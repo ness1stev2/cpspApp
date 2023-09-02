@@ -1,0 +1,98 @@
+.menu-superior {
+  background-color: var(--color-azul-oscuro);
+  transition: all 500ms;
+  padding: 10px;
+
+  .linea-horizontal {
+    color: white;
+  }
+
+  a {
+    padding: 0 15px;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  ul {
+    .svg-img-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .svg-image {
+        display: block;
+        width: 20px;
+        margin: 0 auto;
+        transition: fill 0.3s ease;
+        height: auto;
+        fill: var(--color-blanco);
+      }
+    }
+
+    .nav-item:hover .svg-img-text,
+    .nav-item:hover .svg-image,
+    .nav-item:hover .nav-link {
+      fill: var(--color-naranja);
+      color: var(--color-naranja);
+    }
+
+    button {
+      background-color: var(--color-secundario);
+      border: none;
+      height: 50px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    button:hover {
+      background-color: var(--color-naranja);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    color: white;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    padding-bottom: 0px;
+  }
+
+  .menu-icon {
+    /* Ocultar el menú desplegable en pantallas grandes */
+    cursor: pointer;
+    margin-left: auto;
+    background-image: url(../../../../assets/menu.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-desplegable {
+    background-color: var(--color-azul-oscuro);
+    position: absolute;
+    width: 100%;
+    top: 68px;
+    right: 0px;
+    padding: 5px 15px;
+    text-align: end;
+    z-index: 1;
+    padding: 0px 15px 15px;
+
+    li {
+      list-style: none;
+
+      i {
+        color: white;
+        text-decoration: none;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+}

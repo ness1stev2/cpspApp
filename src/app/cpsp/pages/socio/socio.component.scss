@@ -1,0 +1,82 @@
+.header-socio {
+  background-image: url(../../../../assets/krakenimages-376KN_ISplE-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
+
+  .header--titulo {
+    font-size: 2.2rem;
+    text-shadow: 0px 0px 10px white;
+    color: var(--color-negro);
+  }
+
+  .button-quiero-ser-socio {
+    width: 240px;
+    height: 70px;
+    background-color: var(--color-azul-oscuro);
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+
+    .titulo--inicial {
+      color: white;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .button-quiero-ser-socio:hover {
+    background-color: var(--color-naranja);
+  }
+}
+
+main {
+  .deseo--socio-container {
+    padding: 40px 15px;
+
+    .deseo--socio-titulo {
+      font-size: 2rem;
+      color: var(--color-primario);
+    }
+
+    .deseo--socio-desc {
+      text-align: center;
+      font-size: 1.1rem;
+      color: grey;
+      margin-top: 5px;
+    }
+
+    .requisitos--container {
+      padding: 30px;
+      width: 90%;
+      box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.25);
+      margin: 50px auto;
+      max-width: 1300px;
+
+      .deseo--socio-subtitulo {
+        font-size: 1.5rem;
+        color: gray;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .check--descripcion {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+
+        .check--descripcion-img {
+          width: 45px;
+        }
+
+        .check--descripcion-text {
+          margin-left: 10px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

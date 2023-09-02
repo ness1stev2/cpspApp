@@ -1,0 +1,35 @@
+.redes-sociales {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid white;
+
+    .icono-red {
+      position: relative;
+      top: 3px;
+    }
+  }
+  a:hover {
+    background-color: white;
+    color: black;
+    transition: 550ms;
+}
+}
+
+.contactanos {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 20px black;
+  text-align: center;
+  padding: 25px 0px;
+}
