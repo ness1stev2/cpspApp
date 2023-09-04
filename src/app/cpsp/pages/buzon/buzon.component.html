@@ -1,1 +1,112 @@
-<p>buzon works!</p>
+<header class="header--buzon">
+
+  <h2 class="header--titulo text-center">BUZÓN DE COMENTARIOS</h2>
+
+  <app-redes-sociales></app-redes-sociales>
+
+</header>
+
+<main>
+
+  <section class="buzon-option">
+    <div class="container">
+      <div class="buzon-option-title">ELIJE UNA DE LAS OPCIONES</div>
+      <div class="buzon-option-btns d-flex justify-content-evenly">
+        <div class="btn administrativo" (click)="toggleInfo()">Consejo de Administración</div>
+        <div class="btn vigilancia" (click)="toggleInfo2()">Consejo de Vigilancia</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="forml-vig" [ngStyle]="{'display': isActive ? 'block' : 'none'}">
+    <div class="container">
+      <div class="buzon-option-title">Formulario Consejo de Vigilancia</div>
+      <div class=" forml-vig-desc">Este buzón es exclusivo para seguimiento a temas de servicio y atención al
+        Socio.</div>
+
+      <!-- /*Formulario*/ -->
+      <div class="forml-vig-desc bold">Información del Socio</div>
+      <form class="formulario">
+        <input type="text" name="nombre" placeholder="Nombre(s)" required>
+        <input type="text" name="apellido" placeholder="Apellido(s)" required>
+        <input type="text" name="numero-socio" placeholder="Número de Socio" required>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required>
+        <input type="tel" name="telefono" placeholder="Número de Teléfono / Celular" required>
+        <label class="forml-vig-desc bold" for="motivo">Indique el motivo del mensaje:</label>
+        <div class="radio-buttons">
+          <label><input class="form-check" type="radio" name="motivo" value="felicitaciones">Felicitaciones</label>
+          <label><input class="form-check" type="radio" name="motivo" value="comentario">Comentario</label>
+          <label><input class="form-check" type="radio" name="motivo" value="sugerencia">Sugerencia</label>
+        </div>
+        <label class="forml-vig-desc bold" for="ubicacion">Ubicación:</label>
+        <select name="ubicacion">
+          <option value="matriz">Matriz</option>
+          <option value="zalatitan">Zalatitán</option>
+          <option value="jose-ma-iglesias">José Ma. Iglesias</option>
+          <option value="zapopan">Zapopan</option>
+          <option value="san-pedrito">San Pedrito</option>
+          <option value="santa-fe">Santa Fé</option>
+          <option value="chapala">Chapala</option>
+          <option value="centro">Centro</option>
+          <option value="obrero">Obrero</option>
+          <option value="tonala">Tonalá</option>
+          <option value="san-jose-del-castillo">San José Del Castillo</option>
+          <option value="bahia-colon">Bahía Colón</option>
+          <option value="ocotlan">Ocotlán</option>
+          <option value="tlaquepaque">Tlaquepaque</option>
+        </select>
+        <textarea name="comentario" placeholder="Escriba su comentario (500 Caracteres)" maxlength="500"
+          required></textarea>
+        <button type="submit">Enviar Comentario</button>
+      </form>
+    </div>
+
+  </section>
+  <section class="forml-vig admin" [ngStyle]="{'display': isActive2 ? 'block' : 'none'}">
+    <div class="container">
+      <div class="buzon-option-title" style="color: #dc9c48;">Formulario Consejo de Administración</div>
+      <div class="forml-vig-desc">Este buzón es exclusivo para seguimiento a temas de servicio y atención al Socio.
+      </div>
+
+      <!-- /*Formulario*/ -->
+      <div class="forml-vig-desc bold">Información del Socio</div>
+      <form class="formulario">
+        <input type="text" name="nombre" placeholder="Nombre(s)" required>
+        <input type="text" name="apellido" placeholder="Apellido(s)" required>
+        <input type="text" name="numero-socio" placeholder="Número de Socio" required>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required>
+        <input type="tel" name="telefono" placeholder="Número de Teléfono / Celular" required>
+        <label class="forml-vig-desc bold" for="motivo">Indique el motivo del mensaje:</label>
+        <div class="radio-buttons">
+          <label><input class="form-check" type="radio" name="motivo" value="felicitaciones">Felicitaciones</label>
+          <label><input class="form-check" type="radio" name="motivo" value="comentario">Comentario</label>
+          <label><input class="form-check" type="radio" name="motivo" value="sugerencia">Sugerencia</label>
+        </div>
+        <label class="forml-vig-desc bold" for="ubicacion">Ubicación:</label>
+        <select name="ubicacion">
+          <option value="matriz">Matriz</option>
+          <option value="zalatitan">Zalatitán</option>
+          <option value="jose-ma-iglesias">José Ma. Iglesias</option>
+          <option value="zapopan">Zapopan</option>
+          <option value="san-pedrito">San Pedrito</option>
+          <option value="santa-fe">Santa Fé</option>
+          <option value="chapala">Chapala</option>
+          <option value="centro">Centro</option>
+          <option value="obrero">Obrero</option>
+          <option value="tonala">Tonalá</option>
+          <option value="san-jose-del-castillo">San José Del Castillo</option>
+          <option value="bahia-colon">Bahía Colón</option>
+          <option value="ocotlan">Ocotlán</option>
+          <option value="tlaquepaque">Tlaquepaque</option>
+        </select>
+        <textarea name="comentario" placeholder="Escriba su comentario (500 Caracteres)" maxlength="500"
+          required></textarea>
+        <button type="submit">Enviar Comentario</button>
+      </form>
+    </div>
+
+  </section>
+
+
+</main>

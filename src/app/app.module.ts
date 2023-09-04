@@ -12,6 +12,9 @@ import { InicioComponent } from './cpsp/pages/inicio/inicio.component';
 import { RedesSocialesComponent } from './shared/components/redes-sociales/redes-sociales.component';
 import { SocioComponent } from './cpsp/pages/socio/socio.component';
 import { SucursalesComponent } from './cpsp/pages/sucursales/sucursales.component';
+import { AvisoComponent } from './cpsp/pages/aviso/aviso.component';
+import { HistoriaComponent } from './cpsp/pages/historia/historia.component';
+import { RevistaComponent } from './cpsp/pages/revista/revista.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { SucursalesComponent } from './cpsp/pages/sucursales/sucursales.componen
     RedesSocialesComponent,
     SocioComponent,
     SucursalesComponent,
+    AvisoComponent,
+    HistoriaComponent,
+    RevistaComponent,
   ],
   imports: [
     BrowserModule,

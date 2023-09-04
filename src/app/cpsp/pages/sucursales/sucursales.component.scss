@@ -1,0 +1,155 @@
+.header--inicio-sucursales {
+  background-image: url(../../../../assets/mujer-contenta-que-usa-mapa-papel-telefono-inteligente-al-aire-libre.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 250px 0;
+
+  .header--titulo {
+    font-size: 3rem;
+    text-shadow: 0px 0px 10px white;
+    color: var(--color-negro);
+  }
+}
+
+.sucursales {
+  .card-container {
+    gap: 0px 80px;
+
+    .matriz {
+      background-image: url(../../../../assets/suc-matriz.jpg);
+    }
+
+    .zalatitan {
+      background-image: url(../../../../assets/suczalatitan.png);
+    }
+
+    .iglesias {
+      background-image: url(../../../../assets/jose-ma.-i.jpg);
+    }
+
+    .zapopan {
+      background-image: url(../../../../assets/suc.-zapopan-3.jpg);
+    }
+
+    .pedrito {
+      background-image: url(../../../../assets/san-pedrito.jpg);
+    }
+
+    .santa {
+      background-image: url(../../../../assets/sucsantafe.png);
+    }
+
+    .chapala {
+      background-image: url(../../../../assets/chapala-3.jpg);
+    }
+
+    .chapala {
+      background-image: url(../../../../assets/chapala-3.jpg);
+    }
+
+    .centro {
+      background-image: url(../../../../assets/centro.jpg);
+    }
+
+    .obrero {
+      background-image: url(../../../../assets/sucobrero.png);
+    }
+
+    .tonala {
+      background-image: url(../../../../assets/tonala1.jpg);
+    }
+
+    .castillo {
+      background-image: url(../../../../assets/castillo.jpg);
+    }
+
+    .bahia {
+      background-image: url(../../../../assets/bahia-c.jpg);
+    }
+
+    .tlaquepaque {
+      background-image: url(../../../../assets/tlaquepaque.jpg);
+    }
+
+    .medico {
+      background-image: url(../../../../assets/serviciomed-626x417.jpeg);
+    }
+
+    .tonala {
+      background-image: url(../../../../assets/tonala1.jpg);
+    }
+
+    .card-suc {
+      height: 415px;
+      margin: 20px 0;
+      text-align: center;
+      background-size: cover;
+      box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+      border-radius: 5px;
+      min-width: 240px;
+      max-width: 280px;
+      cursor: pointer;
+
+      .card-suc-title-btn {
+        position: relative;
+        top: 37%;
+
+        .card-suc-title {
+          font-size: 2.5rem;
+          color: var(--color-blanco);
+          text-shadow: 0 0 10px black;
+          line-height: 30px;
+          margin-bottom: 5px;
+        }
+
+        .card-suc-btng {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: var(--color-secundario);
+          width: 190px;
+          border-radius: 15px;
+          height: 30px;
+          color: var(--color-blanco);
+          margin: 20px auto;
+          font-size: 1rem;
+          padding: 10px;
+          p{
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      .card-suc-inf {
+        background-color: rgb(77, 77, 79, 80%);
+        padding: 20px;
+        text-align: start;
+        height: 325px;
+        transform: translateY(315px);
+
+        .card-suc-inf-title {
+          font-size: 2.6rem;
+          color: var(--color-blanco);
+        }
+
+        .card-suc-inf-numbers {
+          color: var(--color-blanco);
+          font-size: 1.2rem;
+          margin: 10px 0px;
+          white-space: pre-line;
+        }
+      }
+    }
+
+    .card-suc-inf {
+      background-color: rgb(77, 77, 79, 80%);
+      padding: 20px;
+      text-align: start;
+      height: 325px;
+      transform: translateY(315px);
+    }
+  }
+}

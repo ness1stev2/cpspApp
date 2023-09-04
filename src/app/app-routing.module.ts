@@ -6,6 +6,9 @@ import { SucursalesComponent } from './cpsp/pages/sucursales/sucursales.componen
 import { CreditosComponent } from './cpsp/pages/creditos/creditos.component';
 import { AhorrosComponent } from './cpsp/pages/ahorros/ahorros.component';
 import { BuzonComponent } from './cpsp/pages/buzon/buzon.component';
+import { AvisoComponent } from './cpsp/pages/aviso/aviso.component';
+import { HistoriaComponent } from './cpsp/pages/historia/historia.component';
+import { RevistaComponent } from './cpsp/pages/revista/revista.component';
 
 const routes: Routes = [
 
@@ -22,7 +25,7 @@ const routes: Routes = [
     component: SucursalesComponent
   },
   {
-    path: 'cred',
+    path: 'creditos',
     component: CreditosComponent
   },
   {
@@ -32,6 +35,18 @@ const routes: Routes = [
   {
     path: 'buzon',
     component: BuzonComponent
+  },
+  {
+    path: 'aviso',
+    component: AvisoComponent
+  },
+  {
+    path: 'historia',
+    component: HistoriaComponent
+  },
+  {
+    path: 'revista',
+    component: RevistaComponent
   },
   {
     path: '**',
