@@ -9,6 +9,12 @@ import { BuzonComponent } from './cpsp/pages/buzon/buzon.component';
 import { AvisoComponent } from './cpsp/pages/aviso/aviso.component';
 import { HistoriaComponent } from './cpsp/pages/historia/historia.component';
 import { RevistaComponent } from './cpsp/pages/revista/revista.component';
+import { AlianzasComponent } from './cpsp/pages/alianzas/alianzas.component';
+import { AsesoriaComponent } from './cpsp/pages/asesoria/asesoria.component';
+import { ProteccionComponent } from './cpsp/pages/proteccion/proteccion.component';
+import { MedicoComponent } from './cpsp/pages/medico/medico.component';
+import { ProfunComponent } from './cpsp/pages/profun/profun.component';
+import { ServiciosComponent } from './cpsp/pages/servicios/servicios.component';
 
 const routes: Routes = [
 
@@ -47,6 +53,30 @@ const routes: Routes = [
   {
     path: 'revista',
     component: RevistaComponent
+  },
+  {
+    path: 'alianzas',
+    component: AlianzasComponent
+  },
+  {
+    path: 'asesoria',
+    component: AsesoriaComponent
+  },
+  {
+    path: 'proteccion',
+    component: ProteccionComponent
+  },
+  {
+    path: 'medico',
+    component: MedicoComponent
+  },
+  {
+    path: 'profun',
+    component: ProfunComponent
+  },
+  {
+    path: 'servicios',
+    component: ServiciosComponent
   },
   {
     path: '**',

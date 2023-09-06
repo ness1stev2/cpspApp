@@ -46,10 +46,16 @@
       font-weight: bold;
       color: var(--color-secundario);
     }
+
     .btn-leer-mas:hover {
       background-color: var(--color-secundario);
       color: white;
       transition: 550ms;
+    }
   }
-  }
+}
+.tiulo-año {
+  color: var(--color-blanco);
+  background-color: var(--color-azul-oscuro);
+  font-size: 3rem;
 }

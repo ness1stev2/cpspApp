@@ -40,6 +40,7 @@ main {
         text-align: center;
         text-decoration: none;
         padding: 0;
+        cursor: pointer;
 
         .card-credito-img {
           background-size: cover;
@@ -49,7 +50,7 @@ main {
 
         .card-credito-title {
           font-size: 1.2rem;
-          height: 65px;
+          height: 85px;
           color: var(--color-negro);
           display: flex;
           align-items: center;
@@ -67,7 +68,7 @@ main {
           justify-content: center;
           align-items: center;
           margin: 0 auto;
-          cursor: pointer;
+          transition: all 0.3s ease-out;
         }
       }
 
@@ -106,14 +107,17 @@ main {
 
         .card-credito-btn-simulador {
           display: flex;
-          font-size: 1.2rem;
+          justify-content: space-evenly;
+          align-items: center;
           font-weight: bold;
           background-color: var(--color-gris);
-          padding: 15px;
           border-radius: 10px;
-          color: var(--color-naranja);
+          font-size: 1.2rem;
+          padding: 15px;
           margin: auto auto 35px auto;
-
+          color: var(--color-naranja);
+          width: 65%;
+          max-width: 320px;
           i {
             margin-left: 5px;
           }

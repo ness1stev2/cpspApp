@@ -61,7 +61,7 @@
       <!-- Contenido de la primera sección -->
 
       <div class="card-content col d-flex flex-column align-items-center">
-        <a href="assets/pdf/promociones2023.pdf" class="text-decoration-none">
+        <a routerLink="/revista" class="text-decoration-none">
           <div class="image-wrapper position-relative">
             <div class="overlay position-absolute"></div>
             <img src="assets/libertador-1.png" alt="" class="card-content-image">
@@ -71,7 +71,7 @@
         </a>
       </div>
       <div class="card-content col d-flex flex-column align-items-center">
-        <a href="assets/pdf/promociones2023.pdf" class="text-decoration-none">
+        <a href="assets/pdf/promociones2023.pdf" target="_blank" class="text-decoration-none">
           <div class="image-wrapper position-relative">
             <div class="overlay position-absolute"></div>
             <img src="assets/Promociones.png" alt="" class="card-content-image">
@@ -81,7 +81,7 @@
         </a>
       </div>
       <div class="card-content col d-flex flex-column align-items-center">
-        <a href="assets/pdf/promociones2023.pdf" class="text-decoration-none">
+        <a routerLink="/alianzas" class="text-decoration-none">
           <div class="image-wrapper position-relative">
             <div class="overlay position-absolute"></div>
             <img src="assets/alianzas.png" alt="" class="card-content-image">
@@ -91,7 +91,7 @@
         </a>
       </div>
       <div class="card-content col d-flex flex-column align-items-center">
-        <a href="assets/pdf/promociones2023.pdf" class="text-decoration-none">
+        <a href="assets/pdf/libro-caja.pdf" target="_blank" class="text-decoration-none">
           <div class="image-wrapper position-relative">
             <div class="overlay position-absolute"></div>
             <img src="assets/portlibro.png" alt="" class="card-content-image">
@@ -114,28 +114,27 @@
       </div>
       <div class="row justify-content-center">
         <div class="all-beneficios d-flex flex-wrap">
-          <div class="item col">
+          <div class="item col" routerLink="/asesoria">
             <img class="img-beneficio" src="assets/icon/consulta.png" alt="Imagen 1">
             <div class="texto-corto">Asesoría Jurídica</div>
           </div>
-          <div class="item col">
+          <div class="item col" routerLink="/alianzas">
             <img class="img-beneficio" src="assets/icon/manos.png" alt="Imagen 2">
             <div class="texto-corto">Alianzas Estratégicas</div>
           </div>
-          <div class="item col">
+          <div class="item col" routerLink="/proteccion">
             <img class="img-beneficio" src="assets/icon/ahorrar-dinero.png" alt="Imagen 3">
-            <div class="texto-corto">Protección al Ahorro
-              y Crédito</div>
+            <div class="texto-corto">Protección al Ahorro y Crédito</div>
           </div>
-          <a href="./pages/sucursales.php#medico" class="item col">
+          <a class="item col" routerLink="/medico">
             <img class="img-beneficio" src="assets/icon/asistencia-medica.png" alt="Imagen 4">
             <div class="texto-corto">Servicios Médicos</div>
           </a>
-          <div class="item col">
+          <div class="item col" routerLink="/servicios">
             <img class="img-beneficio" src="assets/icon/pago.png" alt="Imagen 5">
             <div class="texto-corto">Pago de Servicios</div>
           </div>
-          <div class="item col">
+          <div class="item col" routerLink="/profun">
             <img class="img-beneficio" src="assets/icon/me-gusta.png" alt="Imagen 6">
             <div class="texto-corto">Profun</div>
           </div>
@@ -215,7 +214,7 @@
     <!-- Contenido de la cuarta sección -->
     <div class="slogan-texto">"UNIDOS EN LA COOPERACIÓN,
       POR UN FUTURO MEJOR"</div>
-    <div class="circuloycheck">
+    <div class="circuloycheck" routerLink="/historia">
       <img src="./assets/icon/cheque.png" alt="">
       <div class="texto-circulo">HISTORIA</div>
     </div>
@@ -559,7 +558,7 @@
         <img class="imgfb" src="../assets/icon/buzon.png" alt="">
         <div class="titulofb">Buzón de Comentarios</div>
         <div class="descfb"> Nos importa tu opinión, haznos saber tus recomendaciones para brindarte un mejor servicio</div>
-        <a href="./pages/buzon.php" class="nov-event-enlace">
+        <a routerLink="/buzon" class="nov-event-enlace">
             <div class="nov-event-boton">Ir a Buzón</div>
         </a>
     </section>
