@@ -1,46 +1,27 @@
 import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InicioComponent } from './cpsp/pages/inicio/inicio.component';
-import { SocioComponent } from './cpsp/pages/socio/socio.component';
-import { SucursalesComponent } from './cpsp/pages/sucursales/sucursales.component';
-import { CreditosComponent } from './cpsp/pages/creditos/creditos.component';
-import { AhorrosComponent } from './cpsp/pages/ahorros/ahorros.component';
-import { BuzonComponent } from './cpsp/pages/buzon/buzon.component';
 import { AvisoComponent } from './cpsp/pages/aviso/aviso.component';
 import { HistoriaComponent } from './cpsp/pages/historia/historia.component';
-import { RevistaComponent } from './cpsp/pages/revista/revista.component';
-import { AlianzasComponent } from './cpsp/pages/alianzas/alianzas.component';
+import { RevistaComponent } from './revista-alianzas/pages/revista/revista.component';
+import { AlianzasComponent } from './revista-alianzas/pages/alianzas/alianzas.component';
 import { AsesoriaComponent } from './cpsp/pages/asesoria/asesoria.component';
 import { ProteccionComponent } from './cpsp/pages/proteccion/proteccion.component';
 import { MedicoComponent } from './cpsp/pages/medico/medico.component';
 import { ProfunComponent } from './cpsp/pages/profun/profun.component';
 import { ServiciosComponent } from './cpsp/pages/servicios/servicios.component';
+import { TrabajoComponent } from './cpsp/pages/trabajo/trabajo.component';
+import { AgroAvioComponent } from './cpsp/components/simuladores/agro-avio/agro-avio.component';
+import { BuroComponent } from './shared/Pages/buro/buro.component';
 
 const routes: Routes = [
 
   {
     path: 'inicio',
-    component: InicioComponent
+    loadChildren: () => import('./cpsp/cpsp.module').then( m => m.CpspModule )
   },
   {
-    path: 'socio',
-    component: SocioComponent
-  },
-  {
-    path: 'sucursales',
-    component: SucursalesComponent
-  },
-  {
-    path: 'creditos',
-    component: CreditosComponent
-  },
-  {
-    path: 'ahorros',
-    component: AhorrosComponent
-  },
-  {
-    path: 'buzon',
-    component: BuzonComponent
+    path: 'btns',
+    loadChildren: () => import('./revista-alianzas/revista-alianzas.module').then( m => m.RevistaAlianzasModule )
   },
   {
     path: 'aviso',
@@ -79,6 +60,18 @@ const routes: Routes = [
     component: ServiciosComponent
   },
   {
+    path: 'trabajo',
+    component: TrabajoComponent
+  },
+  {
+    path: 'creditoagro',
+    component: AgroAvioComponent
+  },
+  {
+    path: 'buro',
+    component: BuroComponent
+  },
+  {
     path: '**',
     redirectTo: 'inicio'
   }
@@ -87,7 +80,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
+    useHash: true
+    /* initialNavigation: 'enabledBlocking' */
 })],
   exports: [RouterModule]
 })

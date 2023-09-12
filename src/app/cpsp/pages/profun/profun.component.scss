@@ -1,12 +1,18 @@
+@import 'animate.css';
 .header--profun {
   background-image: url(../../../../assets/damian-markutt-vaG8rOJLDHo-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 250px 0;
+  h2{
+    animation: zoomIn;
+    animation-duration: 1s;
+  }
 }
 
 .profun{
+  text-align: justify;
   .nota{
     background-color: var(--color-secundario);
   }

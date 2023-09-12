@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-creditos',
@@ -16,6 +19,14 @@ export class CreditosComponent {
       // Si no, establecer solo el elemento en la posición i en true y los demás en false.
       this.isActive = this.isActive.map((_, index) => index === i);
     }
+  }
+
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
+  ngOnInit() {
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
+      // Desplázate al inicio de la página
+      this.viewportScroller.scrollToPosition([0, 0]);
+    });
   }
 
 }

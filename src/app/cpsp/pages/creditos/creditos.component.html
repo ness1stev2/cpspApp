@@ -14,20 +14,20 @@
     <div class="card-container row justify-content-center">
 
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(1)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(0)">
         <img src="assets/credito-ordinario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ORDINARIO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[1] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[0] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[1] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[0] ? 'block' : 'none'}">
         <div class="card-credito-detalle">El crédito Ordinario es una buena alternativa de financiamiento
           para conseguir el efectivo que necesitas sin poner en apuros tu presupuesto e historial crediticio.
         </div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
@@ -140,10 +140,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                19.6%
+                19.1%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -209,20 +209,20 @@
       </div>
 
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(2)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(1)">
         <img src="assets/credilomio.png" class="card-credito-img">
         <div class="card-credito-title">CREDILOMÍO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[2] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[1] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[2] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[1] ? 'block' : 'none'}">
         <div class="card-credito-detalle">Llévate al instante un crédito respaldado por tus ahorros, pensando para
           cubrir las necesidades básicas de manera fácil con una excelente tasa de interés y plazo para pagar.
         </div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlush2">
           <div class="accordion-item">
@@ -332,10 +332,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                197.4%
+                198.7%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -400,20 +400,20 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(3)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(2)">
         <img src="assets/credileal.png" class="card-credito-img">
         <div class="card-credito-title">CREDILEAL</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[3] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[2] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[3] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[2] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Tu lealtad y responsabilidad como Socio son reconocidos con un nuevo producto,
           sin aval y en el que tu historial de socio es tu mejor aliado.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample3">
           <div class="accordion-item">
@@ -524,8 +524,8 @@
                 <b>CAT promedio</b><br>
                 14.0%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -590,21 +590,21 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(4)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(3)">
         <img src="assets/credito-para-auto.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO PARA AUTOMÓVIL</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[4] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[3] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más
         </div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[4] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[3] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Es tiempo de comprar ese auto que deseas, con este crédito podrás adquirir un
           auto nuevo o seminuevo con hasta 5 años de antigüedad.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample4">
           <div class="accordion-item">
@@ -720,10 +720,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                16.4%
+                16.3%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -788,21 +788,21 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(5)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(4)">
         <img src="assets/credito-solidario.png" class="card-credito-img">
         <div class="card-credito-title">CREDISOLIDARIO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[5] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[4] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[5] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[4] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">El préstamo CREDISOLIDARIO preponderantemente se destinará para hacer frente a
           las necesidades personales.
           Su uso no será limitativo y no será necesaria la comprobación del destino del préstamo.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample5">
           <div class="accordion-item">
@@ -904,10 +904,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                14.0%
+                14.1%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -972,21 +972,21 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(6)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(5)">
         <img src="assets/credito-alternativo-596x596.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ALTERNATIVO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[6] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[5] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[6] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[5] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Una opción extra para cuando requieres de más capital; adicional a los
           préstamos que ya tengas, siempre y cuando
           tu capacidad de pago así lo permita.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample6">
           <div class="accordion-item">
@@ -1087,10 +1087,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                202.9%
+                213.8%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -1155,21 +1155,21 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(7)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(6)">
         <img src="assets/credito-hipotecario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ORDINARIO HIPOTECARIO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[7] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[6] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[7] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[6] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Si tienes un plan en mente y necesitas dinero para lograrlo, recibe un
           porcentaje del valor
           de tu casa habitación, y haz realidad tu proyecto.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample7">
           <div class="accordion-item">
@@ -1281,10 +1281,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                13.8%
+                13.4%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -1360,20 +1360,20 @@
     <div class="card-container row justify-content-center">
 
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(8)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(7)">
         <img src="assets/credito-micronegocio.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO MICRONEGOCIO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[8] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[7] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[8] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[7] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Financiamiento para creación o ampliación de negocio comercial dentro del
           Municipio de Zapopan.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample8">
           <div class="accordion-item">
@@ -1482,8 +1482,8 @@
                 <b>CAT promedio</b><br>
                 12.7%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -1548,20 +1548,20 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(9)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(8)">
         <img src="assets/credito-emprende.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO EMPRENDE</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[9] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[8] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[9] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[8] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Financiamiento para creación o ampliación de negocio comercial dentro del
           Municipio de Zapopan.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample9">
           <div class="accordion-item">
@@ -1664,8 +1664,8 @@
                 <b>CAT promedio</b><br>
                 9.4%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -1730,20 +1730,20 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(10)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(9)">
         <img src="assets/credito-prestamovil-596x596.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO PRESTAMÓVIL</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[10] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[9] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[10] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[9] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Si necesitas hacer crecer tu negocio, solicita este préstamo para la
           adquisición de vehículos uso de Transporte Público de Pasajeros, carga o Vehículos Utilitarios.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample10">
           <div class="accordion-item">
@@ -1864,10 +1864,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                12.8%
+                12.6%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -1932,23 +1932,23 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(11)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(10)">
         <img src="assets/comercial-avio.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL AVÍO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[11] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[10] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[11] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[10] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Financiamiento de corto o mediano plazo para apoyo al capital de trabajo, cuyo
           importe esta condicionado a ser invertido únicamente en la compra de materias primas y materiales, pagos de
           jornales, salarios y gastos directos de explotación indispensables para la operación de empresas con
           actividades de transformación y manufactura en sectores como: industria, agropecuario, forestal y pesquero
           nacional, principalmente.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample11">
           <div class="accordion-item">
@@ -2069,10 +2069,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                17.5%
+                23.1%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -2137,21 +2137,21 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(12)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(11)">
         <img src="assets/credito-refaccionario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL REFACCIONARIO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[12] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[11] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[12] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[11] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Financiamiento de mediano a largo plazo para cubrir necesidades de inversión
           en activos fijos y fortalecer la infraestructura de su empresa, se puede usar para empresas pertenecientes al
           sector agropecuario forestal y pesquero.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample12">
           <div class="accordion-item">
@@ -2271,10 +2271,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                13.6%
+                13.4%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -2339,21 +2339,21 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(13)">
+      <a class="col-md-3 card-credito" (click)="toggleInfo(12)">
         <img src="assets/creditorefaccionariohipotecario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL REFACCIONARIO HIPOTECARIO</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[13] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[12] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[13] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[12] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Financiamiento de mediano a largo plazo para cubrir necesidades de inversión
           en activos fijos y fortalecer la infraestructura de su empresa, se puede usar para empresas pertenecientes al
           sector agropecuario forestal y pesquero.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample13">
           <div class="accordion-item">
@@ -2481,10 +2481,10 @@
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                13.4%
+                13.5%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>
@@ -2556,23 +2556,23 @@
 
   <section class="credito-contaner">
 
-    <div class="credito-tipe">CONSUMO</div>
+    <div class="credito-tipe">VIVIENDA</div>
     <div class="card-container">
 
-      <div class="card-credito" (click)="toggleInfo(14)">
+      <div class="card-credito" (click)="toggleInfo(13)">
         <img src="assets/credito-vivienda.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO DE VIVIENDA</div>
         <div class="card-credito-btn"
-          [ngStyle]="isActive[14] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
+          [ngStyle]="isActive[13] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </div>
 
-      <div class="card-credito-info" [ngStyle]="{'display': isActive[14] ? 'block' : 'none'}">
+      <div class="card-credito-info" [ngStyle]="{'display': isActive[13] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Construye tu patrimonio con una muy atractiva opción para ti y tu familia,
           invirtiendo en comprar tu casa, terreno o sustituyendo tu hipoteca con ese crédito.</div>
-        <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a>
+        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a> -->
 
         <div class="accordion accordion-flush" id="accordionFlushExample14">
           <div class="accordion-item">
@@ -2691,8 +2691,8 @@
                 <b>CAT promedio</b><br>
                 10.8%
                 "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Cálculo de CAT realizado el 19 de Mayo de 2023.
-                <br>Vigencia de cálculo Junio de 2023.
+                Fecha de cálculo 21 de Agosto 2023
+                <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
           </div>

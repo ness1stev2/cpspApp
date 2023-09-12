@@ -1,17 +1,22 @@
+@import 'animate.css';
+
 .menu-superior {
   background-color: var(--color-azul-oscuro);
   transition: all 500ms;
   padding: 10px;
+  height: 70px;
 
   .linea-horizontal {
     color: white;
   }
 
   a {
-    padding: 0 15px;
+    padding: 0 ;
 
     img {
-      width: 120px;
+      width: 160px;
+      animation: fadeInUp;
+      animation-duration: 1000ms;
     }
   }
 
@@ -21,6 +26,11 @@
       flex-direction: column;
       justify-content: center;
       cursor: pointer;
+      animation: flipInX;
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 13px;
+      }
 
       .svg-image {
         display: block;
@@ -29,7 +39,31 @@
         transition: fill 0.3s ease;
         height: auto;
         fill: var(--color-blanco);
+        @media (min-width: 768px) and (max-width: 991px) {
+          margin-bottom: 5px;
+        }
       }
+    }
+
+    .svg-img-text:nth-child(1) {
+      animation-duration: 500ms;
+      /* don't forget to set a duration! */
+    }
+
+    .svg-img-text:nth-child(2) {
+      animation-duration: 1000ms;
+      /* don't forget to set a duration! */
+    }
+
+    .svg-img-text:nth-child(3) {
+      animation-duration: 1500ms;
+      /* don't forget to set a duration! */
+    }
+
+    .svg-img-text:nth-child(4) {
+      animation-duration: 2000ms;
+      /* don't forget to set a duration! */
+
     }
 
     .nav-item:hover .svg-img-text,
@@ -37,6 +71,11 @@
     .nav-item:hover .nav-link {
       fill: var(--color-naranja);
       color: var(--color-naranja);
+    }
+
+    .btn-saldo {
+      animation: flipInX;
+      animation-duration: 2500ms;
     }
 
     .saldos {
@@ -49,6 +88,7 @@
     .saldos:hover {
       background-color: var(--color-naranja);
     }
+
   }
 
   a {
@@ -68,13 +108,15 @@
     background-size: cover;
     width: 30px;
     height: 30px;
+    animation: fadeIn;
+    animation-duration: 1000ms;
   }
 
   .menu-desplegable {
     background-color: var(--color-azul-oscuro);
     position: absolute;
     width: 100%;
-    top: 56px;
+    top: 68px;
     right: 0px;
     padding: 5px 15px;
     text-align: end;

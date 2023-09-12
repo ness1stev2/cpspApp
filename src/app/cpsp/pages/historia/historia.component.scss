@@ -1,3 +1,4 @@
+@import 'animate.css';
 .header--historia {
   background-image: url(../../../../assets/historiaimg.png);
   background-size: cover;
@@ -5,10 +6,13 @@
   background-position: center;
   padding: 250px 0;
 
+
   .header--titulo {
     font-size: 2.5rem;
     text-shadow: 0px 0px 10px white;
     color: var(--color-negro);
+    animation: zoomIn;
+    animation-duration: 1s;
   }
 }
 

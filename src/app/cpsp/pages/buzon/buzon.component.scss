@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 .header--buzon {
   background-image: url(../../../../assets/buzondecomentariosimg.png);
   background-size: cover;
@@ -6,6 +8,8 @@
   padding: 250px 0;
 
   .header--titulo {
+    animation: zoomIn;
+    animation-duration: 1s;
     font-size: 3rem;
     text-shadow: 0px 0px 10px white;
     color: var(--color-negro);

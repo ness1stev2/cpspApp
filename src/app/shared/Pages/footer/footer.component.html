@@ -3,7 +3,7 @@
     <!-- Contenido del pie de página/footer -->
     <div class="row justify-content-center">
 
-      <div class="footer-img col-12 col-md-4 d-flex align-items-center justify-content-center" alt="">
+      <div routerLink="/buro" class="footer-img col-12 col-md-4 d-flex align-items-center justify-content-center" alt="">
         <img src="assets/logo-de-buro.png" alt="">
       </div>
 
@@ -13,17 +13,16 @@
         <div class="footer-titulo">ENLACES WEB</div>
 
         <ul class="enlaces-web">
-          <li><a routerLink="aviso">Aviso de Privasidad</a></li>
+          <li><a routerLink="aviso">Aviso de Privacidad</a></li>
           <li><a href="https://www.gob.mx/condusef" target="_blank">Condusef</a></li>
-          <li><a href="#">Unidad Especializada de Atencion a Socios</a></li>
-          <li><a href="#">Despachos de Cobranza Externos</a></li>
-          <li><a href="#">Derechos Arco</a></li>
-          <li><a href="#">Costos y Comisiones</a></li>
+          <li><a href="assets/pdf/unidad-especializada.pdf" target="_blank">Unidad Especializada de Atencion a Socios</a></li>
+          <li><a href="assets/pdf/DespachosDeCobranza.pdf" target="_blank">Despachos de Cobranza Externos</a></li>
+          <li><a href="assets/pdf/derechos_arco.pdf" target="_blank">Derechos Arco</a></li>
+          <li><a href="assets/pdf/CostosYComiciones_Septiembre-2023.pdf" target="_blank">Costos y Comisiones</a></li>
         </ul>
       </div>
 
-      <div class="col-12 col-md-4 text-center">
-        <div class="footer-titulo">REDES SOCIALES</div>
+      <div class="col-12 col-md-4 text-center d-flex justify-content-center align-items-center">
         <app-redes-sociales></app-redes-sociales>
       </div>
 

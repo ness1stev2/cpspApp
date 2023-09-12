@@ -1,3 +1,4 @@
+@import 'animate.css';
 .header--inicio-sucursales {
   background-image: url(../../../../assets/mujer-contenta-que-usa-mapa-papel-telefono-inteligente-al-aire-libre.jpg);
   background-size: cover;
@@ -5,10 +6,13 @@
   background-position: center;
   padding: 250px 0;
 
+
   .header--titulo {
     font-size: 3rem;
     text-shadow: 0px 0px 10px white;
     color: var(--color-negro);
+    animation: zoomIn;
+    animation-duration: 1s;
   }
 }
 
@@ -91,6 +95,7 @@
       min-width: 240px;
       max-width: 280px;
       cursor: pointer;
+      transition: box-shadow 500ms ease;
 
       .card-suc-title-btn {
         position: relative;
@@ -116,7 +121,9 @@
           margin: 20px auto;
           font-size: 1rem;
           padding: 10px;
-          p{
+          transition: background-color 500ms ease;
+
+          p {
             margin: 0;
             padding: 0;
           }
@@ -140,6 +147,15 @@
           font-size: 1.2rem;
           margin: 10px 0px;
           white-space: pre-line;
+        }
+      }
+    }
+
+    .card-suc:hover {
+      box-shadow: 1px 1px 21px 0px var(--color-naranja);
+      .card-suc-title-btn {
+        .card-suc-btng {
+          background-color: var(--color-naranja);
         }
       }
     }

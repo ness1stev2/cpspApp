@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-buzon',
@@ -14,8 +17,16 @@ export class BuzonComponent {
     this.isActive2 = false
   }
   toggleInfo2() {
-    this.isActive2 = true
     this.isActive = false
+    this.isActive2 = true
+  }
+
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
+  ngOnInit() {
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
+      // Desplázate al inicio de la página
+      this.viewportScroller.scrollToPosition([0, 0]);
+    });
   }
 
 }
