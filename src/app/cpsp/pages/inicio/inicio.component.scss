@@ -6,43 +6,46 @@
   padding: 20px;
   color: white;
   margin-bottom: 5px;
-  .educoof-content{
 
-    img{
+  .educoof-content {
+
+    img {
       width: 50px;
       animation: jello;
       animation-duration: 3s;
       animation-iteration-count: infinite;
     }
-  .text-enlace{
-    p{
-      width: 300px;
-      margin: 10px auto;
-    }
 
-    .boton-educoof{
-      background-color: var(--color-primario);
-      border-radius: 30px;
-      padding: 10px;
-      color: white;
-      max-width: 400px;
-      margin: 0 auto;
+    .text-enlace {
+      p {
+        width: 300px;
+        margin: 10px auto;
+      }
 
-      a {
-        font-size: 15px;
-        text-decoration: none;
-        color: inherit;
-        font-weight: 500;
+      .boton-educoof {
+        background-color: var(--color-primario);
+        border-radius: 30px;
+        padding: 10px;
+        color: white;
+        max-width: 400px;
+        margin: 0 auto;
+
+        a {
+          font-size: 15px;
+          text-decoration: none;
+          color: inherit;
+          font-weight: 500;
+        }
+
+      }
+
+      .boton-educoof:hover {
+        color: var(--color-naranja);
+        background-color: white
       }
 
     }
-    .boton-educoof:hover {
-      color: var(--color-naranja);
-      background-color: white
-    }
-
   }
-}
 
 }
 
@@ -88,7 +91,8 @@
           .img4,
           .img5,
           .img6,
-          .img7 {
+          .img7,
+          .img8 {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -102,6 +106,7 @@
 
           .img1 {
             background-image: url(../../../../assets/datos-biometricos-1.jpg);
+
             @media (max-width: 576px) {
               background-position-x: -70px;
             }
@@ -109,6 +114,7 @@
 
           .img2 {
             background-image: url(../../../../assets/estimadiosSocios.jpg);
+
             @media (max-width: 576px) {
               background-position-x: -150px;
             }
@@ -120,6 +126,7 @@
 
           .img4 {
             background-image: url(../../../../assets/alianzasgal-2.jpg);
+
             @media (max-width: 576px) {
               background-position-x: -190px;
             }
@@ -133,8 +140,13 @@
             background-image: url(../../../../assets/bases.jpg);
           }
 
+          .img8 {
+            background-image: url(../../../../assets/charla-de-becas.jpg);
+          }
+
           .img7 {
             background-image: url(../../../../assets/servicioelectronicos-1.jpg);
+
             @media (max-width: 576px) {
               background-position-x: -180px;
             }
@@ -356,18 +368,19 @@
       }
     }
 
-a{
-  width: fit-content;
-  .min-youtube {
-    height: auto;
-    border-radius: 10px;
-    width: 260px;
-    margin: 20px 11px;
-    padding: 0;
-    max-width: 300px;
-    cursor: pointer;
-  }
-}
+    a {
+      width: fit-content;
+
+      .min-youtube {
+        height: auto;
+        border-radius: 10px;
+        width: 260px;
+        margin: 20px 11px;
+        padding: 0;
+        max-width: 300px;
+        cursor: pointer;
+      }
+    }
 
     .min-youtube:hover {
       transform: scale(1.1);
@@ -496,7 +509,7 @@ a{
 
           .resp {
             font-size: 1.1rem;
-            text-align: center;
+            text-align: justify;
             white-space: pre-line;
             padding: 25px 20px;
             box-shadow: 0px 10px 20px #00000042;

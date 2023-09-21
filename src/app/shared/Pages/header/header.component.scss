@@ -1,5 +1,25 @@
 @import 'animate.css';
 
+.avisos-importantes{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 30px;
+  a{
+    background-color: var(--color-naranja);
+    color: white;
+    border-radius: 30px;
+    padding: 3px 10px;
+    transition: all 500ms;
+  }
+  a:hover{
+    color: var(--color-primario);
+    background-color: white;
+  }
+}
+
 .menu-superior {
   background-color: var(--color-azul-oscuro);
   transition: all 500ms;
@@ -12,7 +32,7 @@
 
   a {
     padding: 0 ;
-
+    cursor: pointer;
     img {
       width: 160px;
       animation: fadeInUp;

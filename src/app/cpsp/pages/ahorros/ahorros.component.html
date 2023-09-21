@@ -1,6 +1,6 @@
-<header class="header--inicio header--ahorro">
+<header class="header--ahorro">
 
-  <h2 class="titulo-sucursal text-center">CUENTAS DE DEPÓSITO</h2>
+  <h2 class="text-center text-white">CUENTAS DE <br> DEPÓSITO</h2>
 
   <app-redes-sociales></app-redes-sociales>
 
@@ -8,17 +8,13 @@
 
 <main>
 
-  <section class="ahorros--container">
-
-    <div class="container">
-
-      <div class="">
+  <section class="ahorros--container container">
 
         <div class="card-container row no-padding justify-content-center">
 
-          <div class="card-ahorro col-6" (click)="toggleInfo(0)">
+          <div class="card-ahorro d-flex col-6" (click)="toggleInfo(0)">
             <div class="card-ahorro-img adulto"></div>
-            <div class="card-ahorro-title">AHORRO ADULTO</div>
+            <div class="card-ahorro-title align-items-center">AHORRO ADULTO</div>
           </div>
 
           <div class="card-ahorro-info" [ngStyle]="{'display': isActive[0] ? 'block' : 'none'}">
@@ -187,7 +183,7 @@
 
           </div>
 
-          <div class="card-ahorro col-6" (click)="toggleInfo(1)">
+          <div class="card-ahorro d-flex col-6" (click)="toggleInfo(1)">
             <div class="card-ahorro-img menores"></div>
             <div class="card-ahorro-title">AHORRO MENORES</div>
           </div>
@@ -356,7 +352,7 @@
 
           </div>
 
-          <div class="card-ahorro col-6" (click)="toggleInfo(2)">
+          <div class="card-ahorro d-flex col-6" (click)="toggleInfo(2)">
             <div class="card-ahorro-img corriente"></div>
             <div class="card-ahorro-title">CUENTA CORRIENTE</div>
           </div>
@@ -522,7 +518,7 @@
 
           </div>
 
-          <div class="card-ahorro col-6" (click)="toggleInfo(3)">
+          <div class="card-ahorro d-flex col-6" (click)="toggleInfo(3)">
             <div class="card-ahorro-img fijo"></div>
             <div class="card-ahorro-title">PLAZO FIJO</div>
           </div>
@@ -699,10 +695,6 @@
           </div>
 
         </div>
-
-      </div>
-
-    </div>
 
   </section>
 

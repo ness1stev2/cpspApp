@@ -1,6 +1,6 @@
 <header class="header--credito">
 
-  <h2 class="header--titulo text-center">CRÉDITOS</h2>
+  <h2 class="text-center">CRÉDITOS</h2>
 
   <app-redes-sociales></app-redes-sociales>
 
@@ -8,13 +8,14 @@
 
 <main>
 
+
   <section class="credito-contaner">
     <div class="credito-tipe">CONSUMO</div>
 
     <div class="card-container row justify-content-center">
 
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(0)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(0)">
         <img src="assets/credito-ordinario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ORDINARIO</div>
         <div class="card-credito-btn"
@@ -26,8 +27,8 @@
         <div class="card-credito-detalle">El crédito Ordinario es una buena alternativa de financiamiento
           para conseguir el efectivo que necesitas sin poner en apuros tu presupuesto e historial crediticio.
         </div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[0].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
@@ -209,7 +210,7 @@
       </div>
 
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(1)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(1)">
         <img src="assets/credilomio.png" class="card-credito-img">
         <div class="card-credito-title">CREDILOMÍO</div>
         <div class="card-credito-btn"
@@ -221,8 +222,8 @@
         <div class="card-credito-detalle">Llévate al instante un crédito respaldado por tus ahorros, pensando para
           cubrir las necesidades básicas de manera fácil con una excelente tasa de interés y plazo para pagar.
         </div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[1].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlush2">
           <div class="accordion-item">
@@ -240,7 +241,7 @@
                   <li>Monto del Crédito desde $500.00 y hasta el 90% del saldo de tu cuenta de ahorro.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 y hasta 36 o 60 meses según el monto del crédito.</li>
+                  <li>Plazo de 2 a 36 o hasta 60 meses según el monto del crédito.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -400,7 +401,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(2)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(2)">
         <img src="assets/credileal.png" class="card-credito-img">
         <div class="card-credito-title">CREDILEAL</div>
         <div class="card-credito-btn"
@@ -412,8 +413,8 @@
 
         <div class="card-credito-detalle">Tu lealtad y responsabilidad como Socio son reconocidos con un nuevo producto,
           sin aval y en el que tu historial de socio es tu mejor aliado.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[2].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample3">
           <div class="accordion-item">
@@ -590,7 +591,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(3)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(3)">
         <img src="assets/credito-para-auto.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO PARA AUTOMÓVIL</div>
         <div class="card-credito-btn"
@@ -603,8 +604,8 @@
 
         <div class="card-credito-detalle">Es tiempo de comprar ese auto que deseas, con este crédito podrás adquirir un
           auto nuevo o seminuevo con hasta 5 años de antigüedad.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[3].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample4">
           <div class="accordion-item">
@@ -623,7 +624,7 @@
                   <li>Monto del Crédito desde $50,000.00 hasta $400,000.00</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 y hasta 72 meses.</li>
+                  <li>Plazo de 2 a 60 o hasta 72 meses.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -788,7 +789,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(4)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(4)">
         <img src="assets/credito-solidario.png" class="card-credito-img">
         <div class="card-credito-title">CREDISOLIDARIO</div>
         <div class="card-credito-btn"
@@ -801,8 +802,8 @@
         <div class="card-credito-detalle">El préstamo CREDISOLIDARIO preponderantemente se destinará para hacer frente a
           las necesidades personales.
           Su uso no será limitativo y no será necesaria la comprobación del destino del préstamo.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[4].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample5">
           <div class="accordion-item">
@@ -972,7 +973,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(5)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(5)">
         <img src="assets/credito-alternativo-596x596.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ALTERNATIVO</div>
         <div class="card-credito-btn"
@@ -985,8 +986,8 @@
         <div class="card-credito-detalle">Una opción extra para cuando requieres de más capital; adicional a los
           préstamos que ya tengas, siempre y cuando
           tu capacidad de pago así lo permita.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[5].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample6">
           <div class="accordion-item">
@@ -1155,7 +1156,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(6)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(6)">
         <img src="assets/credito-hipotecario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ORDINARIO HIPOTECARIO</div>
         <div class="card-credito-btn"
@@ -1168,8 +1169,8 @@
         <div class="card-credito-detalle">Si tienes un plan en mente y necesitas dinero para lograrlo, recibe un
           porcentaje del valor
           de tu casa habitación, y haz realidad tu proyecto.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[6].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample7">
           <div class="accordion-item">
@@ -1360,7 +1361,7 @@
     <div class="card-container row justify-content-center">
 
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(7)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(7)">
         <img src="assets/credito-micronegocio.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO MICRONEGOCIO</div>
         <div class="card-credito-btn"
@@ -1372,8 +1373,8 @@
 
         <div class="card-credito-detalle">Financiamiento para creación o ampliación de negocio comercial dentro del
           Municipio de Zapopan.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[7].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample8">
           <div class="accordion-item">
@@ -1548,7 +1549,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(8)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(8)">
         <img src="assets/credito-emprende.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO EMPRENDE</div>
         <div class="card-credito-btn"
@@ -1560,8 +1561,8 @@
 
         <div class="card-credito-detalle">Financiamiento para creación o ampliación de negocio comercial dentro del
           Municipio de Zapopan.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[8].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample9">
           <div class="accordion-item">
@@ -1730,7 +1731,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(9)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(9)">
         <img src="assets/credito-prestamovil-596x596.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO PRESTAMÓVIL</div>
         <div class="card-credito-btn"
@@ -1742,8 +1743,8 @@
 
         <div class="card-credito-detalle">Si necesitas hacer crecer tu negocio, solicita este préstamo para la
           adquisición de vehículos uso de Transporte Público de Pasajeros, carga o Vehículos Utilitarios.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[9].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample10">
           <div class="accordion-item">
@@ -1932,7 +1933,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(10)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(10)">
         <img src="assets/comercial-avio.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL AVÍO</div>
         <div class="card-credito-btn"
@@ -1947,8 +1948,8 @@
           jornales, salarios y gastos directos de explotación indispensables para la operación de empresas con
           actividades de transformación y manufactura en sectores como: industria, agropecuario, forestal y pesquero
           nacional, principalmente.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[10].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample11">
           <div class="accordion-item">
@@ -2137,7 +2138,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(11)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(11)">
         <img src="assets/credito-refaccionario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL REFACCIONARIO</div>
         <div class="card-credito-btn"
@@ -2150,8 +2151,8 @@
         <div class="card-credito-detalle">Financiamiento de mediano a largo plazo para cubrir necesidades de inversión
           en activos fijos y fortalecer la infraestructura de su empresa, se puede usar para empresas pertenecientes al
           sector agropecuario forestal y pesquero.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[11].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample12">
           <div class="accordion-item">
@@ -2339,7 +2340,7 @@
 
       </div>
 
-      <a class="col-md-3 card-credito" (click)="toggleInfo(12)">
+      <a class="col-md-3 card-credito"  (click)="toggleInfo(12)">
         <img src="assets/creditorefaccionariohipotecario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL REFACCIONARIO HIPOTECARIO</div>
         <div class="card-credito-btn"
@@ -2352,8 +2353,8 @@
         <div class="card-credito-detalle">Financiamiento de mediano a largo plazo para cubrir necesidades de inversión
           en activos fijos y fortalecer la infraestructura de su empresa, se puede usar para empresas pertenecientes al
           sector agropecuario forestal y pesquero.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[12].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample13">
           <div class="accordion-item">
@@ -2559,7 +2560,7 @@
     <div class="credito-tipe">VIVIENDA</div>
     <div class="card-container">
 
-      <div class="card-credito" (click)="toggleInfo(13)">
+      <div class="card-credito" (click)="toggleInfo(13)" >
         <img src="assets/credito-vivienda.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO DE VIVIENDA</div>
         <div class="card-credito-btn"
@@ -2571,8 +2572,8 @@
 
         <div class="card-credito-detalle">Construye tu patrimonio con una muy atractiva opción para ti y tu familia,
           invirtiendo en comprar tu casa, terreno o sustituyendo tu hipoteca con ese crédito.</div>
-        <!-- <a class="card-credito-btn-simulador">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
-        </a> -->
+        <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[13].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
+        </a>
 
         <div class="accordion accordion-flush" id="accordionFlushExample14">
           <div class="accordion-item">

@@ -1,0 +1,100 @@
+@import 'animate.css';
+@import '../../../app.component.scss';
+
+.header--historia {
+  @include header-styling('../../../../assets/historiaimg.png');
+}
+
+.historia {
+  background-color: #ffffff;
+  position: relative;
+  top: -170px;
+  margin: 0px 8%;
+  box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  min-width: 285px;
+
+  .quienes--somos-title {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    text-align: center;
+  }
+
+  .quienes--somos-desc {
+    font-size: 1rem;
+    color: var(--color-negro);
+    white-space: pre-line;
+    margin: 20px 0px;
+    text-align: center;
+  }
+}
+
+.quienes-somos {
+  .quienes--somos-title {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    text-align: center;
+  }
+
+  .quienes--somos-desc {
+    font-size: 1rem;
+    color: var(--color-negro);
+    white-space: pre-line;
+    margin: 20px 0px;
+    text-align: center;
+  }
+
+
+  .logo {
+    background-image: url(../../../../assets/icon/logo.png);
+    background-size: cover;
+    height: 45px;
+    width: 35px;
+  }
+  .biglogo {
+    width: 170px;
+    height: 220px;
+    margin: auto;
+  }
+
+}
+
+.mvv {
+  margin: 150px 8%;
+  box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  padding: 50px 25px;
+  .nuestros--valores-img {
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .quienes--somos-title {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    text-align: center;
+  }
+
+  .quienes--somos-desc {
+    font-size: 1rem;
+    color: var(--color-negro);
+    white-space: pre-line;
+    margin: 20px 0px;
+    text-align: center;
+  }
+
+  .mision {
+    background-image: url(../../../../assets/icon/mision.png);
+  }
+
+  .vision {
+    background-image: url(../../../../assets/icon/testigo.png);
+  }
+
+  .valores {
+    background-image: url(../../../../assets/icon/propuesta-de-valor.png);
+  }
+}

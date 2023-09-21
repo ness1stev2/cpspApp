@@ -6,6 +6,11 @@ footer {
     img {
       width: 120px;
       height: 110px;
+      transition: all .35s ease-in-out;
+      cursor: pointer;
+    }
+    img:hover{
+      transform: scale(1.4);
     }
   }
 

@@ -1,0 +1,12 @@
+@import 'animate.css';
+@import '../../../app.component.scss';
+.header--proteccion {
+  @include header-styling('../../../../assets/micheile-henderson-SoT4-mZhyhE-unsplash.jpg');
+}
+
+.proteccion{
+  text-align: justify;
+  .nota{
+    background-color: var(--color-secundario);
+  }
+}

@@ -1,14 +1,8 @@
 @import 'animate.css';
+@import '../../../app.component.scss';
+
 .header--alianzas {
-  background-image: url(../../../../assets/apreton-manos-socios-comerciales-reunion-grupo-que-hace-inversion-proyecto-primer.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 250px 0;
-  h2{
-    animation: zoomIn;
-    animation-duration: 1s;
-  }
+  @include header-styling('../../../../assets/apreton-manos-socios-comerciales-reunion-grupo-que-hace-inversion-proyecto-primer.jpg');
 }
 
 .grid {

@@ -1,0 +1,15 @@
+@import 'animate.css';
+@import '../../../app.component.scss';
+
+.header--asesoria {
+  @include header-styling('../../../../assets/joven-pareja-feliz-consultando-gerente-banco-reunion-oficina.jpg');
+}
+
+main{
+  .asesoria-juridica{
+    p{
+      text-align: justify;
+    }
+  }
+}
+

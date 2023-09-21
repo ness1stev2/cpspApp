@@ -1,0 +1,13 @@
+@import 'animate.css';
+@import '../../../app.component.scss';
+
+.header--profun {
+  @include header-styling('../../../../assets/damian-markutt-vaG8rOJLDHo-unsplash.jpg');
+}
+
+.profun{
+  text-align: justify;
+  .nota{
+    background-color: var(--color-secundario);
+  }
+}

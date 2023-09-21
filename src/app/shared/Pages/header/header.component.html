@@ -1,3 +1,6 @@
+<div class="avisos-importantes">
+  CONOCE LOS DÍAS INHÁBILES 2023, DE TU COOPERATIVA <a href="assets/pdf/dias cerrados.pdf" target="_blank">AQUÍ</a>
+</div>
 <nav class="menu-superior navbar navbar-light">
   <div class="container">
     <a class="navbar-brand" routerLink="/inicio">
@@ -6,7 +9,7 @@
 
 
     <ul class="nav d-none d-md-flex justify-content-end gap-4">
-      <li class="svg-img-text nav-item" routerLink="/inicio/sucursales">
+      <li class="svg-img-text nav-item" [routerLink]="['/inicio', 'sucursales']">
         <svg class="svg-image" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
           width="512" height="512">
           <path
@@ -15,7 +18,7 @@
         </svg>
         <a class="nav-link active" aria-current="page">SUCURSALES</a>
       </li>
-      <li class="svg-img-text nav-item" routerLink="/inicio/creditos">
+      <li class="svg-img-text nav-item" [routerLink]="['/inicio', 'creditos']">
         <svg class="svg-image" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
           width="512" height="512">
           <path
@@ -61,6 +64,8 @@
       <li><i class="fi fi-sr-piggy-bank"></i><a routerLink="/inicio/cuentas-deposito">CUENTAS DE DEPÓSITO</a></li>
       <hr class="linea-horizontal">
       <li><i class="fi fi-sr-envelope"></i><a routerLink="/inicio/buzon">BUZÓN</a></li>
+      <hr class="linea-horizontal">
+      <li><a class="saldos btn btn-primary" href="https://www.libertadsanpablo.com/PortalInfiCaja">SALDOS EN LÍNEA</a></li>
     </div>
   </ul>
 </nav>

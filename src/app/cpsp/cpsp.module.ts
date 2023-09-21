@@ -1,29 +1,34 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CpspRoutingModule } from './cpsp-routing.module';
-import { InicioComponent } from './pages/inicio/inicio.component';
-import { SucursalesComponent } from './pages/sucursales/sucursales.component';
-import { CreditosComponent } from './pages/creditos/creditos.component';
 import { AhorrosComponent } from './pages/ahorros/ahorros.component';
 import { BuzonComponent } from './pages/buzon/buzon.component';
+import { CpspRoutingModule } from './cpsp-routing.module';
+import { CreditosComponent } from './pages/creditos/creditos.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { SharedModule } from '../shared/shared.module';
 import { SocioComponent } from './pages/socio/socio.component';
-import { RedesSocialesComponent } from './components/redes-sociales/redes-sociales.component';
+import { SucursalesComponent } from './pages/sucursales/sucursales.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CreditoSimuladorComponent } from './components/creditos-simulador/creditos-simulador.component';
+
 
 
 @NgModule({
   declarations: [
-    InicioComponent,
-    SucursalesComponent,
-    CreditosComponent,
+    CreditoSimuladorComponent,
     AhorrosComponent,
     BuzonComponent,
+    CreditosComponent,
+    InicioComponent,
     SocioComponent,
-    RedesSocialesComponent
+    SucursalesComponent,
   ],
   imports: [
     CommonModule,
     CpspRoutingModule,
-  ]
+    SharedModule,
+    ReactiveFormsModule,
+  ],
 })
 export class CpspModule { }

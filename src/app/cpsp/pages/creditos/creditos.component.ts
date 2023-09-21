@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { filter } from 'rxjs';
+import { Credito } from '../../interfaces/credito.interface';
+import { CreditosService } from '../../services/creditos.service';
 
 @Component({
   selector: 'app-creditos',
   templateUrl: './creditos.component.html',
   styleUrls: ['./creditos.component.scss']
 })
-export class CreditosComponent {
+export class CreditosComponent implements OnInit {
+
+  public creditos: Credito[] = [];
+
   isActive: boolean[] = Array(14).fill(false);
 
   toggleInfo(i: number) {
@@ -21,8 +26,13 @@ export class CreditosComponent {
     }
   }
 
-  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
-  ngOnInit() {
+  constructor(private router: Router, private viewportScroller: ViewportScroller, private creditoService : CreditosService) {}
+  ngOnInit(): void {
+    this.creditoService.getCreditos()
+      .subscribe( creditos => this.creditos = creditos)
+
+
+
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
       // Desplázate al inicio de la página
       this.viewportScroller.scrollToPosition([0, 0]);

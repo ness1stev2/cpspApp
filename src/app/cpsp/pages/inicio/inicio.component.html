@@ -8,10 +8,17 @@
         <div class="gallery">
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-item active">
+                <div class="gallery-image img8 d-block" alt="..."></div>
+                <a href="https://www.youtube.com/watch?v=wRfz1qZwJ04&t=64s&pp=ygUWY2FqYSBwb3B1bGFyIHNhbiBwYWJsbw%3D%3D"
+                  target="_blank"><button class="d-grid align-content-center justify-items-center"
+                    style="height: 80px; border-radius: 45px; width: 80px;">VER <i
+                      class="fi fi-sr-play"></i></button></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
                 <div class="gallery-image img1 d-block" alt="..."></div>
                 <a href="assets/pdf/datos biometricos.pdf" style="top: 85%;" target="_blank"><button
-                  style="background-color: white; color: #fab819;">VER</button></a>
+                    style="background-color: white; color: #fab819;">VER</button></a>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <div class="gallery-image img2 d-block" alt="..."></div>
@@ -53,8 +60,9 @@
       </div>
 
       <div class="col-12 col-xl-6">
-        <div class="button-quiero-ser-socio d-flex justify-content-center align-items-center">
-          <a routerLink="/socio">
+        <div routerLink="/inicio/socio"
+          class="button-quiero-ser-socio d-flex justify-content-center align-items-center">
+          <a>
             <h1 class="titulo--inicial">QUIERO SER SOCIO</h1>
           </a>
         </div>
@@ -71,15 +79,15 @@
   <div class="educoof mb-2">
     <div class="container">
 
-        <div class="educoof-content text-center">
-          <img src="assets/puerco_educoof.png" alt="">
-          <div class="text-enlace">
-            <p class="">¡DESCUBRE AQUÍ!</p>
-            <div class="boton-educoof">
-              <a href="https://www.educoofin.com/">EDUCACIÓN COOPERATIVA Y FINANCIERA SAN PABLO</a>
-            </div>
+      <div class="educoof-content text-center">
+        <img src="assets/puerco_educoof.png" alt="">
+        <div class="text-enlace">
+          <p class="">¡DESCUBRE AQUÍ!</p>
+          <div class="boton-educoof">
+            <a href="https://www.educoofin.com/">EDUCACIÓN COOPERATIVA Y FINANCIERA SAN PABLO</a>
           </div>
         </div>
+      </div>
 
     </div>
   </div>
@@ -142,27 +150,23 @@
       </div>
       <div class="row justify-content-center">
         <div class="all-beneficios d-flex flex-wrap">
-          <div class="item col" routerLink="/asesoria">
+          <div class="item col" routerLink="/beneficios/asesoria">
             <img class="img-beneficio" src="assets/icon/consulta.png" alt="Imagen 1">
             <div class="texto-corto">Asesoría Jurídica</div>
           </div>
-          <!-- <div class="item col" routerLink="/alianzas">
-            <img class="img-beneficio" src="assets/icon/manos.png" alt="Imagen 2">
-            <div class="texto-corto">Alianzas Estratégicas</div>
-          </div> -->
-          <div class="item col" routerLink="/proteccion">
+          <div class="item col" routerLink="/beneficios/proteccion">
             <img class="img-beneficio" src="assets/icon/ahorrar-dinero.png" alt="Imagen 3">
             <div class="texto-corto">Protección al Ahorro y Crédito</div>
           </div>
-          <a class="item col" routerLink="/medico">
+          <a class="item col" routerLink="/beneficios/medico">
             <img class="img-beneficio" src="assets/icon/asistencia-medica.png" alt="Imagen 4">
             <div class="texto-corto">Servicios Médicos</div>
           </a>
-          <div class="item col" routerLink="/servicios">
+          <div class="item col" routerLink="/beneficios/servicios">
             <img class="img-beneficio" src="assets/icon/pago.png" alt="Imagen 5">
             <div class="texto-corto">Pago de Servicios</div>
           </div>
-          <div class="item col" routerLink="/profun">
+          <div class="item col" routerLink="/beneficios/profun">
             <img class="img-beneficio" src="assets/icon/me-gusta.png" alt="Imagen 6">
             <div class="texto-corto">Profun</div>
           </div>
@@ -219,12 +223,18 @@
 
         <div class="col-12 col-lg-7">
           <div class="row justify-content-evenly d-none d-lg-flex">
-            <a href="https://www.youtube.com/watch?v=3W9E1b9_r7Q"><img class="min-youtube col" src="assets/min-yt1.webp" alt=""></a>
-            <a href="https://www.youtube.com/watch?v=HBwBnjEaWNU"><img class="min-youtube col" src="assets/min-yt2.webp" alt=""></a>
-            <a href="https://www.youtube.com/watch?v=ffbZKWobhrw"><img class="min-youtube col" src="assets/min-yt3.webp" alt=""></a>
-            <a href="https://www.youtube.com/watch?v=Fl8aYzjgyRQ"><img class="min-youtube col" src="assets/min-yt4.webp" alt=""></a>
-            <a href="https://www.youtube.com/watch?v=zQqpuB1DZIc"><img class="min-youtube col" src="assets/min-yt5.webp" alt=""></a>
-            <a href="https://www.youtube.com/watch?v=3W9E1b9_r7Q"><img class="min-youtube col" src="assets/min-yt1.webp" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=3W9E1b9_r7Q"><img class="min-youtube col" src="assets/min-yt1.webp"
+                alt=""></a>
+            <a href="https://www.youtube.com/watch?v=HBwBnjEaWNU"><img class="min-youtube col" src="assets/min-yt2.webp"
+                alt=""></a>
+            <a href="https://www.youtube.com/watch?v=ffbZKWobhrw"><img class="min-youtube col" src="assets/min-yt3.webp"
+                alt=""></a>
+            <a href="https://www.youtube.com/watch?v=Fl8aYzjgyRQ"><img class="min-youtube col" src="assets/min-yt4.webp"
+                alt=""></a>
+            <a href="https://www.youtube.com/watch?v=zQqpuB1DZIc"><img class="min-youtube col" src="assets/min-yt5.webp"
+                alt=""></a>
+            <a href="https://www.youtube.com/watch?v=3W9E1b9_r7Q"><img class="min-youtube col" src="assets/min-yt1.webp"
+                alt=""></a>
           </div>
           <div class="d-flex justify-content-center d-lg-none">
             <img class="youtube-frame" src="assets/min-yt2.webp" alt="">
@@ -242,20 +252,20 @@
     <!-- Contenido de la cuarta sección -->
     <div class="slogan-texto">"UNIDOS EN LA COOPERACIÓN,
       POR UN FUTURO MEJOR"</div>
-    <div class="circuloycheck" routerLink="/historia">
+    <div class="circuloycheck" routerLink="/info/historia">
       <img src="./assets/icon/cheque.png" alt="">
       <div class="texto-circulo">HISTORIA</div>
     </div>
-    <div class="circuloycheck" routerLink="/trabajo">
+    <div class="circuloycheck" routerLink="/info/trabajo">
       <img src="./assets/icon/cheque.png" alt="">
       <div class="texto-circulo">BOLSA DE TRABAJO</div>
     </div>
-    <div class="circuloycheck">
+    <!-- <div class="circuloycheck">
       <img src="./assets/icon/cheque.png" alt="">
       <a href="https://www.educoofin.com">
         <div class="texto-circulo">EDUCACIÓN COPERATIVA Y FINANCIERA</div>
       </a>
-    </div>
+    </div> -->
   </section>
 
   <section class="preg-frec pb-5">
@@ -282,12 +292,12 @@
               <p class="resp resp-1">“La Sociedad Cooperativa es una forma de organización social integrada por personas
                 físicas con base en intereses comunes y en los principios de solidaridad, esfuerzo propio y ayuda mutua,
                 con el propósito de satisfacer necesidades individuales y colectivas, a través de la realización de
-                actividades económicas de producción, distribución y consumo de bienes y servicios.”
+                actividades económicas de producción, distribución y consumo de bienes y servicios.” <br><br>
 
-                Así lo define la “Ley General de Sociedades Cooperativas (LGSC) Art. 2
+                Así lo define la “Ley General de Sociedades Cooperativas (LGSC) Art. 2<br><br>
 
                 Además se rige bajo sus Estatutos definidos por los mismos Socios; funge como intermediario financiero
-                *Ahorro y Crédito* sin fines de lucro y ofrece servicios exclusivos a sus Asociados.
+                *Ahorro y Crédito* sin fines de lucro y ofrece servicios exclusivos a sus Asociados.<br><br>
 
                 Fuente: <a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/143_190118.pdf">Aquí</a></p>
             </div>
@@ -304,18 +314,21 @@
             data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               <p class="resp resp-2">Las Sociedades Cooperativas de Ahorro y Préstamo juegan un papel muy importante en
-                muchos sentidos:
+                muchos sentidos:<br><br>
 
                 • Promueven la inclusión financiera de productos y servicios financieros formales en zonas donde la
                 infraestructura bancaria aún es limitada; es decir, ayudan a las personas a acceder a productos y
-                servicios financieros formales en condiciones de seguridad.
+                servicios financieros formales en condiciones de seguridad.<br>
                 • Ofrecen productos que están diseñados para personas con menores recursos o cuyos ingresos no son
-                constantes.
+                constantes.<br>
                 • Impulsan el desarrollo económico en las localidades donde operan al ofrecer créditos para fines
-                productivos y retener el ahorro en la localidad.
+                productivos y retener el ahorro en la localidad.<br>
                 • Contribuyen a la satisfacción de necesidades individuales y colectivas, proporcionando servicios de
                 asistencia social, a través de la distribución de sus remanentes mediante fondos constituidos para tales
-                fines.</p>
+                fines. <br><br>
+
+                Más información: <a href="https://www.condusef.gob.mx/">https://www.condusef.gob.mx/</a>
+              </p>
             </div>
           </div>
         </div>
@@ -336,14 +349,14 @@
                 Supervisión Auxiliar de Sociedades Cooperativas de Ahorro y Préstamo y de Protección a sus Ahorradores
                 (FOCOOP), de otra forma están operando al margen de la ley, con el riesgo económico que esto implica
                 para el patrimonio de los socios ahorradores y los de aspecto legal para los administradores de la
-                Sociedad.
+                Sociedad.<br><br>
 
                 Para consultar la situación que guardan las SOCAP, se puede acceder a la página de internet que tiene el
-                FOCOOP: www.focoop.com.mx.
-                2. Verificar si se encuentra autorizada y supervisada por la CNBV.
+                FOCOOP:<br> www.focoop.com.mx.<br><br>
+                2. Verificar si se encuentra autorizada y supervisada por la CNBV.<br>
                 Caja Popular San Pablo, Cooperativa Autorizada y Supervisada por la
-                Comisión Nacional Bancaria y de Valores desde 2007
-                Oficio CNBV 310-1500125/2007
+                Comisión Nacional Bancaria y de Valores desde 2007<br>
+                Oficio CNBV 310-1500125/2007<br>
                 134-870855/2007</p>
             </div>
           </div>
@@ -392,83 +405,25 @@
             data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               <p class="resp resp-3">Ingresar a una Cooperativa certificada es sinónimo de seguridad y confianza, entre
-                otros beneficios importantes obtendrás al ingresar con nosotros:
-                • Apertura de cuentas de ahorro sin comisiones
-                • Acceso a todas las cuentas de ahorro disponibles con atractivos rendimientos.
-                • Extensa gama de productos crediticios para cualquier necesidad con tasas justas.
-                • Servicios escolares, además convenios con Instituciones educativas.
+                otros beneficios importantes obtendrás al ingresar con nosotros:<br><br>
+                • Apertura de cuentas de ahorro sin comisiones<br>
+                • Acceso a todas las cuentas de ahorro disponibles con atractivos rendimientos.<br>
+                • Extensa gama de productos crediticios para cualquier necesidad con tasas justas.<br>
+                • Servicios escolares, además convenios con Instituciones educativas.<br>
                 • Servicios adicionales como: pago de servicios, envío de remesas, cajeros automáticos, servicios en
-                red, entre otros.
+                red, entre otros.<br>
                 • Servicios médicos, campañas de salud y alianzas con diversas empresas con descuentos y precios
-                especiales.
-                • Seguro de protección al Ahorro y Crédito, por tu cumplimiento puntual
+                especiales.<br>
+                • Seguro de protección al Ahorro y Crédito, por tu cumplimiento puntual.<br>
                 • Servicio de Apoyo Funerario (PROFUN) sin costo a Socios por buen manejo de cuenta (revisar políticas
-                vigentes).
-                • Participación en Concurso de Becas Escolares para estudiantes, desde Primaria, hasta Licenciatura.
-                • Participación en promociones, eventos y apoyos de Obra Social todo el año.
+                vigentes).<br>
+                • Participación en Concurso de Becas Escolares para estudiantes, desde Primaria, hasta Licenciatura.<br>
+                • Participación en promociones, eventos y apoyos de Obra Social todo el año.<br>
                 • Opción de pagos electrónicos para mayor comodidad (TPV, Depósitos bancarios, Cajeros Receptores).</p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-              ¿Cuáles son los Requisitos para integrarme como Socio?
-            </button>
-          </h2>
-          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <p class="resp resp-1"><b>Estos son los documentos que necesitas presentar en Original y copia para
-                  integrarte como Socio San Pablo:</b>
-                *Ser mayor de edad.
-                *Acta de Nacimiento reciente.
-                *Identificación Oficial con fotografía (INE, Pasaporte Mexicano, Cédula Profesional, Licencia para
-                conducir del Estado de Jalisco.
-                *Cédula RFC con homoclave.
-                *Cédula CURP.
-                *Acta de matrimonio (en su caso).
-                *Comprobante de domicilio no mayor a 60 días de su emisión.
-                *Parte Social $1,000.00 (Un mil pesos 00/000).
 
-                <b>Datos adicionales:</b>
-                *El dato de dos referencias familiares o tres amistades: nombre, domicilio y teléfono.
-                *Nombre, domicilio y teléfono de empleo.
-                *Teléfono celular del Titular.
-                *Comprobante de ingresos reciente.
-                *Correo Electrónico (si es que se tiene).
-
-                <b>Estos son los documentos que necesitas presentar en Original y copia para integrar a un Menor como
-                  Ahorrador San Pablo:</b>
-                *Tener de 1 a 17 años de edad
-                *Presentarse acompañado de papá o mamá con identificación oficial con fotografía (INE, Pasaporte
-                Mexicano, Cédula Profesional, Licencia para conducir del Estado de Jalisco).
-                *Acta de Nacimiento reciente del menor.
-                *Cédula CURP del menor.
-                *Cédula RFC de padre o tutor con homoclave.
-                *Comprobante de domicilio no mayor a 60 días de su emisión.
-                *El dato de dos referencias familiares o tres amistades: nombre, domicilio y teléfono.
-                *$100.00 mínimo para abrir la cuenta.
-
-                <b>Datos adicionales:</b>
-                Dos referencias familiares o tres amistades: nombre, domicilio y teléfono.
-
-
-                <b>EXTRANJEROS</b>
-                Los extranjeros (adultos y menores) además de cumplir con los datos señalados, deberán presentar:
-                • Original de Pasaporte vigente.
-                • Documento FMM que acredite su legal estancia en el país, expedido por la SRE.
-                • Datos de su domicilio en el país de origen.
-                • IMPORTANTE: Los documentos personales deberán estar traducidos al español (documento oficial).
-                Caja Popular San Pablo, institución reconocida por manejar intereses justos y excelentes ventajas
-                competitivas; nos ponemos a tus órdenes en el teléfono 38831830 Ext. 1110
-                De lunes a viernes de 9:00 a 18:45 horas y sábados de 9:00 a 13:00 horas.
-                Cooperativa Autorizada y Supervisada por la CNBV.
-              </p>
-            </div>
-          </div>
-        </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingEight">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -501,13 +456,14 @@
               <p class="resp resp-3">La Comisión Nacional Bancaria y de Valores (CNBV), de acuerdo a la Ley para Regular
                 las Actividades de las Sociedades Cooperativas de Ahorro y Préstamo, solo realiza supervisión a
                 Entidades Autorizadas, para seguir con las operaciones de Ahorro y Préstamo como Cooperativas con
-                niveles de operación I a IV (SOCAP).
+                niveles de operación I a IV (SOCAP).<br>
                 Así mismo se tiene el apoyo del Fideicomiso Fondo de Supervisión Auxiliar de Sociedades Cooperativas de
                 Ahorro y Préstamo y de Protección a sus Ahorradores (FOCOOP) hasta por 25 mil UDIS para un caso de
-                contingencia.
+                contingencia.<br>
                 Por la seguridad de tu patrimonio, utiliza únicamente los servicios que ofrecen las Sociedades
                 Cooperativas de Ahorro y Préstamo autorizadas como Caja Popular San Pablo, puedes consultar en el Padrón
-                de Entidades Financieras Supervisadas (PES) entrando a <a href="www.gob.mx/cnbv">www.gob.mx/cnbv</a></p>
+                de Entidades Financieras Supervisadas (PES) entrando a: <br><a
+                  href="www.gob.mx/cnbv">www.gob.mx/cnbv</a></p>
             </div>
           </div>
         </div>
@@ -539,11 +495,11 @@
             data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               <p class="resp resp-2">Jamás pierdes tu dinero es muy importante aclararlo, éste es enviado a una cuenta
-                por cobrar, que puedes recuperar presentando tu identificación oficial.
+                por cobrar, que puedes recuperar presentando tu identificación oficial.<br>
                 Si el tiempo no asciende a un periodo entre 3 a 6 meses como mínimo, puede que tu cuenta aun esté
                 vigente; si deseas recuperarla solo debes realizar un depósito de complemento a la brevedad; en cambio,
                 si el periodo es más largo, necesitarás darte de alta nuevamente en módulos de captación, con la
-                documentación oficial.
+                documentación oficial.<br>
                 Si te encuentras en este supuesto, llama al módulo de Información al 3338831830 Ext. 1110 u 1161, en
                 donde pueden informarte la situación de tu cuenta</p>
             </div>
@@ -610,12 +566,28 @@
             data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               <p class="resp resp-3">Son Socios, como todos nosotros, que se eligen mediante los periodos de elecciones
-                en las Asambleas Generales que se realizan cada año.
+                en las Asambleas Generales que se realizan cada año.<br>
                 Las personas deben tener conocimientos básicos para poder manejar una institución como San Pablo; cada
                 año se celebran los Talleres “Competencias Directivas” que tienen como finalidad, preparar a quienes
                 tienen la intención de formar parte de nuestro Órgano de Gobierno; si estás interesado en ser parte del
                 equipo, mantente atento a las siguientes convocatorias que se publican en nuestros medios de
                 información.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSixTeen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSixTeen" aria-expanded="false" aria-controls="flush-collapseSixTeen">
+              ¿Cuentan con bolsa de trabajo?
+            </button>
+          </h2>
+          <div id="flush-collapseSixTeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixTeen"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p class="resp resp-3">Claro, en ésta página web, encontraras un apartado del mismo nombre, ahí se
+                publican las actualizaciones de vacantes disponibles, además de los datos de contacto del área de
+                Recursos Humanos <a routerLink="/info/trabajo">Consultar bolsa de trabajo</a></p>
             </div>
           </div>
         </div>

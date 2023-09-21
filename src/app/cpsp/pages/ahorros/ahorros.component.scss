@@ -1,15 +1,8 @@
 @import 'animate.css';
+@import '../../../app.component.scss';
 
 .header--ahorro {
-  background-image: url(../../../../assets/familia-mexicana-sonriente-tiro-medio.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 250px 0;
-  h2{
-    animation: zoomIn;
-    animation-duration: 1s;
-  }
+  @include header-styling('../../../../assets/familia-mexicana-sonriente-tiro-medio.png');
 }
 
 .ahorros--container {
@@ -17,15 +10,11 @@
   .card-container {
     padding: 40px 0px;
     gap: 0px 80px;
-    justify-content: space-evenly;
 
     .card-ahorro {
       width: 360px;
       height: auto;
-      display: flex;
       margin: 20px;
-      min-width: 320px;
-      max-width: 360px;
       cursor: pointer;
 
       .card-ahorro-img {
@@ -38,8 +27,6 @@
         background-color: #f3f3f3;
         width: 50%;
         border-radius: 0 5px 5px 0;
-        justify-content: center;
-        align-items: center;
         display: flex;
         font-size: 1.5rem;
         text-align: center;
@@ -50,8 +37,6 @@
     .card-ahorro-info {
       padding: 25px 15px;
       border-radius: 5px;
-      height: auto;
-      background-color: #ffffff;
       display: none;
       box-shadow: 0px 0px 13px #00000061;
 

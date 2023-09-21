@@ -1,0 +1,13 @@
+@import 'animate.css';
+@import '../../../app.component.scss';
+
+.header--medico {
+  @include header-styling('../../../../assets/patty-brito-Y-3Dt0us7e0-unsplash.jpg');
+}
+
+.medico {
+  text-align: justify;
+  button {
+    background-color: var(--color-secundario);
+  }
+}
