@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, catchError, of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Credito } from '../interfaces/credito.interface';
 import { environments } from 'src/environments/environments';
 import { CreditosData } from 'src/app/data/creditos-data';
@@ -10,7 +10,7 @@ import { CreditosData } from 'src/app/data/creditos-data';
 })
 export class CreditosService {
 
-  private baseUrl: string = environments.baseUrl;
+  /* private baseUrl: string = environments.baseUrl; */
   private creditos: Credito[] = CreditosData;
 
   constructor(private http: HttpClient) { }

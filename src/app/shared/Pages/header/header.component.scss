@@ -1,20 +1,40 @@
 @import 'animate.css';
 
-.avisos-importantes{
+.contactanos-flotante {
+  position: fixed;
+  top: 90%;
+  right: 4%;
+  animation: bounce;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  --animate-repeat: 5;
+  transition: all 500ms;
+  z-index: 1;
+  .messenger-facebook {
+    width: 50px;
+  }
+}
+.contactanos-flotante:hover{
+  transform: scale(1.4);
+}
+
+.avisos-importantes {
   background-color: black;
   color: white;
   font-size: 14px;
   font-weight: 500;
   text-align: center;
   padding: 5px 30px;
-  a{
+
+  a {
     background-color: var(--color-naranja);
     color: white;
     border-radius: 30px;
     padding: 3px 10px;
     transition: all 500ms;
   }
-  a:hover{
+
+  a:hover {
     color: var(--color-primario);
     background-color: white;
   }
@@ -31,8 +51,9 @@
   }
 
   a {
-    padding: 0 ;
+    padding: 0;
     cursor: pointer;
+
     img {
       width: 160px;
       animation: fadeInUp;
@@ -59,6 +80,7 @@
         transition: fill 0.3s ease;
         height: auto;
         fill: var(--color-blanco);
+
         @media (min-width: 768px) and (max-width: 991px) {
           margin-bottom: 5px;
         }
@@ -124,7 +146,7 @@
     /* Ocultar el menú desplegable en pantallas grandes */
     cursor: pointer;
     margin-left: auto;
-    background-image: url(../../../../assets/menu.png);
+    background-image: url(../../../../assets/icon/menu.png);
     background-size: cover;
     width: 30px;
     height: 30px;

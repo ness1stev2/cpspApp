@@ -13,6 +13,7 @@ import { CreditosService } from '../../services/creditos.service';
 export class CreditosComponent implements OnInit {
 
   public creditos: Credito[] = [];
+  public fechadecalculo: string = "21 de Agosto 2023"
 
   isActive: boolean[] = Array(14).fill(false);
 

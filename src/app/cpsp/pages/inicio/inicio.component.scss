@@ -1,4 +1,5 @@
 @import 'animate.css';
+@import '../../../app.component.scss';
 
 .educoof {
   background-color: var(--color-secundario);
@@ -54,7 +55,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 250px 0;
+  padding: 177px 0;
 
   @media (max-width: 1200px) {
     padding: 110px 0;
@@ -92,7 +93,8 @@
           .img5,
           .img6,
           .img7,
-          .img8 {
+          .img8,
+          .img9 {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -140,9 +142,6 @@
             background-image: url(../../../../assets/bases.jpg);
           }
 
-          .img8 {
-            background-image: url(../../../../assets/charla-de-becas.jpg);
-          }
 
           .img7 {
             background-image: url(../../../../assets/servicioelectronicos-1.jpg);
@@ -150,6 +149,14 @@
             @media (max-width: 576px) {
               background-position-x: -180px;
             }
+          }
+
+          .img8 {
+            background-image: url(../../../../assets/charla-de-becas.jpg);
+          }
+
+          .img9 {
+            background-image: url(../../../../assets/rallycoop.jpg);
           }
 
           a {
@@ -179,9 +186,6 @@
 
   }
 
-
-
-
   .button-quiero-ser-socio:hover {
     background-color: var(--color-naranja);
   }
@@ -198,373 +202,13 @@
     animation: fadeInUp;
     animation-duration: 1500ms;
     animation-delay: 500ms;
+    cursor: pointer;
 
     .titulo--inicial {
       color: white;
       font-size: 1.4rem;
       font-style: normal;
       font-weight: 400;
-    }
-  }
-}
-
-.cuatro--botones {
-  margin: 100px 0;
-  gap: 30px;
-
-
-  .card-content {
-    a {
-      .image-wrapper {
-        .overlay {
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.3);
-          opacity: 0;
-          transition: opacity 0.3s ease;
-          border-radius: 20px;
-        }
-
-        .card-content-image {
-          width: 250px;
-          height: auto;
-          border-radius: 7%;
-          box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);
-        }
-
-        .hover-text {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white;
-          font-weight: bold;
-          font-size: 1.8rem;
-          opacity: 0;
-          transition: opacity 0.3s ease;
-        }
-      }
-
-      .image-wrapper:hover .overlay {
-        opacity: 1;
-      }
-
-      .image-wrapper:hover .hover-text {
-        opacity: 1;
-      }
-    }
-
-
-
-    .card-content-text {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-top: 20px;
-      color: black;
-      white-space: pre-line;
-    }
-  }
-}
-
-.beneficios {
-  background-color: var(--color-azul-oscuro);
-  padding: 40px 15px;
-
-  .beneficios-titulo {
-    color: var(--color-blanco);
-    font-size: 2rem;
-    text-shadow: 1px 1px 10px black;
-    margin: 0 auto;
-  }
-
-  .all-beneficios {
-    gap: 75px;
-    width: 80%;
-
-    .item {
-      margin-top: 35px;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
-      .img-beneficio {
-        width: 50px;
-        height: 50px;
-      }
-
-      .texto-corto {
-        color: white;
-        font-size: 1rem;
-        margin-top: 10px;
-        font-weight: bold;
-        white-space: pre-line;
-      }
-    }
-
-    .item:hover {
-      transform: scale(1.5);
-      transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    }
-  }
-}
-
-.otros {
-
-  .nov-event,
-  .youtube {
-    margin: 100px 0;
-  }
-
-  .nov-event-titulo-boton {
-    position: absolute;
-
-    .nov-event-titulo {
-      font-size: 3rem;
-      color: var(--color-blanco);
-      text-align: center;
-      text-shadow: 0px 0px 10px var(--color-azul-oscuro);
-      white-space: pre-line;
-    }
-
-    @media screen and (min-width: 768px) {
-      position: unset;
-    }
-
-    .nov-event-enlace {
-      .nov-event-boton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 194px;
-        height: 65px;
-        background-color: var(--color-primario);
-        color: white;
-        font-size: 1.5rem;
-        border-radius: 40px;
-        margin: 0 auto;
-        margin-top: 20px;
-      }
-
-      .nov-event-boton:hover {
-        background-color: var(--color-naranja);
-      }
-    }
-  }
-
-  .nov-event-img {
-    height: auto;
-    object-fit: cover;
-    min-height: 510px;
-  }
-
-  .youtube {
-    .nov-event-titulo-boton {
-      @media screen and (max-width: 768px) {
-        position: unset;
-      }
-    }
-
-    a {
-      width: fit-content;
-
-      .min-youtube {
-        height: auto;
-        border-radius: 10px;
-        width: 260px;
-        margin: 20px 11px;
-        padding: 0;
-        max-width: 300px;
-        cursor: pointer;
-      }
-    }
-
-    .min-youtube:hover {
-      transform: scale(1.1);
-      transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    }
-
-    .youtube-frame {
-      border-radius: 10px;
-      margin-top: 60px;
-      width: 100%;
-      box-shadow: 0px 0px 15px;
-      max-width: 500px;
-      cursor: pointer;
-    }
-  }
-}
-
-.slogan {
-  height: auto;
-  margin-top: 80px;
-  padding: 40px 15px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--color-azul-oscuro);
-
-  .slogan-texto {
-    font-size: 2rem;
-    color: white;
-    text-align: center;
-    text-shadow: 1px 1px 10px black;
-    white-space: pre-line;
-    font-weight: 100;
-    margin-bottom: 50px;
-  }
-
-  .circuloycheck {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding-left: 10px;
-    height: 70px;
-    margin: 15px auto;
-    max-width: 600px;
-    width: 90%;
-    cursor: pointer;
-
-    img {
-      width: 50px;
-    }
-
-    .texto-circulo {
-      color: var(--color-secundario);
-      font-size: 1.2rem;
-      margin-left: 10px;
-      text-align: initial;
-      font-weight: 500;
-    }
-  }
-
-  .circuloycheck:hover {
-    box-shadow: -7px 24px 26px -5px rgba(0, 0, 0, 0.41);
-    transform: scale(1.1);
-    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  }
-}
-
-.preg-frec {
-  height: auto;
-  padding: 0px 15px;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .imgfb {
-    width: 200px;
-  }
-
-  .titulofb {
-    font-size: 2.5rem;
-    color: var(--color-primario);
-    margin: 25px 0px;
-    text-align: center;
-  }
-
-  .descfb {
-    font-size: 1.4rem;
-    color: var(--color-azul-oscuro);
-    text-align: center;
-  }
-
-  .nov-event-boton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 194px;
-    height: 65px;
-    background-color: var(--color-primario);
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 40px;
-    margin: 20px auto;
-    transition: all 0.3s ease;
-  }
-
-  .nov-event-boton:hover {
-    background-color: var(--color-naranja);
-  }
-
-  .accordion {
-    .accordion-item {
-      .accordion-header {
-        .accordion-button {
-          margin: 5px 0px;
-          font-size: 1.3rem;
-          font-weight: 400;
-          color: var(--bs-gray);
-        }
-      }
-
-      .accordion-collapse {
-        .accordion-body {
-          padding: unset;
-
-          .resp {
-            font-size: 1.1rem;
-            text-align: justify;
-            white-space: pre-line;
-            padding: 25px 20px;
-            box-shadow: 0px 10px 20px #00000042;
-            border-radius: 0 0 10px 10px;
-          }
-        }
-      }
-    }
-  }
-}
-
-.buzon {
-  height: auto;
-  padding: 40px 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  .imgfb {
-    width: 200px;
-  }
-
-  .titulofb {
-    font-size: 2.5rem;
-    color: var(--color-primario);
-    margin: 25px 0px;
-    text-align: center;
-  }
-
-  .descfb {
-    font-size: 1.4rem;
-    color: var(--color-azul-oscuro);
-    text-align: center;
-  }
-
-  .nov-event-enlace {
-    text-decoration: none;
-
-    .nov-event-boton {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 194px;
-      height: 65px;
-      background-color: var(--color-primario);
-      color: white;
-      font-size: 1.5rem;
-      border-radius: 40px;
-      margin: 20px auto;
-      transition: all 0.3s ease;
-    }
-
-    .nov-event-boton:hover {
-      background-color: var(--color-naranja);
     }
   }
 }

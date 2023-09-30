@@ -16,7 +16,7 @@
 
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(0)">
-        <img src="assets/credito-ordinario.png" class="card-credito-img">
+        <img src="assets/icon/credito-ordinario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ORDINARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[0] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -43,10 +43,10 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito Simple sin destino específico, ya que tú decides su finalidad.</li>
-                  <li>Monto del Crédito desde $500.00 hasta $300,000.00.</li>
+                  <li>Monto del Crédito desde ${{ creditos[0].montoMin | number:'1.2-2' }} hasta ${{ creditos[0].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 y hasta 60 meses</li>
+                  <li>Plazo de {{ creditos[0].plazoMin }} hasta {{ creditos[0].plazoMax }} meses</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -133,17 +133,17 @@
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                21.60%
+                {{ creditos[0].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[0].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                19.1%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[0].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }}<br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -211,7 +211,7 @@
 
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(1)">
-        <img src="assets/credilomio.png" class="card-credito-img">
+        <img src="assets/icon/credilomio.png" class="card-credito-img">
         <div class="card-credito-title">CREDILOMÍO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[1] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -238,10 +238,10 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito Simple sin destino específico, ya que tú decides su finalidad.</li>
-                  <li>Monto del Crédito desde $500.00 y hasta el 90% del saldo de tu cuenta de ahorro.</li>
+                  <li>Monto del Crédito desde ${{ creditos[1].montoMin | number:'1.2-2' }} y hasta el 90% del saldo de tu cuenta de ahorro.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 a 36 o hasta 60 meses según el monto del crédito.</li>
+                  <li>Plazo de {{ creditos[1].plazoMin }} a {{ creditos[1].plazoMax }} o hasta 60 meses según el monto del crédito.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -325,17 +325,17 @@
               data-bs-parent="#accordionFlush2">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                12.00%
+                {{ creditos[1].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                36.00%
+                {{ creditos[1].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                198.7%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[1].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -402,7 +402,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(2)">
-        <img src="assets/credileal.png" class="card-credito-img">
+        <img src="assets/icon/credileal.png" class="card-credito-img">
         <div class="card-credito-title">CREDILEAL</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[2] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -428,10 +428,10 @@
               data-bs-parent="#accordionFlushExample3">
               <div class="accordion-body">
                 <ul>
-                  <li>Monto del Crédito desde $500.00 hasta $100,000.00.</li>
+                  <li>Monto del Crédito desde ${{ creditos[2].montoMin | number:'1.2-2' }} hasta ${{ creditos[2].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 y hasta 60 meses.</li>
+                  <li>Plazo de {{ creditos[2].plazoMin }} hasta {{ creditos[2].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -515,17 +515,17 @@
               data-bs-parent="#accordionFlushExample3">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                18.00%
+                {{ creditos[2].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[2].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                14.0%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[2].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -592,7 +592,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(3)">
-        <img src="assets/credito-para-auto.png" class="card-credito-img">
+        <img src="assets/icon/credito-para-auto.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO PARA AUTOMÓVIL</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[3] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -621,10 +621,10 @@
                 <ul>
                   <li>Crédito destinado para la compra de un auto nuevo, seminuevo o de hasta 5 años de antigüedad.</li>
                   <li>El vehículo deberá de ser adquirido exclusivamente en agencia automotriz y/o lote de autos que se encuentren registrados en ANCA.</li>
-                  <li>Monto del Crédito desde $50,000.00 hasta $400,000.00</li>
+                  <li>Monto del Crédito desde ${{ creditos[3].montoMin | number:'1.2-2' }} hasta ${{ creditos[3].montoMax | number:'1.2-2' }}</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 a 60 o hasta 72 meses.</li>
+                  <li>Plazo de {{ creditos[3].plazoMin }} hasta {{ creditos[3].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -713,17 +713,17 @@
               data-bs-parent="#accordionFlushExample4">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                14.40%
+                {{ creditos[3].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[3].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                16.3%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[3].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -790,7 +790,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(4)">
-        <img src="assets/credito-solidario.png" class="card-credito-img">
+        <img src="assets/icon/credito-solidario.png" class="card-credito-img">
         <div class="card-credito-title">CREDISOLIDARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[4] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -818,10 +818,10 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito Simple sin destino específico, ya que tú decides su finalidad.</li>
-                  <li>Monto del Crédito desde $5,000.00 hasta $100,000.00</li>
+                  <li>Monto del Crédito desde ${{ creditos[4].montoMin | number:'1.2-2' }} hasta ${{ creditos[4].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 y hasta 60 meses</li>
+                  <li>Plazo de {{ creditos[4].plazoMin }} hasta {{ creditos[4].plazoMax }} meses</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -897,17 +897,17 @@
               data-bs-parent="#accordionFlushExample5">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                24.00%
+                {{ creditos[4].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[4].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                14.1%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[4].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -974,7 +974,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(5)">
-        <img src="assets/credito-alternativo-596x596.png" class="card-credito-img">
+        <img src="assets/icon/credito-alternativo-596x596.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ALTERNATIVO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[5] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1002,10 +1002,10 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito Simple sin destino específico, ya que tú decides su finalidad.</li>
-                  <li>Monto del Crédito desde $500.00 y hasta 20,000.00.</li>
+                  <li>Monto del Crédito desde ${{ creditos[5].montoMin | number:'1.2-2' }} y hasta ${{ creditos[5].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 y hasta 48 meses.</li>
+                  <li>Plazo de {{ creditos[5].plazoMin }} hasta {{ creditos[5].plazoMax }} meses.</li>
                   <li>Se revisará cumplimiento en ahorro y crédito.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
@@ -1080,17 +1080,17 @@
               data-bs-parent="#accordionFlushExample6">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                24.00%
+                {{ creditos[5].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[5].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                213.8%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[5].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -1157,7 +1157,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(6)">
-        <img src="assets/credito-hipotecario.png" class="card-credito-img">
+        <img src="assets/icon/credito-hipotecario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO ORDINARIO HIPOTECARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[6] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1185,10 +1185,10 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito con garantía hipotecaria sin destino específico, ya que tú decides su finalidad.</li>
-                  <li>Monto del Crédito desde $200,000.00 hasta $5,000,000.00.</li>
+                  <li>Monto del Crédito desde ${{ creditos[6].montoMin | number:'1.2-2' }} hasta ${{ creditos[6].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 12 y hasta 240 meses.</li>
+                  <li>Plazo de {{ creditos[6].plazoMin }} hasta {{ creditos[6].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -1274,17 +1274,17 @@
               data-bs-parent="#accordionFlushExample7">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                12.00%
+                {{ creditos[6].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[6].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                13.4%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[6].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -1350,19 +1350,8 @@
 
       </div>
 
-    </div>
-  </section>
-
-
-
-  <section class="credito-contaner back-black">
-    <div class="credito-tipe">COMERCIAL</div>
-
-    <div class="card-container row justify-content-center">
-
-
       <a class="col-md-3 card-credito"  (click)="toggleInfo(7)">
-        <img src="assets/credito-micronegocio.png" class="card-credito-img">
+        <img src="assets/icon/Credito Micronegocio.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO MICRONEGOCIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[7] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1387,12 +1376,12 @@
             <div id="flush-collapseOne8" class="accordion-collapse collapse" aria-labelledby="flush-headingOne8"
               data-bs-parent="#accordionFlushExample8">
               <div class="accordion-body">
-                • Monto del Crédito desde $1,000.00 hasta $20,000.00
-                • Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.
-                • Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.
-                • Plazo de 6 y hasta 12 meses.
-                • Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.
-                • Moneda: Pesos.
+                <li>Monto del Crédito desde ${{ creditos[7].montoMin | number:'1.2-2' }} hasta ${{ creditos[7].montoMax | number:'1.2-2' }}. </li>
+                <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito. </li>
+                <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito. </li>
+                <li>Plazo de {{ creditos[7].plazoMin }} hasta {{ creditos[7].plazoMax }} meses. </li>
+                <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco. </li>
+                <li>Moneda: Pesos.</li>
               </div>
             </div>
           </div>
@@ -1473,17 +1462,17 @@
               data-bs-parent="#accordionFlushExample8">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                18.00%
+                {{ creditos[7].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                36.00%
+                {{ creditos[7].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                12.7%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[7].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -1550,7 +1539,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(8)">
-        <img src="assets/credito-emprende.png" class="card-credito-img">
+        <img src="assets/icon/Credito Emprende.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO EMPRENDE</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[8] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1577,10 +1566,10 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito Simple para la creación y/o ampliación de negocio en el Municipio de Zapopan.</li>
-                  <li>Monto del Crédito desde $10,000.00 hasta $100,000.00.</li>
+                  <li>Monto del Crédito desde ${{ creditos[8].montoMin | number:'1.2-2' }} hasta ${{ creditos[8].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 y hasta 48 meses.</li>
+                  <li>Plazo de {{ creditos[8].plazoMin }} hasta {{ creditos[8].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -1655,17 +1644,17 @@
               data-bs-parent="#accordionFlushExample9">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                9.00%
+                {{ creditos[8].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                24.00%
+                {{ creditos[8].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                9.4%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[8].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -1731,8 +1720,21 @@
 
       </div>
 
+    </div>
+  </section>
+
+
+
+  <section class="credito-contaner back-black">
+    <div class="credito-tipe">COMERCIAL</div>
+
+    <div class="card-container row justify-content-center">
+
+
+
+
       <a class="col-md-3 card-credito"  (click)="toggleInfo(9)">
-        <img src="assets/credito-prestamovil-596x596.png" class="card-credito-img">
+        <img src="assets/icon/credito-prestamovil-596x596.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO PRESTAMÓVIL</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[9] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1760,10 +1762,10 @@
                 <ul>
                   <li>Crédito destinado para la compra de un auto nuevo o seminuevo de hasta 2 años de antigüedad.</li>
                   <li>El vehículo deberá de ser adquirido exclusivamente en agencia automotriz y/o lote de autos (Aplicarestricciones).</li>
-                  <li>Monto del Crédito desde $50,000.00 hasta $1,400,000.00 o 5,000,000.00 de acuerdo al destino del crédito.</li>
+                  <li>Monto del Crédito desde ${{ creditos[9].montoMin | number:'1.2-2' }} a $1,400,000.00 o hasta ${{ creditos[9].montoMax | number:'1.2-2' }} de acuerdo al destino del crédito.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 2 y hasta 72 meses.</li>
+                  <li>Plazo de {{ creditos[9].plazoMin }} hasta {{ creditos[9].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -1857,17 +1859,17 @@
               data-bs-parent="#accordionFlushExample10">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                14.40%
+                {{ creditos[9].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[9].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                12.6%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[9].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -1934,7 +1936,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(10)">
-        <img src="assets/comercial-avio.png" class="card-credito-img">
+        <img src="assets/icon/comercial-avio.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL AVÍO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[10] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1964,10 +1966,11 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito de habilitación o avío.</li>
-                  <li>Monto del Crédito de $5,000.00 hasta $5,000,000.00.</li>
+                  <li>Monto del Crédito de ${{ creditos[10].montoMin | number:'1.2-2' }} hasta ${{ creditos[10].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 6 y hasta 60 meses o de 2 y hasta 12 meses según el destino del crédito.</li>
+                  <!-- TODO: FALTA PREGUNTAR EL ACOMODO DE ESTOS PLAZOS -->
+                  <li>Plazo de {{ creditos[10].plazoMin }} y hasta {{ creditos[10].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual o al ciclo.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -2062,17 +2065,17 @@
               data-bs-parent="#accordionFlushExample11">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                21.60%
+                {{ creditos[10].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[10].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                23.1%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[10].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -2139,7 +2142,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(11)">
-        <img src="assets/credito-refaccionario.png" class="card-credito-img">
+        <img src="assets/icon/credito-refaccionario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL REFACCIONARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[11] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -2167,10 +2170,11 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito refaccionario.</li>
-                  <li>Monto del Crédito de $5,000.00 hasta 300,000.00.</li>
+                  <li>Monto del Crédito de ${{ creditos[11].montoMin | number:'1.2-2' }} hasta ${{ creditos[11].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 6 y hasta 60 meses o de 2 y hasta 48 meses dependiendo del destino del crédito.</li>
+                  <!-- TODO: Falta acomodar los plazos correspondientes -->
+                  <li>Plazo de {{ creditos[11].plazoMin }} y hasta {{ creditos[11].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual o cada ciclo.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -2264,17 +2268,17 @@
               data-bs-parent="#accordionFlushExample12">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                21.60%
+                {{ creditos[11].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[11].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                13.4%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[11].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -2341,7 +2345,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(12)">
-        <img src="assets/creditorefaccionariohipotecario.png" class="card-credito-img">
+        <img src="assets/icon/creditorefaccionariohipotecario.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO COMERCIAL REFACCIONARIO HIPOTECARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[12] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -2369,10 +2373,11 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito refaccionario con garantía hipotecaria.</li>
-                  <li>Monto del Crédito desde $300,000.00 hasta el 80% del proyecto a financiar.</li>
+                  <li>Monto del Crédito desde ${{ creditos[12].montoMin | number:'1.2-2' }} hasta el ${{ creditos[12].montoMax | number:'1.2-2' }} del proyecto a financiar.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 6 y hasta 120 meses o de 2 a 48 meses de acuerdo al destino del crédito.</li>
+                  <!-- TODO: Falta acomodar los plazos correspondientes -->
+                  <li>Plazo de {{ creditos[12].plazoMin }} y hasta {{ creditos[12].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual o por ciclos.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -2474,17 +2479,17 @@
               data-bs-parent="#accordionFlushExample13">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                21.60%
+                {{ creditos[12].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[12].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                13.5%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[12].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>
@@ -2561,7 +2566,7 @@
     <div class="card-container">
 
       <div class="card-credito" (click)="toggleInfo(13)" >
-        <img src="assets/credito-vivienda.png" class="card-credito-img">
+        <img src="assets/icon/credito-vivienda.png" class="card-credito-img">
         <div class="card-credito-title">CRÉDITO DE VIVIENDA</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[13] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -2589,10 +2594,10 @@
 
                 <ul>
                   <li>Crédito destinado para la adquisición de vivienda nueva o usada, construcción o remodelación, compra de terreno para fines habitacionales y sustitución de hipoteca.</li>
-                  <li>Monto del Crédito de $200,000.00 hasta 5,000,000.00</li>
+                  <li>Monto del Crédito de ${{ creditos[13].montoMin | number:'1.2-2' }} hasta ${{ creditos[13].montoMax | number:'1.2-2' }}.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
-                  <li>Plazo de 12 y hasta 240 meses.</li>
+                  <li>Plazo de {{ creditos[13].plazoMin }} hasta {{ creditos[13].plazoMax }} meses.</li>
                   <li>Periodicidad de pago mensual.</li>
                   <li>Contratación en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
                   <li>Moneda: Pesos.</li>
@@ -2682,17 +2687,17 @@
               data-bs-parent="#accordionFlushExample14">
               <div class="accordion-body">
                 <b>Tasa de Interés anual fija</b><br>
-                9.60%
+                {{ creditos[13].interesAnualFija }}%
                 antes de IVA.
                 <br><br>
                 <b>Tasa de Interés anual moratoria fija</b><br>
-                48.00%
+                {{ creditos[13].interesAnualMora }}%
                 antes de IVA.
                 <br><br>
                 <b>CAT promedio</b><br>
-                10.8%
-                "SIN IVA". Para fines informativos y de comparación exclusivamente.
-                Fecha de cálculo 21 de Agosto 2023
+                {{ creditos[13].catPromedio }}%
+                "SIN IVA". Para fines informativos y de comparación exclusivamente. <br>
+                Fecha de cálculo {{ fechadecalculo }} <br>
                 <br>Vigencia: Septiembre - Diciembre 2023
               </div>
             </div>

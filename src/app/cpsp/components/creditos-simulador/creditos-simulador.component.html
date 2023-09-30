@@ -5,29 +5,45 @@
 
         <form [formGroup]="formSimulador" (ngSubmit)="onSubmit()">
 
+          <div class="row align-items-center">
+            <div class="col-3">
+              <img [src]="'assets/icon/' + credito.img + '.png'" class="img-credito d-block" [alt]="credito.nombre">
+            </div>
+            <div class="col-9">
+              <h2 class="titulo-simulador d-inline">Simulador de Crédito {{ credito.nombre }}</h2>
+              <p class="tipo-credito d-inline-block m-0 ms-md-2"
+                [ngClass]="{'btn-amarillo': credito.tipoCredito === 'Consumo', 'btn-azul': credito.tipoCredito === 'Comercial', 'btn-azul-marino': credito.tipoCredito === 'Vivienda'}">
+                {{ credito.tipoCredito }}</p>
+            </div>
+          </div>
 
-          <h2 class="h2 d-inline">Simulador de Crédito {{ credito?.nombre }}</h2>
-          <p class="tipo-credito" style="background-color: #9E9E9E;display: inline;padding: 5px;border-radius: 20px;color: white;margin-left: 11px;">
-            {{ credito?.tipoCredito }}</p>
           <div class="form-group mt-2 mb-3">
             <label for="monto"><b>Monto</b></label>
             <input type="text" class="form-control" placeholder="Ingresar monto" formControlName="monto">
-            <p>Monto del Crédito desde
-              ${{ credito?.montoMin | number:'1.2-2' }}
-              hasta
-              ${{ credito?.montoMax | number:'1.2-2' }} pesos.</p>
+            <div *ngIf="formSimulador.get('monto')?.hasError('montoFueraDeRango'); else templateA" class="bg-danger rounded-pill text-white text-center mt-2">
+              Monto fuera del rango de ${{ credito.montoMin }} y hasta ${{ credito.montoMax }}
+            </div>
+
+            <ng-template #templateA>
+              <p class="mt-2">Monto del Crédito desde
+                ${{ credito.montoMin | number:'1.2-2' }}
+                hasta
+                ${{ credito.montoMax | number:'1.2-2' }} pesos.
+              </p>
+            </ng-template>
+
           </div>
           <div class="form-group mt-2 mb-3">
             <label for="tiempo"><b>Tiempo en Meses</b></label>
             <input type="number" class="form-control" placeholder="Ingresar cantidad de meses" formControlName="tiempo"
-              [min]="credito?.plazoMin || 0" [max]="credito?.plazoMax || 1">
-            <p>Plazo mínimo de {{ credito?.plazoMin }} meses y un maximo de {{ credito?.plazoMax }} meses.</p>
+              [min]="credito.plazoMin || 0" [max]="credito.plazoMax || 1">
+            <p>Plazo mínimo de {{ credito.plazoMin }} meses y un maximo de {{ credito.plazoMax }} meses.</p>
             <p id="meses" style="color: red;"></p>
             <p id="mesesv" style="color: green;"></p>
           </div>
           <div class="form-group mt-2 mb-3">
             <label for="interes"><b>Interés Mensual %</b></label>
-            <input type="text" class="form-control" id="interes" [value]="credito?.interesMen" readonly>
+            <input type="text" class="form-control" id="interes" [value]="credito.interesMen" readonly>
           </div>
           <div class="form-group mt-2 mb-3 alert alert-danger" hidden id="alert-error">
             Debes llenar todos los campos!
@@ -43,7 +59,7 @@
 
         </form>
       </div>
-      <div class="col-12 col-sm-12 col-lg-7">
+      <div class="col-12 col-sm-12 col-lg-7 overflow-auto">
         <table id="lista-tabla" class="table">
           <thead>
             <tr>
@@ -51,7 +67,7 @@
               <th>Fecha</th>
               <th class="text-center">Abono a Capital</th>
               <th>Interés</th>
-              <th>IVA</th>
+              <th *ngIf="credito.tipoCredito !== 'Comercial' && credito.tipoCredito !== 'Vivienda'">IVA</th>
               <th>A pagar</th>
               <th>Saldo</th>
             </tr>
@@ -62,7 +78,7 @@
               <td>{{ result.fecha[i] }}</td>
               <td class="text-center">${{ result.abonoCapital | number:'1.2-2' }}</td>
               <td>${{ result.interes | number:'1.2-2' }}</td>
-              <td>${{ result.iva | number:'1.2-2' }}</td>
+              <td *ngIf="credito.tipoCredito !== 'Comercial' && credito.tipoCredito !== 'Vivienda'">${{ result.iva | number:'1.2-2' }}</td>
               <td>${{ result.aPagar | number:'1.2-2' }}</td>
               <td>${{ result.saldo | number:'1.2-2' }}</td>
             </tr>
@@ -71,6 +87,5 @@
       </div>
     </div>
   </div>
-
 
 </section>

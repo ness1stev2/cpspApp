@@ -11,6 +11,12 @@ import { SocioComponent } from './pages/socio/socio.component';
 import { SucursalesComponent } from './pages/sucursales/sucursales.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreditoSimuladorComponent } from './components/creditos-simulador/creditos-simulador.component';
+import { CuatroBotonesComponent } from './pages/inicio/components/cuatro-botones/cuatro-botones.component';
+import { BeneficiosComponent } from './pages/inicio/components/beneficios/beneficios.component';
+import { OtrosComponent } from './pages/inicio/components/otros/otros.component';
+import { SloganComponent } from './pages/inicio/components/slogan/slogan.component';
+import { PreguntasFrecuentesComponent } from './pages/inicio/components/preguntas-frecuentes/preguntas-frecuentes.component';
+import { BuzonComponentinicio } from './pages/inicio/components/buzon/buzon.component';
 
 
 
@@ -23,6 +29,12 @@ import { CreditoSimuladorComponent } from './components/creditos-simulador/credi
     InicioComponent,
     SocioComponent,
     SucursalesComponent,
+    CuatroBotonesComponent,
+    BeneficiosComponent,
+    OtrosComponent,
+    SloganComponent,
+    PreguntasFrecuentesComponent,
+    BuzonComponentinicio
   ],
   imports: [
     CommonModule,

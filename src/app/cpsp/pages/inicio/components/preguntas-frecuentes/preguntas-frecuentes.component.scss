@@ -1,0 +1,54 @@
+.preg-frec {
+
+  .imgfb {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+
+  .titulofb {
+    color: var(--color-primario);
+  }
+
+  .descfb {
+    color: var(--color-azul-oscuro);
+  }
+
+  .nov-event-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 194px;
+    height: 65px;
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 40px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .nov-event-boton:hover {
+    background-color: var(--color-naranja);
+  }
+
+  .accordion-button {
+    margin: 5px 0px;
+    font-size: 1.3rem;
+    color: var(--bs-gray);
+  }
+}
+
+.accordion-body {
+  padding: unset;
+
+  .resp {
+    font-size: 1.1rem;
+    text-align: justify;
+    white-space: pre-line;
+    padding: 25px 20px;
+    box-shadow: 0px 10px 20px #00000042;
+    border-radius: 0 0 10px 10px;
+  }
+}

@@ -1,0 +1,32 @@
+@import 'animate.css';
+
+.section-main {
+  .img-credito {
+    width: 100px;
+    animation: backInLeft;
+    animation-duration: 3s;
+  }
+
+  .tipo-credito {
+    overflow: hidden;
+    animation: flash;
+    animation-duration: 4s;
+    background-color: #9E9E9E;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    margin-left: 11px;
+  }
+
+  .btn-amarillo {
+    background-color: #ffcd1d;
+  }
+
+  .btn-azul {
+    background-color: #92b5e1;
+  }
+
+  .btn-azul-marino {
+    background-color: #002f63;
+  }
+}

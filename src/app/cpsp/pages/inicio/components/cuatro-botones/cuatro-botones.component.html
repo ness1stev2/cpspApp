@@ -1,0 +1,27 @@
+<div class="container">
+  <section class="my-5 gap-5 row align-items-start">
+    <!-- Contenido de la primera sección -->
+
+    <div *ngFor="let boton of cuatroBotones" class="col d-flex flex-column align-items-center">
+      <a *ngIf="boton.ruta;else botonpdf" [routerLink]="boton.ruta" class="text-decoration-none">
+        <div class="image-wrapper position-relative">
+          <div class="overlay position-absolute"></div>
+          <img [src]="boton.img" [alt]="boton.alt" class="card-content-image">
+          <div class="hover-text">Leer más</div>
+        </div>
+        <div class="card-content-text">{{ boton.nombre }}</div>
+      </a>
+      <ng-template #botonpdf>
+        <a [href]="boton.pdf" target="_blank" class="text-decoration-none">
+          <div class="image-wrapper position-relative">
+            <div class="overlay position-absolute"></div>
+            <img [src]="boton.img" [alt]="boton.alt" class="card-content-image">
+            <div class="hover-text">Leer más</div>
+          </div>
+          <div class="card-content-text">{{ boton.nombre }}</div>
+        </a>
+      </ng-template>
+    </div>
+
+  </section>
+</div>

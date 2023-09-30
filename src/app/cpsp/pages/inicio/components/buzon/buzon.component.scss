@@ -1,0 +1,38 @@
+.buzon {
+
+  .imgfb {
+    width: 200px;
+  }
+
+  .titulofb {
+    color: var(--color-primario);
+  }
+
+  .descfb {
+    font-size: 1.4rem;
+    color: var(--color-azul-oscuro);
+    text-align: center;
+  }
+
+  .nov-event-enlace {
+    text-decoration: none;
+
+    .nov-event-boton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 194px;
+      height: 65px;
+      background-color: var(--color-primario);
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 40px;
+      margin: 20px auto;
+      transition: all 0.3s ease;
+    }
+
+    .nov-event-boton:hover {
+      background-color: var(--color-naranja);
+    }
+  }
+}

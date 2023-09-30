@@ -1,21 +1,27 @@
-import { ViewportScroller } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Credito } from '../interfaces/credito.interface';
+import { Observable, of } from 'rxjs';
+import { AlianzasData } from 'src/app/data/alianzas-data';
+import { Alianza } from 'src/app/revista-alianzas/interfaces/alianzas.interface';
+import { CuatroBotones } from '../interfaces/cuatro-botones.interface';
+import { CuatroBotonesData } from 'src/app/data/cuatro-botones-data';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CpspService {
 
-  constructor(private viewportScroller: ViewportScroller, private http: HttpClient) { }
+  private alianzas: Alianza[] = AlianzasData;
+  private cuatroBotones: CuatroBotones[] = CuatroBotonesData;
 
-  scrollToTop() {
-    this.viewportScroller.scrollToPosition([0, 0]);
+  constructor() { }
+
+  getAlianzas(): Observable<Alianza[]>{
+    return of(this.alianzas);
   }
 
-  getCreditos(): Observable<Credito[]>{
-    return this.http.get<Credito[]>('../../../../data/db.json')
+  getCuatroBotones(): Observable<CuatroBotones[]>{
+    return of(this.cuatroBotones);
   }
+
+
 }

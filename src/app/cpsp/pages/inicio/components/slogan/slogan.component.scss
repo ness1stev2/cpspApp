@@ -1,0 +1,41 @@
+.slogan {
+  background-color: var(--color-azul-oscuro);
+
+  .slogan-texto {
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    white-space: pre-line;
+    font-weight: 100;
+    margin-bottom: 50px;
+  }
+
+  .circuloycheck {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding-left: 10px;
+    height: 70px;
+    margin: 15px auto;
+    max-width: 600px;
+    width: 90%;
+    cursor: pointer;
+
+    img {
+      width: 50px;
+    }
+
+    .texto-circulo {
+      color: var(--color-secundario);
+      font-size: 1.2rem;
+      margin-left: 10px;
+      font-weight: 500;
+    }
+  }
+
+  .circuloycheck:hover {
+    box-shadow: -7px 24px 26px -5px rgba(0, 0, 0, 0.41);
+    transform: scale(1.1);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+}

@@ -10,12 +10,6 @@ import { filter } from 'rxjs';
 })
 export class InicioComponent {
 
-  isActive: boolean = false
-
-  toggleInfo() {
-    this.isActive = !this.isActive;
-  }
-
   constructor(private router: Router, private viewportScroller: ViewportScroller) {}
   ngOnInit() {
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
