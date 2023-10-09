@@ -1,5 +1,4 @@
 @mixin header-styling($image-url) {
-  background-image: url('#{$image-url}');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 250px 0;
@@ -12,6 +11,21 @@
     color: var(--color-negro);
     animation: zoomIn;
     animation-duration: 1s;
+  }
+
+  // Verificar si la imagen existe
+  $image-exists: file-exists('#{$image-url}-medium.webp');
+
+  // Utilizar la imagen especificada o la imagen predeterminada
+  background-image: url(if($image-exists, '#{$image-url}-medium.webp', '#{$image-url}.webp'));
+
+  // Media queries para distintos tamaños de pantalla
+  @media (min-width: 1200px) {
+    // Verificar si la imagen existe
+    $image-exists: file-exists('#{$image-url}-large.webp');
+
+    // Utilizar la imagen especificada o la imagen predeterminada
+    background-image: url(if($image-exists, '#{$image-url}-large.webp', '#{$image-url}.webp'));
   }
 }
 

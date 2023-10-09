@@ -2,7 +2,7 @@
 @import '../../../app.component.scss';
 
 .header--historia {
-  @include header-styling('../../../../assets/historiaimg.png');
+  @include header-styling('../../../../assets/historiaimg');
 }
 
 .historia {
@@ -46,7 +46,7 @@
 
 
   .logo {
-    background-image: url(../../../../assets/icon/LOGOTIPO1.png);
+    background-image: url(../../../../assets/icon/LOGOTIPO1.webp);
     background-size: cover;
     height: 45px;
     width: 35px;
@@ -87,14 +87,14 @@
   }
 
   .mision {
-    background-image: url(../../../../assets/icon/mision.png);
+    background-image: url(../../../../assets/icon/mision.webp);
   }
 
   .vision {
-    background-image: url(../../../../assets/icon/testigo.png);
+    background-image: url(../../../../assets/icon/testigo.webp);
   }
 
   .valores {
-    background-image: url(../../../../assets/icon/propuesta-de-valor.png);
+    background-image: url(../../../../assets/icon/propuesta-de-valor.webp);
   }
 }

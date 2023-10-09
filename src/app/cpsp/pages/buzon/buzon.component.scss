@@ -2,7 +2,7 @@
 @import '../../../app.component.scss';
 
 .header--buzon {
-  @include header-styling('../../../../assets/buzondecomentariosimg.png');
+  @include header-styling('../../../../assets/buzondecomentariosimg');
 }
 
 .buzon-option {

@@ -1,0 +1,43 @@
+.gallery {
+  position: relative;
+  overflow: hidden;
+  max-height: 650px;
+  transition: all 500ms;
+  animation: fadeIn;
+  animation-duration: 1s;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
+  box-shadow: black 0px 0px 20px -5px;
+
+  .carousel {
+    .carousel-inner {
+
+      .carousel-item {
+
+        .btnGallery {
+          min-width: fit-content;
+          text-align: center;
+          border-radius: 45px;
+          width: 20%;
+          font-weight: 700;
+          padding: 10px 5px;
+          @media (max-width: 576px) {
+            font-size: 12px;
+          }
+        }
+
+        a {
+          position: absolute;
+          transition: all 1s ease;
+        }
+
+        a:hover {
+          transform: scale(1.7);
+        }
+      }
+    }
+  }
+
+
+}

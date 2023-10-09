@@ -1,7 +1,7 @@
 @import 'animate.css';
 @import '../../../app.component.scss';
 .header--credito {
-  @include header-styling('../../../../assets/creditoimg.png');
+  @include header-styling('../../../../assets/creditoimg');
 }
 
 main {

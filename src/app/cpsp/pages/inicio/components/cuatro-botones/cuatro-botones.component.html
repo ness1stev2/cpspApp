@@ -1,27 +1,30 @@
-<div class="container">
-  <section class="my-5 gap-5 row align-items-start">
-    <!-- Contenido de la primera sección -->
+<div class="cuatro-botones">
+  <div class="container">
+    <section class="my-5 gap-5 row align-items-start">
 
-    <div *ngFor="let boton of cuatroBotones" class="col d-flex flex-column align-items-center">
-      <a *ngIf="boton.ruta;else botonpdf" [routerLink]="boton.ruta" class="text-decoration-none">
-        <div class="image-wrapper position-relative">
-          <div class="overlay position-absolute"></div>
-          <img [src]="boton.img" [alt]="boton.alt" class="card-content-image">
-          <div class="hover-text">Leer más</div>
-        </div>
-        <div class="card-content-text">{{ boton.nombre }}</div>
-      </a>
-      <ng-template #botonpdf>
-        <a [href]="boton.pdf" target="_blank" class="text-decoration-none">
+      <div *ngFor="let boton of cuatroBotones" class="col d-flex flex-column align-items-center">
+        <a *ngIf="boton.ruta;else botonpdf" [routerLink]="boton.ruta" class="text-decoration-none">
           <div class="image-wrapper position-relative">
             <div class="overlay position-absolute"></div>
-            <img [src]="boton.img" [alt]="boton.alt" class="card-content-image">
+            <app-img alt="boton.alt" [path]="boton.img+'.webp'" style="width: 250px;height: 257px;border-radius: 7%;box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);"></app-img>
+
             <div class="hover-text">Leer más</div>
           </div>
           <div class="card-content-text">{{ boton.nombre }}</div>
         </a>
-      </ng-template>
-    </div>
+        <ng-template #botonpdf>
+          <a [href]="boton.pdf" target="_blank" class="text-decoration-none">
+            <div class="image-wrapper position-relative">
+              <div class="overlay position-absolute"></div>
+              <app-img alt="boton.alt" [path]="boton.img+'.webp'" style="width: 250px;height: 257px;border-radius: 7%;box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);"></app-img>
 
-  </section>
+              <div class="hover-text">Leer más</div>
+            </div>
+            <div class="card-content-text">{{ boton.nombre }}</div>
+          </a>
+        </ng-template>
+      </div>
+
+    </section>
+  </div>
 </div>

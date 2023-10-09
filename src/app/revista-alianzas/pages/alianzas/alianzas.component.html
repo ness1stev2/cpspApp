@@ -13,7 +13,7 @@
 
       <div class="item col-3" *ngFor="let alianza of alianzas">
         <div class="item-contenido">
-          <img [src]="'assets/'+ alianza.img" [alt]="alianza.img">
+          <img [src]="'assets/'+ alianza.img+'.webp'" [alt]="alianza.img">
         </div>
         <h2>{{alianza.nombre}}</h2>
         <span>{{alianza.beneficio}}</span>

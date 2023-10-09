@@ -15,7 +15,7 @@
       padding: 5px;
       font-size: 14px;
       border-radius: 5px;
-      color: white;
+      color: black;
     }
 
     .nov-event-titulo {
@@ -50,11 +50,12 @@
     }
   }
 
-  .nov-event-img {
-    height: auto;
-    object-fit: cover;
-    min-height: 510px;
+  picture{
+    source, .nov-event-img{
+      width: 100%;
+    }
   }
+
 
   .youtube {
     .nov-event-titulo-boton {

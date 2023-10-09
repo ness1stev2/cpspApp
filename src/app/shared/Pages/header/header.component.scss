@@ -19,7 +19,7 @@
 }
 
 .avisos-importantes {
-  background-color: black;
+  background-color: var(--color-primario);
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -27,18 +27,19 @@
   padding: 5px 30px;
 
   a {
-    background-color: var(--color-naranja);
-    color: white;
+    background-color: white;
+    color: var(--color-primario);
     border-radius: 30px;
-    padding: 3px 10px;
+    padding: 3px 7px;
     transition: all 500ms;
   }
 
   a:hover {
-    color: var(--color-primario);
-    background-color: white;
+    color: white;
+    background-color: var(--color-naranja);
   }
 }
+
 
 .menu-superior {
   background-color: var(--color-azul-oscuro);
@@ -54,10 +55,14 @@
     padding: 0;
     cursor: pointer;
 
-    img {
+    .logo-imagen {
       width: 160px;
       animation: fadeInUp;
       animation-duration: 1000ms;
+    }
+    img{
+
+      width: 160px;
     }
   }
 
@@ -146,7 +151,7 @@
     /* Ocultar el menú desplegable en pantallas grandes */
     cursor: pointer;
     margin-left: auto;
-    background-image: url(../../../../assets/icon/menu.png);
+    background-image: url(../../../../assets/icon/menu.webp);
     background-size: cover;
     width: 30px;
     height: 30px;

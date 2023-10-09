@@ -4,6 +4,7 @@ import { HeaderComponent } from './Pages/header/header.component';
 import { FooterComponent } from './Pages/footer/footer.component';
 import { RedesSocialesComponent } from './components/redes-sociales/redes-sociales.component';
 import { RouterModule } from '@angular/router';
+import { ImgComponent } from './components/img/img.component';
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     RedesSocialesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ImgComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { RouterModule } from '@angular/router';
   exports: [
     RedesSocialesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ImgComponent
   ]
 })
 export class SharedModule { }

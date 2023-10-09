@@ -13,6 +13,6 @@ export class CuatroBotonesComponent {
 
   constructor(private cpspService: CpspService){}
   ngOnInit(){
-    this.cpspService.getCuatroBotones().subscribe( boton => this.cuatroBotones = boton)
+    this.cpspService.getCuatroBotones().subscribe( boton => this.cuatroBotones = boton);
   }
 }

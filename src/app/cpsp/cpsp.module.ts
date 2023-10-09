@@ -17,6 +17,8 @@ import { OtrosComponent } from './pages/inicio/components/otros/otros.component'
 import { SloganComponent } from './pages/inicio/components/slogan/slogan.component';
 import { PreguntasFrecuentesComponent } from './pages/inicio/components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { BuzonComponentinicio } from './pages/inicio/components/buzon/buzon.component';
+import { ImgComponent } from '../shared/components/img/img.component';
+import { GalleryComponent } from './pages/inicio/components/gallery/gallery.component';
 
 
 
@@ -34,7 +36,8 @@ import { BuzonComponentinicio } from './pages/inicio/components/buzon/buzon.comp
     OtrosComponent,
     SloganComponent,
     PreguntasFrecuentesComponent,
-    BuzonComponentinicio
+    BuzonComponentinicio,
+    GalleryComponent
   ],
   imports: [
     CommonModule,

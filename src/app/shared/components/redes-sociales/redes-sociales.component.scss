@@ -22,36 +22,43 @@
       top: 3px;
     }
   }
-  a:nth-child(1){
+
+  a:nth-child(1) {
     animation-duration: 1500ms;
   }
-  a:nth-child(2){
+
+  a:nth-child(2) {
     animation-duration: 1500ms;
   }
-  a:nth-child(3){
+
+  a:nth-child(3) {
     animation-duration: 1500ms;
   }
-  a:nth-child(4){
+
+  a:nth-child(4) {
     animation-duration: 1500ms;
   }
-  a:nth-child(5){
+
+  a:nth-child(5) {
     animation-duration: 1500ms;
   }
+
   a:hover {
     background-color: white;
     color: black;
     transition: 550ms;
-}
+  }
 }
 
 .contactanos {
   font-size: 2rem;
-  color: white;
+  color: var(--color-naranja);
   text-shadow: 1px 1px 20px black;
   text-align: center;
-  padding: 25px 0px;
+  padding: 25px 0px 0px;
   overflow: hidden;
-  p{
+
+  p {
     animation: fadeInRight;
     animation-duration: 1500ms;
   }

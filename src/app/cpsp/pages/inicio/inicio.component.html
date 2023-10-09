@@ -1,84 +1,32 @@
 <header class="header--inicio">
 
-  <div class="container">
+  <app-gallery></app-gallery>
+  <div class="container py-5">
 
-    <div class="row">
+    <div class="row gap-4 justify-content-center">
+      <a routerLink="/inicio/socio" class="col-lg-4 text-center">
+        <app-img alt="imagen socios estrechando la mano" path="assets/socios-comerciales-sonrientes.webp" class="bd-placeholder-img rounded-circle" style="height: 140px;width: 140px;object-fit: cover;background-color: var(--color-azul-oscuro);"></app-img>
 
-      <div class="col-12 col-xl-6">
-        <div class="gallery">
-          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+        <h2>QUIERO SER SOCIO</h2>
+        <p>Unete a Caja Popular San Pablo presentando solo 4 documentos</p>
+        <p><a class="btn" href="#" style="background-color: var(--color-primario); color: white">Ver detalles »</a></p>
+      </a>
+      <a href="https://www.educoofin.com/" class="col-lg-4 text-center" target="_blank">
+        <app-img alt="imagen puerco educoof" path="assets/icon/puerco_educoof.webp" class="bd-placeholder-img rounded-circle" style="height: 140px;width: 140px;object-fit: contain;background-color: var(--color-azul-oscuro);"></app-img>
 
-              <div class="carousel-item active">
-                <div class="gallery-image img9 d-block" alt="..."></div>
-                <a href="assets/pdf/rally.pdf" target="_blank" style="top: 85%; left: 65%;">
-                  <button class="d-inline align-content-center justify-items-center p-2" style="height: auto; border-radius: 45px; width: auto; background-color: #f39a1f;">
-                    MÁS INFORMACIÓN  <i class="fi fi-rr-info"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <div class="gallery-image img8 d-block" alt="..."></div>
-                <a href="https://www.youtube.com/watch?v=wRfz1qZwJ04&t=64s&pp=ygUWY2FqYSBwb3B1bGFyIHNhbiBwYWJsbw%3D%3D" target="_blank">
-                  <button class="d-grid align-content-center justify-items-center" style="height: 80px; border-radius: 45px; width: 80px;">
-                    VER<i class="fi fi-sr-play"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="carousel-item" data-bs-interval="10000">
-                <div class="gallery-image img1 d-block" alt="..."></div>
-                <a href="assets/pdf/datos biometricos.pdf" style="top: 85%;" target="_blank"><button
-                    style="background-color: white; color: #fab819;">VER</button></a>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <div class="gallery-image img2 d-block" alt="..."></div>
-              </div>
-              <div class="carousel-item">
-                <div class="gallery-image img3 d-block" alt="..."></div>
-                <a href="assets/pdf/dictamen-debecas.pdf" target="_blank"><button>VER</button></a>
-              </div>
-              <div class="carousel-item">
-                <div class="gallery-image img4 d-block" alt="..."></div>
-                <a routerLink="/btns/alianzas" style="top: 85%;"><button
-                    style="background-color: white; color: #3f7ebd;">VER</button></a>
-              </div>
-              <div class="carousel-item">
-                <div class="gallery-image img5 d-block" alt="..."></div>
-                <a href="assets/pdf/libro-caja.pdf" style="top: 62%;left: 56%;" target="_blank"><button>VER</button></a>
-              </div>
-              <div class="carousel-item">
-                <div class="gallery-image img6 d-block" alt="..."></div>
-                <a href="assets/pdf/promociones2023.pdf" style="top: 84%;left: 41%;" target="_blank"><button
-                    style="background-color: white; color: #fab819;">VER</button></a>
-              </div>
-              <div class="carousel-item">
-                <div class="gallery-image img7 d-block" alt="..."></div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
+        <h2>EDUCACIÓN COOPERATIVA Y FINANCIERA</h2>
+        <p>Ingresa a conocer nuestra nueva pagina</p>
+        <p><a class="btn" href="#" style="background-color: var(--color-primario); color: white">Ver detalles »</a></p>
+      </a>
+      <a routerLink="/inicio/creditos" class="col-lg-4 text-center">
+        <app-img alt="imagen creditos" path="assets/alegre-joven-emocionada-telefono-movil-tarjeta-credito.webp" class="bd-placeholder-img rounded-circle" style="height: 140px;width: 140px;object-fit: cover;background-color: var(--color-azul-oscuro);"></app-img>
 
-      <div class="col-12 col-xl-6">
-        <div routerLink="/inicio/socio"
-          class="button-quiero-ser-socio d-flex justify-content-center align-items-center">
-          <a>
-            <h1 class="titulo--inicial">QUIERO SER SOCIO</h1>
-          </a>
-        </div>
-        <app-redes-sociales></app-redes-sociales>
-      </div>
+        <h2>CREDITOS</h2>
+        <p>Conoce nuestros creditos con la tasa de interes mas baja</p>
+        <p><a class="btn" href="#" style="background-color: var(--color-primario); color: white">Ver detalles »</a></p>
+      </a>
     </div>
+
 
   </div>
 
@@ -86,30 +34,26 @@
 
 <main>
 
-  <div class="educoof mb-2">
-    <div class="container">
-
-      <div class="educoof-content text-center">
-        <img src="assets/icon/puerco_educoof.png" alt="">
-        <div class="text-enlace">
-          <p class="">¡DESCUBRE AQUÍ!</p>
-          <div class="boton-educoof">
-            <a href="https://www.educoofin.com/">EDUCACIÓN COOPERATIVA Y FINANCIERA SAN PABLO</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  <!-- quiero aplicar mi funcion de animacion en mi plantilla html -->
 
   <cuatro-botones-component></cuatro-botones-component>
-  <beneficios-component></beneficios-component>
-  <otros-component></otros-component>
-  <slogan-component></slogan-component>
-  <preguntas-frecuentes-component></preguntas-frecuentes-component>
+  <div class="animated-element" (window:scroll)="onScroll()">
+    <beneficios-component></beneficios-component>
+  </div>
+  <div class="animated-element" (window:scroll)="onScroll()">
+    <otros-component></otros-component>
+  </div>
+  <div class="animated-element" (window:scroll)="onScroll()">
+    <slogan-component></slogan-component>
+  </div>
+  <div class="animated-element" (window:scroll)="onScroll()">
+    <preguntas-frecuentes-component></preguntas-frecuentes-component>
+  </div>
 
   <hr class="linea-horizontal" style="margin: 50px 0;">
 
-  <buzon-component-inicio></buzon-component-inicio>
+  <div class="animated-element" (window:scroll)="onScroll()">
+    <buzon-component-inicio></buzon-component-inicio>
+  </div>
 
 </main>

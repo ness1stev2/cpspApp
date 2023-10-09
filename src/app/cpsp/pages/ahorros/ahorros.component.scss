@@ -2,7 +2,7 @@
 @import '../../../app.component.scss';
 
 .header--ahorro {
-  @include header-styling('../../../../assets/familia-mexicana-sonriente-tiro-medio.png');
+  @include header-styling('../../../../assets/familia-mexicana-sonriente-tiro-medio');
 }
 
 .ahorros--container {
@@ -67,18 +67,18 @@
   }
 
   .adulto {
-    background-image: url(../../../../assets/icon/aadulto-2-1201x650.png);
+    background-image: url(../../../../assets/icon/aadulto-2-1201x650.webp);
   }
 
   .menores {
-    background-image: url(../../../../assets/icon/amenores-1-1201x650.png);
+    background-image: url(../../../../assets/icon/amenores-1-1201x650.webp);
   }
 
   .corriente {
-    background-image: url(../../../../assets/icon/ccorriente-2-1201x650.png);
+    background-image: url(../../../../assets/icon/ccorriente-2-1201x650.webp);
   }
 
   .fijo {
-    background-image: url(../../../../assets/icon/pfijo-1-1201x650.png);
+    background-image: url(../../../../assets/icon/pfijo-1-1201x650.webp);
   }
 }

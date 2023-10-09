@@ -1,214 +1,71 @@
 @import 'animate.css';
 @import '../../../app.component.scss';
 
-.educoof {
-  background-color: var(--color-secundario);
-  font-size: 20px;
-  padding: 20px;
-  color: white;
-  margin-bottom: 5px;
-
-  .educoof-content {
-
-    img {
-      width: 50px;
-      animation: jello;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-    }
-
-    .text-enlace {
-      p {
-        width: 300px;
-        margin: 10px auto;
-      }
-
-      .boton-educoof {
-        background-color: var(--color-primario);
-        border-radius: 30px;
-        padding: 10px;
-        color: white;
-        max-width: 400px;
-        margin: 0 auto;
-
-        a {
-          font-size: 15px;
-          text-decoration: none;
-          color: inherit;
-          font-weight: 500;
-        }
-
-      }
-
-      .boton-educoof:hover {
-        color: var(--color-naranja);
-        background-color: white
-      }
-
-    }
-  }
-
-}
 
 .header--inicio {
-  background-image: url(../../../../assets/campana.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 177px 0;
+  background-color: #f8f9fa;
 
-  @media (max-width: 1200px) {
-    padding: 110px 0;
-  }
-
-  h2 {
-    animation: zoomIn;
-    animation-duration: 1s;
-  }
-
-  .gallery {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
+  .container {
     display: flex;
-    margin: 0 auto;
-    max-width: 600px;
-    transition: all 500ms;
-    animation: fadeIn;
-    animation-duration: 1s;
-    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 
-    @media (min-width: 1200px) {
-      right: 60px;
-    }
+    .col-lg-4 {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      width: 350px;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      color: inherit;
 
-    .carousel {
-      .carousel-inner {
-        .carousel-item {
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: black 0px 0px 20px -5px;
+      }
 
-          .img1,
-          .img2,
-          .img3,
-          .img4,
-          .img5,
-          .img6,
-          .img7,
-          .img8,
-          .img9 {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 300px;
-            width: 600px;
+      h2 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
 
-            @media (max-width: 576px) {
-              width: 366px;
-            }
-          }
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
 
-          .img1 {
-            background-image: url(../../../../assets/datos-biometricos-1.jpg);
+      .btn {
+        background-color: var(--color-primario);
+        color: white;
+        border: 2px solid var(--color-primario);
+        transition: all 0.3s ease-in-out;
 
-            @media (max-width: 576px) {
-              background-position-x: -70px;
-            }
-          }
-
-          .img2 {
-            background-image: url(../../../../assets/estimadiosSocios.jpg);
-
-            @media (max-width: 576px) {
-              background-position-x: -150px;
-            }
-          }
-
-          .img3 {
-            background-image: url(../../../../assets/listado.jpg);
-          }
-
-          .img4 {
-            background-image: url(../../../../assets/alianzasgal-2.jpg);
-
-            @media (max-width: 576px) {
-              background-position-x: -190px;
-            }
-          }
-
-          .img5 {
-            background-image: url(../../../../assets/libro_conmemorativo.jpg);
-          }
-
-          .img6 {
-            background-image: url(../../../../assets/bases.jpg);
-          }
-
-
-          .img7 {
-            background-image: url(../../../../assets/servicioelectronicos-1.jpg);
-
-            @media (max-width: 576px) {
-              background-position-x: -180px;
-            }
-          }
-
-          .img8 {
-            background-image: url(../../../../assets/charla-de-becas.jpg);
-          }
-
-          .img9 {
-            background-image: url(../../../../assets/rallycoop.jpg);
-          }
-
-          a {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            button {
-              width: 110px;
-              height: 35px;
-              border-radius: 16px;
-              background-color: #fab819;
-              color: white;
-              border: none;
-              transition: all 1s ease;
-            }
-
-            button:hover {
-              transform: scale(1.7);
-            }
-          }
+        &:hover {
+          background-color: white;
+          color: var(--color-primario);
+          border-color: var(--color-secundario);
+          transform: translateY(-2px);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
       }
     }
-
-
   }
+}
 
-  .button-quiero-ser-socio:hover {
-    background-color: var(--color-naranja);
-  }
+.animated-element {
+  /* Estilos iniciales */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s, transform 0.5s;
+}
 
-  .button-quiero-ser-socio {
-    width: 240px;
-    height: 70px;
-    background-color: var(--color-azul-oscuro);
-    border-radius: 8px;
-    margin: 0 auto;
-    margin-top: 40px;
-    transition: all 0.3s ease;
-    border: white 1px solid;
-    animation: fadeInUp;
-    animation-duration: 1500ms;
-    animation-delay: 500ms;
-    cursor: pointer;
-
-    .titulo--inicial {
-      color: white;
-      font-size: 1.4rem;
-      font-style: normal;
-      font-weight: 400;
-    }
-  }
+.animated-element.animated {
+  /* Estilos cuando la animación se activa (por ejemplo, opacity: 1; transform: translateY(0);) */
+  opacity: 1;
+  transform: translateY(0);
 }
