@@ -2,7 +2,7 @@ import sharp from 'sharp';
 import path from 'path';
 import * as fs from 'fs/promises'; // Utiliza fs.promises para operaciones asincrónicas
 
-const directory = path.join(process.cwd(), 'src/assets/');
+const directory = path.join(process.cwd(), 'src/assets/icon/');
 
 (async () => {
   try {

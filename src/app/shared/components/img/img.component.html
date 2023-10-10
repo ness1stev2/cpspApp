@@ -1,12 +1,3 @@
-<!-- FILEPATH: /c:/Users/usuario/OneDrive/Desktop/Angular/cpspApp/src/app/shared/components/img/img.component.html -->
-<!--
-  Este componente es responsable de mostrar una imagen con múltiples fuentes para diferentes tamaños de pantalla.
-  Utiliza el elemento <picture> para mostrar la imagen y los elementos <source> para proporcionar diferentes fuentes para diferentes tamaños de pantalla.
-  Las fuentes se proporcionan a través de la propiedad de entrada 'sources', que es una matriz de objetos con propiedades 'path' y 'media'.
-  La propiedad 'path' es la ruta a la fuente de la imagen y la propiedad 'media' es la consulta de medios para el tamaño de pantalla.
-  Las propiedades de entrada 'alt', 'style' y 'class' se utilizan para establecer el texto alternativo, estilo y clase para el elemento <img>.
-  Los atributos 'loading' y 'decoding' se utilizan para optimizar la carga de la imagen.
--->
 <picture>
   <source
   [srcset]="source.path"

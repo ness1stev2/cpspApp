@@ -17,7 +17,7 @@ export const GalleryData: Gallery[] = [
   {
     isActive: false,
     rlink: false,
-    path: "assets/Vale de despensa.webp",
+    path: "assets/Valededespensa.webp",
     alt: "Vale de despensa",
     btn: true,
     href: "assets/pdf/PROMOCION DE VALES DE DESPENSAS.pdf",
@@ -43,7 +43,7 @@ export const GalleryData: Gallery[] = [
   {
     isActive: false,
     rlink: false,
-    path: "assets/Octubre testamento.webp",
+    path: "assets/Octubretestamento.webp",
     alt: "Octubre testamento",
     btn: true,
     href: "assets/pdf/octubretambienmesdeltestamento.pdf",
@@ -56,7 +56,7 @@ export const GalleryData: Gallery[] = [
   {
     isActive: false,
     rlink: false,
-    path: "assets/ingresa y gana.webp",
+    path: "assets/ingresaygana.webp",
     alt: "Imagen Ingresa y Gana",
     btn: true,
     href: "assets/pdf/ingresa y gana.pdf",
@@ -69,7 +69,7 @@ export const GalleryData: Gallery[] = [
   {
     isActive: false,
     rlink: false,
-    path: "assets/competencias directivas.webp",
+    path: "assets/competenciasdirectivas.webp",
     alt: "Imagen competencias directivas",
     btn: true,
     href: "assets/pdf/COMPETENCIASDIRECTIVAS.pdf",
@@ -82,7 +82,7 @@ export const GalleryData: Gallery[] = [
   {
     isActive: false,
     rlink: false,
-    path: "assets/tasa de interes.webp",
+    path: "assets/tasadeinteres.webp",
     alt: "Imagen tasa de interes",
     btn: true,
     href: "assets/pdf/tasa de interes.pdf",
@@ -96,7 +96,7 @@ export const GalleryData: Gallery[] = [
     isActive: false,
     rlink: true,
     rlinkName: "/inicio/socio",
-    path: "assets/inscribete ahora es más facil.webp",
+    path: "assets/inscribeteahoraesmásfacil.webp",
     alt: "Imagen inscribete ahora es más facil",
     btn: true,
     btntext: "QUIERO SER SOCIO",

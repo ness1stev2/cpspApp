@@ -3,8 +3,8 @@
     <div class="carousel-inner">
 
       <div *ngFor="let gallery of gallerys" class="carousel-item" [ngClass]="{'active': gallery.isActive}">
-        <!-- <app-img class="gallery-image"[alt]="gallery.alt" [path]="gallery.path" style="width: 100%; height: auto;"></app-img> -->
-        <img [src]="gallery.path" [alt]="gallery.alt" style="width: 100%; height: auto;">
+        <app-img class="" [alt]="gallery.alt" [path]="gallery.path" style="width: 100%; height: auto;"></app-img>
+        <!-- <img [src]="gallery.path" [alt]="gallery.alt" style="width: 100%; height: auto;"> -->
 
           <a *ngIf="gallery.btn && !gallery.rlink; else conRuta" [class]="gallery.classbtn"  [href]="gallery.href" target="_blank"
             [style]="gallery.styleBtn">{{gallery.btntext}}<i *ngIf="gallery.icon" [class]="gallery.iconName"></i>

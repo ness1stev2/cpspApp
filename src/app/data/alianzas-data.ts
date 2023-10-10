@@ -104,14 +104,14 @@ export const AlianzasData: Alianza[] = [
     nombre: "VOLVER A ESCUCHAR",
     beneficio: "Descuento: del 3 al 10%.",
     categoria: ["Salud","Belleza"],
-    pdfName: "TwoPieyTwoSpa.pdf",
+    pdfName: "VOLVER A ESCUCHAR.pdf",
   },
   {
     img: "DR ALBERTO ROBLES",
     nombre: "DR JESÚS ALBERTO ROBLES",
     beneficio: "Socios 10% a 15% en traumatología y ortopedia",
     categoria: ["Salud","Belleza"],
-    pdfName: "TwoPieyTwoSpa.pdf",
+    pdfName: "Dr Jesús Alberto Robles.pdf",
   },
   {
     img: "SILOE",

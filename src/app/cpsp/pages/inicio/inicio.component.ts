@@ -40,7 +40,7 @@ export class InicioComponent {
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
     // Calcular la posición vertical en la que se activará la animación (10% del viewport)
-    const activationPoint = windowHeight * 0.70;
+    const activationPoint = windowHeight * 0.80;
 
     // Comprobar si el elemento está dentro del 10% superior del viewport
     return rect.top <= activationPoint;

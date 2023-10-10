@@ -6,8 +6,8 @@ import path from 'path';
 
 const currentFileUrl = import.meta.url;
 const currentDir = path.dirname(currentFileUrl);
-const sourcePath = path.join(currentDir, 'src/assets/');
-const destinationPath = path.join(currentDir, 'src/assets/');
+const sourcePath = path.join(currentDir, 'src/assets/icon/');
+const destinationPath = path.join(currentDir, 'src/assets/icon/');
 
 const files = await imagemin([`${sourcePath}/*.{jpg,png}`], {
   destination: destinationPath,
