@@ -1,0 +1,65 @@
+<header class="header--nov-event">
+  <div class="content">
+    <h2 class="text-center text-white">NOVEDADES Y EVENTOS</h2>
+    <app-redes-sociales></app-redes-sociales>
+  </div>
+  <div class="video-container">
+    <video id="miVideo" muted autoplay loop playsinline>
+      <source src="assets/nov-event-web4.mp4" type="video/mp4">
+    </video>
+
+    <!-- <button id="iniciarVideo">Iniciar Video</button> -->
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let item of novEvent; index as i" class="col-12 col-md-4 col-xl-3">
+        <div class="card mb-2">
+          <img [src]="'assets/img-nov-event/'+item.srcImg+'.webp'" class="card-img-top" [alt]="item.altImg">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text">{{ item.description }}</p>
+            <a class="btn btn-primary" data-bs-toggle="modal" [href]="'#exampleModalToggle'+i" role="button">VER MAS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let item of novEvent; index as i" class="modal fade" [id]="'exampleModalToggle'+i" aria-hidden="true" attr.aria-labelledby="exampleModalToggleLabel{{i}}"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" [id]="'exampleModalToggleLabel'+i">{{ item.title }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <div [id]="'carouselExampleControls'+i" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let event of item.imagesGallery; index as j" class="carousel-item" [ngClass]="{'active': j === 0}">
+                <img [src]="'assets/img-nov-event/'+event+'.webp'" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" attr.data-bs-target="#carouselExampleControls{{i}}" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" attr.data-bs-target="#carouselExampleControls{{i}}" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</main>

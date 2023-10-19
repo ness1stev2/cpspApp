@@ -7,6 +7,7 @@ import { AhorrosComponent } from './pages/ahorros/ahorros.component';
 import { BuzonComponent } from './pages/buzon/buzon.component';
 import { SocioComponent } from './pages/socio/socio.component';
 import { CreditoSimuladorComponent } from './components/creditos-simulador/creditos-simulador.component';
+import { NovEventComponent } from './pages/nov-event/nov-event.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
       { path: 'cuentas-deposito', component: AhorrosComponent},
       { path: 'buzon', component: BuzonComponent},
       { path: 'socio', component: SocioComponent},
+      { path: 'nov-event', component: NovEventComponent},
       { path: 'simulador/:id', component: CreditoSimuladorComponent},
       { path: '**', redirectTo: 'bienvenido'},
     ]

@@ -19,6 +19,7 @@ import { PreguntasFrecuentesComponent } from './pages/inicio/components/pregunta
 import { BuzonComponentinicio } from './pages/inicio/components/buzon/buzon.component';
 import { ImgComponent } from '../shared/components/img/img.component';
 import { GalleryComponent } from './pages/inicio/components/gallery/gallery.component';
+import { NovEventComponent } from './pages/nov-event/nov-event.component';
 
 
 
@@ -37,7 +38,8 @@ import { GalleryComponent } from './pages/inicio/components/gallery/gallery.comp
     SloganComponent,
     PreguntasFrecuentesComponent,
     BuzonComponentinicio,
-    GalleryComponent
+    GalleryComponent,
+    NovEventComponent
   ],
   imports: [
     CommonModule,

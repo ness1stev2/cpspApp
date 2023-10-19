@@ -2,6 +2,13 @@ import { Alianza } from "../revista-alianzas/interfaces/alianzas.interface";
 
 export const AlianzasData: Alianza[] = [
   {
+    img: "CEO (Centro de Estudios Profecionales)",
+    nombre: "CEP (Centro de Estudios Profesionales)",
+    beneficio: "Inscripción gratuita y descuento de 25% en colegiaturas",
+    categoria: ["Educación","Cultura"],
+    pdfName: "(CEP) Centro de Estudios Profecionales.pdf",
+  },
+  {
     img: "CECATI 7",
     nombre: "CECATI 7",
     beneficio: "Descuento: 30% cursos presenciales de lunes a viernes",

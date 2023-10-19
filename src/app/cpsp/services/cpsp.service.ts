@@ -7,6 +7,8 @@ import { CuatroBotones } from '../interfaces/cuatro-botones.interface';
 import { CuatroBotonesData } from 'src/app/data/cuatro-botones-data';
 import { Gallery } from '../interfaces/gallery.interface';
 import { GalleryData } from 'src/app/data/gallery-data';
+import { NovEvent } from '../interfaces/nov-event.interface';
+import { NovEventData } from 'src/app/data/nov-event-data';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +18,7 @@ export class CpspService {
   private alianzas: Alianza[] = AlianzasData;
   private cuatroBotones: CuatroBotones[] = CuatroBotonesData;
   private gallery: Gallery[] = GalleryData;
+  private novEvent: NovEvent[] = NovEventData;
 
   constructor() { }
 
@@ -29,6 +32,10 @@ export class CpspService {
 
   getGallery(): Observable<Gallery[]>{
     return of(this.gallery);
+  }
+
+  getNovEvent(): Observable<NovEvent[]>{
+    return of(this.novEvent);
   }
 
 

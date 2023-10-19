@@ -28,15 +28,23 @@
 
   a {
     background-color: white;
-    color: var(--color-primario);
     border-radius: 30px;
     padding: 3px 7px;
     transition: all 500ms;
-  }
-
-  a:hover {
-    color: white;
-    background-color: var(--color-naranja);
+    svg{
+      width: 17px;
+      height: auto;
+      fill: var(--color-primario);
+      position: relative;
+      bottom: 2px;
+    }
+    &:hover {
+      fill: white;
+      background-color: var(--color-naranja);
+      svg {
+        fill: white;
+      }
+    }
   }
 }
 
@@ -167,7 +175,7 @@
     right: 0px;
     padding: 5px 15px;
     text-align: end;
-    z-index: 1;
+    z-index: 2;
     padding: 0px 15px 15px;
 
     li {

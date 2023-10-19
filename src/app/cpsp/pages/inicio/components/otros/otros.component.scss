@@ -50,6 +50,15 @@
     }
   }
 
+  .nov-event-titulo-boton:hover .nov-event-titulo {
+    color: white;
+    text-shadow: 0px 0px 10px var(--color-naranja);
+  }
+
+  .nov-event-titulo-boton:hover .nov-event-enlace .nov-event-boton {
+    background-color: var(--color-naranja);
+  }
+
   picture{
     source, .nov-event-img{
       width: 100%;

@@ -38,7 +38,7 @@ export class ImgComponent implements AfterContentInit{
       },
       {
         path: `${path}/${name}-medium.webp`,
-        media: '(min-width: 640px)'
+        media: '(min-width: 520px)'
       },
       {
         path: `${path}/${name}-small.webp`,
@@ -50,7 +50,7 @@ export class ImgComponent implements AfterContentInit{
       },
       {
         path: `${path}/${name}-medium.${ext}`,
-        media: '(min-width: 640px)'
+        media: '(min-width: 520px)'
       },
       {
         path: `${path}/${name}-small.${ext}`,
