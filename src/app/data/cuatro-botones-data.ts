@@ -3,7 +3,7 @@ import { CuatroBotones } from "../cpsp/interfaces/cuatro-botones.interface";
 export const CuatroBotonesData: CuatroBotones[] = [
   {
     ruta: "/btns/revistas",
-    img: "assets/img-revistas/REV Octubre 2023",
+    img: "assets/img-revistas/REV Diciembre 2023",
     nombre: "Revista Libertador Cooperativo",
     alt: "Revista Libertador Cooperativo"
   },

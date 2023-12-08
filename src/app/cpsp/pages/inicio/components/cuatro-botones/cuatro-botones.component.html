@@ -6,18 +6,17 @@
         <a *ngIf="boton.ruta;else botonpdf" [routerLink]="boton.ruta" class="text-decoration-none">
           <div class="image-wrapper position-relative">
             <div class="overlay position-absolute"></div>
-            <app-img alt="boton.alt" [path]="boton.img+'.webp'" style="width: 250px;height: 257px;border-radius: 7%;box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);"></app-img>
-
+            <img [src]="boton.img+'.webp'" [alt]="boton.alt" style="width: 250px;height: 257px;border-radius: 7%;box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);">
             <div class="hover-text">Leer más</div>
           </div>
           <div class="card-content-text">{{ boton.nombre }}</div>
         </a>
+
         <ng-template #botonpdf>
           <a [href]="boton.pdf" target="_blank" class="text-decoration-none">
             <div class="image-wrapper position-relative">
               <div class="overlay position-absolute"></div>
-              <app-img alt="boton.alt" [path]="boton.img+'.webp'" style="width: 250px;height: 257px;border-radius: 7%;box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);"></app-img>
-
+              <img [src]="boton.img+'.webp'" [alt]="boton.alt" style="width: 250px;height: 257px;border-radius: 7%;box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);">
               <div class="hover-text">Leer más</div>
             </div>
             <div class="card-content-text">{{ boton.nombre }}</div>

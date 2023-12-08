@@ -1,27 +1,23 @@
 <header class="header--credito">
-
   <h2 class="text-center">CRÉDITOS</h2>
-
   <app-redes-sociales></app-redes-sociales>
-
 </header>
 
 <main>
-
 
   <section class="credito-contaner">
     <div class="credito-tipe">CONSUMO</div>
 
     <div class="card-container row justify-content-center">
 
-
       <a class="col-md-3 card-credito"  (click)="toggleInfo(0)">
-        <app-img path="assets/icon/credito-ordinario.png" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credito-ordinario.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO ORDINARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[0] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
           Leer más</div>
       </a>
+
 
       <div class="card-credito-info" [ngStyle]="{'display': isActive[0] ? 'block' : 'none'}">
         <div class="card-credito-detalle">El crédito Ordinario es una buena alternativa de financiamiento
@@ -211,7 +207,7 @@
 
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(1)">
-        <app-img path="assets/icon/credilomio.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credilomio.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CREDILOMÍO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[1] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -402,7 +398,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(2)">
-        <app-img path="assets/icon/credileal.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credileal.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CREDILEAL</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[2] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -481,13 +477,12 @@
               <div class="accordion-body">
 
                 <ul>
-                  <li>Ser socio de la Cooperativa con 5 años de antigüedad.</li>
+                  <li>Ser socio de la Cooperativa con 3 años de antigüedad.</li>
                   <li>Ahorro sistemático mensual de los últimos 12 meses.</li>
-                  <li>Haber registrado historial interno mínimo de 12 meses en créditos anteriores o el equivalente a un año contable en un crédito anterior.</li>
+                  <li>Haber registrado historial interno mínimo de 12 meses en créditos anteriores mayor a sus haberes.</li>
                   <li>Constituir una garantía líquida del 10% del monto de crédito a solicitado.</li>
                   <li>Identificación oficial vigente (Credencial para votar, pasaporte, cédula profesional).</li>
                   <li>Comprobante de ingresos de acuerdo a política interna.</li>
-                  <li>Acta de matrimonio civil (si aplica).</li>
                   <li>Comprobante de domicilio (recibo de luz, agua, teléfono fijo de 2 meses de antigüedad máximo).</li>
                   <li>RFC con homoclave.</li>
                   <li>Solicitud de crédito con documentación.</li>
@@ -592,7 +587,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(3)">
-        <app-img path="assets/icon/credito-para-auto.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credito-para-auto.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO PARA AUTOMÓVIL</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[3] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -790,7 +785,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(4)">
-        <app-img path="assets/icon/credito-solidario.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credito-solidario.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CREDISOLIDARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[4] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -974,7 +969,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(5)">
-        <app-img path="assets/icon/credito-alternativo-596x596.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credito-alternativo-596x596.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO ALTERNATIVO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[5] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1157,7 +1152,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(6)">
-        <app-img path="assets/icon/credito-hipotecario.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credito-hipotecario.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO ORDINARIO HIPOTECARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[6] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1351,7 +1346,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(7)">
-        <app-img path="assets/icon/Credito Micronegocio.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/Credito Micronegocio.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO MICRONEGOCIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[7] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1539,7 +1534,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(8)">
-        <app-img path="assets/icon/Credito Emprende.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/Credito Emprende.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO EMPRENDE</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[8] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1734,7 +1729,7 @@
 
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(9)">
-        <app-img path="assets/icon/credito-prestamovil-596x596.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credito-prestamovil-596x596.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO PRESTAMÓVIL</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[9] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -1744,7 +1739,7 @@
       <div class="card-credito-info" [ngStyle]="{'display': isActive[9] ? 'block' : 'none'}">
 
         <div class="card-credito-detalle">Si necesitas hacer crecer tu negocio, solicita este préstamo para la
-          adquisición de vehículos uso de Transporte Público de Pasajeros, carga o Vehículos Utilitarios.</div>
+          adquisición de vehículos uso de Transporte Público de Pasajeros, carga, tractor agrícola o Vehículos Utilitarios.</div>
         <a class="card-credito-btn-simulador" [routerLink]="['/inicio/simulador/', creditos[9].id] ">SIMULADOR DE PAGOS<i class="fi fi-sr-credit-card"></i>
         </a>
 
@@ -1936,7 +1931,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(10)">
-        <app-img path="assets/icon/comercial-avio.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/comercial-avio.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO COMERCIAL AVÍO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[10] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -2142,7 +2137,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(11)">
-        <app-img path="assets/icon/credito-refaccionario.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credito-refaccionario.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO COMERCIAL REFACCIONARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[11] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -2345,7 +2340,7 @@
       </div>
 
       <a class="col-md-3 card-credito"  (click)="toggleInfo(12)">
-        <app-img path="assets/icon/creditorefaccionariohipotecario.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/creditorefaccionariohipotecario.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO COMERCIAL REFACCIONARIO HIPOTECARIO</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[12] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -2373,7 +2368,8 @@
               <div class="accordion-body">
                 <ul>
                   <li>Crédito refaccionario con garantía hipotecaria.</li>
-                  <li>Monto del Crédito desde ${{ creditos[12].montoMin | number:'1.2-2' }} hasta el ${{ creditos[12].montoMax | number:'1.2-2' }} del proyecto a financiar.</li>
+                  <li>Monto del Crédito desde ${{ creditos[12].montoMin | number:'1.2-2' }} hasta el ${{ creditos[12].montoMax | number:'1.2-2' }}</li>
+                  <li>El financiamiento será hasta el 80% del proyecto.</li>
                   <li>Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
                   <li>Los intereses ordinarios se calculan sobre el saldo insoluto del capital del crédito.</li>
                   <!-- TODO: Falta acomodar los plazos correspondientes -->
@@ -2566,7 +2562,7 @@
     <div class="card-container">
 
       <div class="card-credito" (click)="toggleInfo(13)" >
-        <app-img path="assets/icon/credito-vivienda.webp" alt="icono credito" style="width: 220px; height: 220px"></app-img>
+        <img src="assets/icon/credito-vivienda.webp" alt="icono credito" style="width: 220px; height: 220px">
         <div class="card-credito-title">CRÉDITO DE VIVIENDA</div>
         <div class="card-credito-btn"
           [ngStyle]="isActive[13] ? { 'border-radius': '20px 20px 0 0', 'height': '60px' } : { 'border-radius': '' }">
@@ -2649,6 +2645,7 @@
                   <li>Garantía quirografaria de aval en su caso.</li>
                   <li>Edad mínima 25 años a 64 años máxima.</li>
                   <li>Solicitud de crédito con documentación.</li>
+                  <li>Constancia de situación fiscal no mayor a 30 días.</li>
                   <li>Cédula de identificación fiscal actualizada.</li>
                   <li>Autorización para consulta en SIC’s*</li>
                   <li>Gastos previos: El socio incurrirá en gastos de avalúo independientemente de que se formalice o no el crédito. Para la formalización del avalúo, el Socio deberá cubrir los horarios del valuador autorizado por la Cooperativa para tales efectos.</li>

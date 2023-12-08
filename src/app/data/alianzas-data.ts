@@ -2,6 +2,13 @@ import { Alianza } from "../revista-alianzas/interfaces/alianzas.interface";
 
 export const AlianzasData: Alianza[] = [
   {
+    img: "logo-flexi",
+    nombre: "ZAPATERIA FLEXI",
+    beneficio: "20% de descuento en calzado de linea y 15% adicional en mercancia de oferta",
+    categoria: ["Belleza","Vestir"],
+    pdfName: "flexi-inf.pdf",
+  },
+  {
     img: "CEO (Centro de Estudios Profecionales)",
     nombre: "CEP (Centro de Estudios Profesionales)",
     beneficio: "Inscripción gratuita y descuento de 25% en colegiaturas",
@@ -53,9 +60,9 @@ export const AlianzasData: Alianza[] = [
   {
     img: "dojo seishin okami",
     nombre: "DOJO SEISHIN OKAMI",
-    beneficio: "Descuento de 20% en colegiatura Prepa UDG y Prepa semiescolarizada. Excepto carreras de aviación",
+    beneficio: "Descuento: 20% en clases karate do",
     categoria: ["Estilo de vida"],
-    pdfName: "cecati.pdf",
+    pdfName: "dojo seishim.pdf",
   },
   {
     img: "SELVA MAGICA",
@@ -125,6 +132,13 @@ export const AlianzasData: Alianza[] = [
     nombre: "HOSPITAL SILOÉ",
     beneficio: "Descuento: 10% en consulta para Socios.",
     categoria: ["Salud","Belleza"],
+    pdfName: "hospital siloe.pdf",
+  },
+  {
+    img: "VIAJES ALONDRA",
+    nombre: "VIAJES ALONDRA",
+    beneficio: "Descuento de 7% al socio",
+    categoria: ["Viajes","Entretenimiento"],
     pdfName: "hospital siloe.pdf",
   },
 ]

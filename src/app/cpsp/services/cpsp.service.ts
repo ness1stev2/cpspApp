@@ -9,6 +9,8 @@ import { Gallery } from '../interfaces/gallery.interface';
 import { GalleryData } from 'src/app/data/gallery-data';
 import { NovEvent } from '../interfaces/nov-event.interface';
 import { NovEventData } from 'src/app/data/nov-event-data';
+import { Sucursal } from '../interfaces/sucursal.interface';
+import { sucursalesData } from 'src/app/data/sucursales-data';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +21,7 @@ export class CpspService {
   private cuatroBotones: CuatroBotones[] = CuatroBotonesData;
   private gallery: Gallery[] = GalleryData;
   private novEvent: NovEvent[] = NovEventData;
+  private sucursal: Sucursal[] = sucursalesData;
 
   constructor() { }
 
@@ -36,6 +39,10 @@ export class CpspService {
 
   getNovEvent(): Observable<NovEvent[]>{
     return of(this.novEvent);
+  }
+
+  getSucursales(): Observable<Sucursal[]>{
+    return of(this.sucursal);
   }
 
 

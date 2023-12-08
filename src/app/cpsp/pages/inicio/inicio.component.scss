@@ -96,7 +96,7 @@
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.animated-element.animated {
+.animated-element .animated {
   /* Estilos cuando la animación se activa (por ejemplo, opacity: 1; transform: translateY(0);) */
   opacity: 1;
   transform: translateY(0);

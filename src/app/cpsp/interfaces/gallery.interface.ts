@@ -10,5 +10,6 @@ export interface Gallery {
   classbtn?: string;
   styleBtn?: string;
   icon: boolean;
-  iconName?: string
+  iconName?: string;
+  etiqueta?: string;
 }

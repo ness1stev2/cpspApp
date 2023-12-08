@@ -26,11 +26,7 @@ export class InicioComponent {
   onScroll() {
     this.animatedElements.forEach((element) => {
       if (this.isElementInViewport(element)) {
-        console.log('Elemento en el viewport:', element);
         element.classList.add('animated');
-        /*element.classList.add('animate__animated');
-         element.classList.add('animate__fadeIn');
-        document.documentElement.style.setProperty('--animate-duration', '1s'); */
       }
     });
   }

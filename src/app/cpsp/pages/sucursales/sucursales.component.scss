@@ -78,6 +78,10 @@
       background-image: url(../../../../assets/tonala1.webp);
     }
 
+    .aleira {
+      background-image: url(../../../../assets/aleira.webp);
+    }
+
     .card-suc {
       height: 415px;
       margin: 20px 0;
@@ -90,6 +94,23 @@
       max-width: 280px;
       cursor: pointer;
       transition: box-shadow 500ms ease;
+
+      a {
+        text-decoration: none;
+      }
+
+      //Unicamente para nuevas sucursales (borrar una vez que se deje de utilizar)
+      .nueva-sucursal {
+        background: var(--color-naranja);
+        color: white;
+        transform: rotate(45deg);
+        padding: 8px 0px;
+        position: absolute;
+        bottom: 180px;
+        left: 90px;
+        font-size: 20px;
+        width: 220px;
+      }
 
       .card-suc-title-btn {
         position: relative;
@@ -147,6 +168,7 @@
 
     .card-suc:hover {
       box-shadow: 1px 1px 21px 0px var(--color-naranja);
+
       .card-suc-title-btn {
         .card-suc-btng {
           background-color: var(--color-naranja);

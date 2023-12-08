@@ -5,6 +5,8 @@
   background-position-y: 0px;
   background-position-x: center;
 
+  background-image: url(#{$image-url}.webp);
+
   h2 {
     font-size: 3rem;
     text-shadow: 0px 0px 10px white;
@@ -12,21 +14,10 @@
     animation: zoomIn;
     animation-duration: 1s;
   }
-
-  // Verificar si la imagen existe
-  $image-exists: file-exists('#{$image-url}-medium.webp');
-
-  // Utilizar la imagen especificada o la imagen predeterminada
-  background-image: url(if($image-exists, '#{$image-url}-medium.webp', '#{$image-url}.webp'));
-
-  // Media queries para distintos tamaños de pantalla
-  @media (min-width: 1200px) {
-    // Verificar si la imagen existe
-    $image-exists: file-exists('#{$image-url}-large.webp');
-
-    // Utilizar la imagen especificada o la imagen predeterminada
-    background-image: url(if($image-exists, '#{$image-url}-large.webp', '#{$image-url}.webp'));
-  }
 }
 
 
+
+a{
+  text-decoration: none;
+}
