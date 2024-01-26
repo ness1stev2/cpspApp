@@ -7,9 +7,6 @@ export interface Gallery {
   btn: boolean;
   href?: string;
   btntext?: string;
-  classbtn?: string;
   styleBtn?: string;
-  icon: boolean;
-  iconName?: string;
   etiqueta?: string;
 }

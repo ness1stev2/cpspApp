@@ -1,0 +1,21 @@
+{
+  "name": "Caja Popular San Pablo",
+  "short_name": "CPSP",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#003063",
+  "description": "Somos una Sociedad Cooperativa de Ahorro y Préstamo con más de 52 años al servicio de nuestros Socios, contribuyendo en el crecimiento económico de más de 82 mil cooperativistas activos en nuestra orgullosa Institución. Trabajamos para llevar más y mejores alternativas financieras a las familias de Jalisco, educando en materia cooperativista para la sana administración de los recursos y el uso responsable de productos crediticios con intereses justos.",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192x248.png",
+      "sizes": "192x248",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512x662.png",
+      "sizes": "512x662",
+      "type": "image/png"
+    }
+  ]
+}

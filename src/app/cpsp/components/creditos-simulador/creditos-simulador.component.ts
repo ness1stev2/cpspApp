@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, signal } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { format, addMonths } from 'date-fns';
 import { Simulador } from '../../interfaces/simulador.interface'
@@ -28,7 +28,6 @@ export class CreditoSimuladorComponent implements OnInit {
     interesAnualFija: 0,
     interesAnualMora: 0,
     catPromedio: 0,
-    img: ''
   };
 
   /* formSimulador: FormGroup; */
@@ -68,8 +67,8 @@ export class CreditoSimuladorComponent implements OnInit {
   onSubmit() {
     if (this.formSimulador.valid && this.credito) {
 
-      const credito = this.credito;
-      let monto = this.formSimulador.get('monto')?.value;
+      const credito = signal(this.credito);
+      let monto = signal(this.formSimulador.get('monto')?.value);
       const tiempo = this.formSimulador.get('tiempo')?.value
 
 
@@ -77,14 +76,14 @@ export class CreditoSimuladorComponent implements OnInit {
       this.resultCredito = [];
       this.fechas = [];
       // Valores iniciales del crédito
-      let abonoCapital: number = Math.round(monto / tiempo);
-      let saldo: number = monto - abonoCapital;
-      let interes: number = Math.round(monto * (credito.interesMen / 100));
+      const abonoCapital: number = (monto() / tiempo);
+      let saldo: number = monto() - abonoCapital;
+      let interes: number = (monto() * (credito().interesMen / 100));
       let iva: number = 0; // Valor predeterminado en 0
 
-      if (credito.tipoCredito !== 'Comercial' && credito.tipoCredito !== 'Vivienda') {
+      if (credito().tipoCredito !== 'Comercial' && credito().tipoCredito !== 'Vivienda') {
         // Solo si el tipo de crédito no es "Comercial" ni "Vivienda", se calcula el valor de iva
-        iva = Math.round(interes * 0.16);
+        iva = (interes * 0.16);
       }
 
       let aPagar: number = abonoCapital + interes + iva;
@@ -110,8 +109,8 @@ export class CreditoSimuladorComponent implements OnInit {
           saldo,
         };
 
-        abonoCapital = Math.round(saldo / tiempo); // Actualiza abonoCapital para el siguiente mes
-        interes = Math.round(saldo * (credito.interesMen / 100));
+        interes = (saldo * (credito().interesMen / 100));
+        iva = interes * 0.16; // Actualiza iva para el siguiente mes
         aPagar = abonoCapital + interes + iva; // Actualiza aPagar para el siguiente mes
         saldo = saldo - abonoCapital; // Actualiza saldo para el siguiente mes
 

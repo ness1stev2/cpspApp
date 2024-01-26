@@ -1,6 +1,9 @@
 @import 'animate.css';
 @import '../../../app.component.scss';
 
+a{
+  text-decoration: none;
+}
 
 .header--inicio {
   background-color: #f8f9fa;

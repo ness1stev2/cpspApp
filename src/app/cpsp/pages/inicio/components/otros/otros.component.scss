@@ -1,8 +1,16 @@
 .otros {
 
+  a{
+    text-decoration: none;
+  }
+
   .nov-event,
+  .podcast,
   .youtube {
     margin: 100px 0;
+    img{
+      object-fit: cover;
+    }
   }
 
   .nov-event-titulo-boton {
@@ -20,8 +28,8 @@
 
     .nov-event-titulo {
       font-size: 3rem;
-      color: var(--color-blanco);
-      text-shadow: 0px 0px 10px var(--color-azul-oscuro);
+      color: var(--color-primario);
+      text-shadow: 0px 0px 10px var(--color-blanco);
       white-space: pre-line;
     }
 
@@ -59,12 +67,6 @@
     background-color: var(--color-naranja);
   }
 
-  picture{
-    source, .nov-event-img{
-      width: 100%;
-    }
-  }
-
   .youtube {
     .nov-event-titulo-boton {
       @media screen and (max-width: 768px) {
@@ -76,9 +78,7 @@
       width: fit-content;
 
       .min-youtube {
-        height: auto;
         border-radius: 10px;
-        width: 260px;
         margin: 20px 11px;
         padding: 0;
         max-width: 300px;

@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
-import { filter } from 'rxjs';
+import { Observable, filter } from 'rxjs';
 import { Credito } from '../../interfaces/credito.interface';
 import { CreditosService } from '../../services/creditos.service';
 
@@ -12,10 +12,10 @@ import { CreditosService } from '../../services/creditos.service';
 })
 export class CreditosComponent implements OnInit {
 
-  public creditos: Credito[] = [];
+  public creditos$: Observable<Credito[]> = this.creditoService.getCreditos();
   public fechadecalculo: string = "Agosto 2023"
 
-  isActive: boolean[] = Array(14).fill(false);
+  isActive: boolean[] = Array(15).fill(false);
 
   toggleInfo(i: number) {
     // Si el elemento en la posición i ya es true, establecerlo en false junto con los demás.
@@ -29,10 +29,7 @@ export class CreditosComponent implements OnInit {
 
   constructor(private router: Router, private viewportScroller: ViewportScroller, private creditoService : CreditosService) {}
   ngOnInit(): void {
-    this.creditoService.getCreditos()
-      .subscribe( creditos => this.creditos = creditos)
-
-
+    this.creditos$ = this.creditoService.getCreditos();
 
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
       // Desplázate al inicio de la página

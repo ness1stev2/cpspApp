@@ -2,32 +2,37 @@
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
 
-      <div *ngFor="let gallery of gallerys" class="carousel-item" [ngClass]="{'active': gallery.isActive}">
-        <img class="" [alt]="gallery.alt" [src]="gallery.path" style="width: 100%; height: auto;">
-        <!-- <img [src]="gallery.path" [alt]="gallery.alt" style="width: 100%; height: auto;"> -->
+      <div *ngFor="let gallery of gallerys; let i = index" class="carousel-item" [ngClass]="{'active': gallery.isActive}">
+        <picture>
+          <source media="(min-width: 576px)" [srcset]="gallery.path+'.webp'">
+          <source media="(max-width: 576px)" [srcset]="gallery.path+'-movil.webp'">
+          <img width="1300" height="652" [alt]="gallery.alt" [src]="gallery.path+'.webp'" [loading]="i > 0 ? 'lazy' : 'auto'">
+        </picture>
 
-        <div *ngIf="gallery.etiqueta" style="position: absolute;color: white;top: 38%;left: 10%;background-color:
-        #f4a318;font-size: 1.2rem;border-radius: 75px;padding: 23px; font-weight: 800; width: 130px; width: 130px; text-align: center;">{{ gallery.etiqueta}}</div>
 
-          <a *ngIf="gallery.btn && !gallery.rlink; else conRuta" [class]="gallery.classbtn"  [href]="gallery.href" target="_blank"
-            [style]="gallery.styleBtn">{{gallery.btntext}}<i *ngIf="gallery.icon" [class]="gallery.iconName"></i>
+        <a *ngIf="gallery.btn && !gallery.rlink; else conRuta" class="btnGallery" href="{{gallery.href}}" target="_blank"
+          [style]="gallery.styleBtn">{{gallery.btntext}}
+        </a>
+        <ng-template #conRuta>
+          <a class="btnGallery" [routerLink]="gallery.rlinkName"
+            href="{{gallery.href}}" target="_blank"
+            [style]="gallery.styleBtn">{{gallery.btntext}}
           </a>
-          <ng-template #conRuta>
-            <a [class]="gallery.classbtn" [routerLink]="gallery.rlinkName" target="_blank"
-            [style]="gallery.styleBtn">{{gallery.btntext}}<i *ngIf="gallery.icon" [class]="gallery.iconName"></i>
-          </a>
-          </ng-template>
+        </ng-template>
+
       </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+
+    </div>

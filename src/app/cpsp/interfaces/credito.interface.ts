@@ -4,13 +4,19 @@ export interface Credito {
   id:          string;
   nombre:      string;
   tipoCredito: string;
+  descripcion?: string;
+  caracteristicas?: string;
+  venyben?:  string;
+  requisitos?: string;
+  consideraciones?: string;
+  recomendaciones?: string;
+  riesgos?:    string;
   montoMin:   number;
   montoMax:   number;
   plazoMin:   number;
   plazoMax:   number;
   interesMen: number;
-  interesAnualFija: number,
-  interesAnualMora: number,
-  catPromedio:      number,
-  img:        string
+  interesAnualFija: number;
+  interesAnualMora: number;
+  catPromedio:      number;
 }

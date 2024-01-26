@@ -1,5 +1,6 @@
 @import 'animate.css';
 @import '../../../app.component.scss';
+
 .header--revista {
   @include header-styling('../../../../assets/pareja-joven-disfrutando-tiempo-juntos-casa');
 }
@@ -46,6 +47,7 @@
     }
   }
 }
+
 .tiulo-año {
   color: var(--color-blanco);
   background-color: var(--color-azul-oscuro);

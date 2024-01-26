@@ -10,6 +10,10 @@
   .card-container {
     gap: 0px 80px;
 
+    .aleira {
+      background-image: url(../../../../assets/aleira.webp);
+    }
+
     .matriz {
       background-image: url(../../../../assets/suc-matriz.webp);
     }
@@ -78,8 +82,11 @@
       background-image: url(../../../../assets/tonala1.webp);
     }
 
-    .aleira {
-      background-image: url(../../../../assets/aleira.webp);
+
+
+    .belisario {
+      background-image: url(../../../../assets/suc-belisario.webp);
+      background-position: center;
     }
 
     .card-suc {
@@ -128,7 +135,7 @@
           display: flex;
           justify-content: space-evenly;
           align-items: center;
-          background-color: var(--color-secundario);
+          background-color: var(--color-primario);
           width: 190px;
           border-radius: 15px;
           height: 30px;
@@ -171,7 +178,7 @@
 
       .card-suc-title-btn {
         .card-suc-btng {
-          background-color: var(--color-naranja);
+          background-color: var(--color-primario);
         }
       }
     }

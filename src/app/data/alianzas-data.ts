@@ -4,7 +4,7 @@ export const AlianzasData: Alianza[] = [
   {
     img: "logo-flexi",
     nombre: "ZAPATERIA FLEXI",
-    beneficio: "20% de descuento en calzado de linea y 15% adicional en mercancia de oferta",
+    beneficio: "20% de descuento en calzado de linea y 15% adicional en mercancia de oferta. (obten el descuento en las sucursales: Matriz, Morelos, Alcalde, Tonalá y Portales",
     categoria: ["Belleza","Vestir"],
     pdfName: "flexi-inf.pdf",
   },
@@ -58,25 +58,11 @@ export const AlianzasData: Alianza[] = [
     pdfName: "CEAO.pdf",
   },
   {
-    img: "dojo seishin okami",
-    nombre: "DOJO SEISHIN OKAMI",
-    beneficio: "Descuento: 20% en clases karate do",
-    categoria: ["Estilo de vida"],
-    pdfName: "dojo seishim.pdf",
-  },
-  {
     img: "SELVA MAGICA",
     nombre: "SELVA MAGICA",
     beneficio: "Descuento: Cupones 2x1 en pase platino.",
     categoria: ["Entretenimiento","Cultura"],
     pdfName: "selvaMagica.pdf",
-  },
-  {
-    img: "TWO SPA",
-    nombre: "TWO PIE & TWO SPA",
-    beneficio: "Descuento: 15% para Socios.",
-    categoria: ["Salud","Belleza"],
-    pdfName: "TwoPieyTwoSpa.pdf",
   },
   {
     img: "distring",

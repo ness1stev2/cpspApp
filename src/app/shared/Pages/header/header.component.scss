@@ -1,5 +1,9 @@
 @import 'animate.css';
 
+a {
+  text-decoration: none;
+}
+
 .contactanos-flotante {
   position: fixed;
   top: 90%;
@@ -10,13 +14,11 @@
   --animate-repeat: 5;
   transition: all 500ms;
   z-index: 1;
-  .messenger-facebook {
-    width: 50px;
+  &:hover {
+    transform: scale(1.4);
   }
 }
-.contactanos-flotante:hover{
-  transform: scale(1.4);
-}
+
 
 .avisos-importantes {
   background-color: var(--color-primario);
@@ -31,23 +33,25 @@
     border-radius: 30px;
     padding: 3px 7px;
     transition: all 500ms;
-    svg{
+
+    svg {
       width: 17px;
       height: auto;
       fill: var(--color-primario);
       position: relative;
       bottom: 2px;
-    }
-    &:hover {
-      fill: white;
-      background-color: var(--color-naranja);
-      svg {
+      &:hover {
         fill: white;
       }
     }
+    &:hover {
+      fill: white;
+      color: white;
+      background-color: var(--color-naranja);
+    }
+
   }
 }
-
 
 .menu-superior {
   background-color: var(--color-azul-oscuro);
@@ -55,23 +59,13 @@
   padding: 10px;
   height: 70px;
 
-  .linea-horizontal {
-    color: white;
-  }
-
   a {
     padding: 0;
     cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 
-    .logo-imagen {
-      width: 160px;
-      animation: fadeInUp;
-      animation-duration: 1000ms;
-    }
-    img{
-
-      width: 160px;
-    }
   }
 
   ul {
@@ -102,22 +96,18 @@
 
     .svg-img-text:nth-child(1) {
       animation-duration: 500ms;
-      /* don't forget to set a duration! */
     }
 
     .svg-img-text:nth-child(2) {
       animation-duration: 1000ms;
-      /* don't forget to set a duration! */
     }
 
     .svg-img-text:nth-child(3) {
       animation-duration: 1500ms;
-      /* don't forget to set a duration! */
     }
 
     .svg-img-text:nth-child(4) {
       animation-duration: 2000ms;
-      /* don't forget to set a duration! */
 
     }
 
@@ -134,7 +124,7 @@
     }
 
     .saldos {
-      background-color: var(--color-secundario);
+      background-color: var(--color-primario);
       border: none;
       font-size: 13px;
       padding: 5px 10px;
@@ -147,22 +137,12 @@
   }
 
   a {
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-    color: white;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    padding-bottom: 0px;
+
   }
 
   .menu-icon {
     /* Ocultar el menú desplegable en pantallas grandes */
     cursor: pointer;
-    margin-left: auto;
-    background-image: url(../../../../assets/icon/menu.webp);
-    background-size: cover;
-    width: 30px;
-    height: 30px;
     animation: fadeIn;
     animation-duration: 1000ms;
   }
@@ -173,21 +153,18 @@
     width: 100%;
     top: 68px;
     right: 0px;
-    padding: 5px 15px;
     text-align: end;
     z-index: 2;
-    padding: 0px 15px 15px;
+    padding: 15px;
+
+    .linea-horizontal {
+      color: white;
+    }
 
     li {
       list-style: none;
-
-      i {
+      a {
         color: white;
-        text-decoration: none;
-
-        a {
-          text-decoration: none;
-        }
       }
     }
   }

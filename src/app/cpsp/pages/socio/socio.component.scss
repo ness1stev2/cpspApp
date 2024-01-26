@@ -28,7 +28,6 @@
   }
 }
 
-main {
   .deseo--socio-container {
     padding: 40px 15px;
 
@@ -40,7 +39,7 @@ main {
     .deseo--socio-desc {
       text-align: center;
       font-size: 1.1rem;
-      color: grey;
+      color: black;
       margin-top: 5px;
     }
 
@@ -63,9 +62,6 @@ main {
         align-items: center;
         margin-top: 12px;
 
-        .check--descripcion-img {
-          width: 45px;
-        }
 
         .check--descripcion-text {
           margin-left: 10px;
@@ -74,4 +70,4 @@ main {
       }
     }
   }
-}
+
