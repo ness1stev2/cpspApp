@@ -14,6 +14,7 @@ a {
   --animate-repeat: 5;
   transition: all 500ms;
   z-index: 1;
+
   &:hover {
     transform: scale(1.4);
   }
@@ -40,52 +41,53 @@ a {
       fill: var(--color-primario);
       position: relative;
       bottom: 2px;
-      &:hover {
+    }
+
+    &:hover {
+      background-color: var(--color-naranja);
+      fill: white;
+
+      svg {
         fill: white;
       }
     }
-    &:hover {
-      fill: white;
-      color: white;
-      background-color: var(--color-naranja);
-    }
-
-  }
+}
 }
 
 .menu-superior {
   background-color: var(--color-azul-oscuro);
-  transition: all 500ms;
+
   padding: 10px;
   height: 70px;
 
-  a {
-    padding: 0;
-    cursor: pointer;
-    font-weight: 600;
-    color: white;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-
-  }
 
   ul {
+    font-weight: 500;
     .svg-img-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       cursor: pointer;
       animation: flipInX;
+      a {
+        padding: 0;
+        color: white;
+      }
+      &:hover {
+        svg{
+          fill: var(--color-naranja);
+        }
+        a{
+          color: var(--color-naranja);
+        }
+      }
 
       @media (min-width: 768px) and (max-width: 991px) {
         font-size: 13px;
       }
 
       .svg-image {
-        display: block;
-        width: 20px;
         margin: 0 auto;
-        transition: fill 0.3s ease;
-        height: auto;
         fill: var(--color-blanco);
 
         @media (min-width: 768px) and (max-width: 991px) {
@@ -111,32 +113,23 @@ a {
 
     }
 
-    .nav-item:hover .svg-img-text,
-    .nav-item:hover .svg-image,
-    .nav-item:hover .nav-link {
-      fill: var(--color-naranja);
-      color: var(--color-naranja);
-    }
+
 
     .btn-saldo {
       animation: flipInX;
       animation-duration: 2500ms;
+      .saldos {
+        background-color: var(--color-primario);
+        border: none;
+        font-size: 13px;
+        font-weight: 500;
+        &:hover {
+          background-color: var(--color-naranja);
+        }
+      }
+
     }
 
-    .saldos {
-      background-color: var(--color-primario);
-      border: none;
-      font-size: 13px;
-      padding: 5px 10px;
-    }
-
-    .saldos:hover {
-      background-color: var(--color-naranja);
-    }
-
-  }
-
-  a {
 
   }
 
@@ -163,6 +156,7 @@ a {
 
     li {
       list-style: none;
+
       a {
         color: white;
       }

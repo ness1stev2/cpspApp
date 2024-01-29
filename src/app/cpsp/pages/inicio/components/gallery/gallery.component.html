@@ -6,7 +6,8 @@
         <picture>
           <source media="(min-width: 576px)" [srcset]="gallery.path+'.webp'">
           <source media="(max-width: 576px)" [srcset]="gallery.path+'-movil.webp'">
-          <img width="1300" height="652" [alt]="gallery.alt" [src]="gallery.path+'.webp'" [loading]="i > 0 ? 'lazy' : 'auto'">
+          <!-- <img width="1300" height="652" [alt]="gallery.alt" [src]="gallery.path+'.webp'" [loading]="i > 0 ? 'lazy' : 'auto'"> -->
+          <img [alt]="gallery.alt" [src]="gallery.path+'.webp'" [loading]="i > 0 ? 'lazy' : 'auto'">
         </picture>
 
 
