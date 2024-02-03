@@ -1,11 +1,3 @@
-@import 'animate.css';
-@import '../../../app.component.scss';
-
-.header--asesoria {
-  @include header-styling('../../../../assets/joven-pareja-feliz-consultando-gerente-banco-reunion-oficina');
-}
-
-
 .asesoria-juridica {
   p {
     text-align: justify;

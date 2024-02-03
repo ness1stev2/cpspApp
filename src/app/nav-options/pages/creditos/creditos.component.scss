@@ -1,0 +1,117 @@
+.back-black {
+  background-color: var(--color-gris);
+}
+
+.credito-contaner {
+  width: 100%;
+  padding: 40px 10%;
+  margin: auto;
+
+
+  .credito-tipe {
+    font-size: 3rem;
+    color: var(--color-negro);
+    text-align: center;
+  }
+
+  .card-container {
+    padding: 40px 0px;
+    gap: 0px 80px;
+    justify-content: space-evenly;
+
+    .card-credito {
+      text-align: center;
+      cursor: pointer;
+
+      .card-credito-img {
+        background-size: cover;
+        width: 220px;
+        height: 220px;
+      }
+
+      .card-credito-title {
+        font-size: 1.2rem;
+        height: 85px;
+        color: var(--color-negro);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-credito-btn {
+        font-size: 1.1rem;
+        background-color: var(--color-primario);
+        color: var(--color-blanco);
+        height: 40px;
+        width: 110px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        transition: all 0.3s ease-out;
+      }
+    }
+
+
+    .card-credito-info {
+      width: 80%;
+      padding: 30px 15px;
+      height: auto;
+      background-color: var(--color-primario);
+      border-radius: 20px;
+      display: block;
+      width: 92%;
+      min-width: 300px;
+
+      .accordion {
+        .accordion-item {
+          margin-bottom: 15px;
+          border-radius: 10px;
+          overflow: hidden;
+
+          .accordion-header {
+            .accordion-button {
+              b {
+                color: var(--color-primario);
+              }
+            }
+          }
+        }
+      }
+
+      .card-credito-detalle {
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: var(--color-blanco);
+        text-align: center;
+      }
+
+      .card-credito-btn-simulador {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: bold;
+        background-color: var(--color-gris);
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 15px;
+        margin: auto auto 35px auto;
+        color: var(--color-naranja);
+        width: 65%;
+        max-width: 320px;
+
+        i {
+          margin-left: 5px;
+        }
+      }
+
+      .btnsinfo {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: var(--color-azul-oscuro);
+      }
+    }
+  }
+}

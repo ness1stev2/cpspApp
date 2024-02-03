@@ -3,7 +3,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { filter } from 'rxjs';
 import { CpspService } from '../../../cpsp/services/cpsp.service';
-import { Alianza } from '../../interfaces/alianzas.interface';
+import { Alianza } from '../../../interfaces/alianzas.interface';
 
 @Component({
   selector: 'app-alianzas',

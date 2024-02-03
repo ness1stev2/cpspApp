@@ -1,4 +1,4 @@
-import { Sucursal } from '../cpsp/interfaces/sucursal.interface';
+import { Sucursal } from '../interfaces/sucursal.interface';
 
 export const sucursalesData: Sucursal[] = [
   {

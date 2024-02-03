@@ -1,4 +1,4 @@
-import { CuatroBotones } from "../cpsp/interfaces/cuatro-botones.interface";
+import { CuatroBotones } from "../interfaces/cuatro-botones.interface";
 
 export const CuatroBotonesData: CuatroBotones[] = [
   {

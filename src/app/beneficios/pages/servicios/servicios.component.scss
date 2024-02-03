@@ -1,9 +1,3 @@
-@import 'animate.css';
-@import '../../../app.component.scss';
-.header--servicios {
-  @include header-styling('../../../../assets/emocionada-mujer-hermosa-parte-superior-recortada-verano-mira-asombrado-camara-comprando-tarjeta-credito-pie-sobre-fondo-azul');
-}
-
 .servicios{
   text-align: justify;
   img{

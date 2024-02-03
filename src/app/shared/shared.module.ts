@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './Pages/header/header.component';
-import { FooterComponent } from './Pages/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { RedesSocialesComponent } from './components/redes-sociales/redes-sociales.component';
-import { RouterModule } from '@angular/router';
+
+import { PortadaComponent } from './components/portada/portada.component';
 
 
 
@@ -12,15 +13,16 @@ import { RouterModule } from '@angular/router';
     RedesSocialesComponent,
     HeaderComponent,
     FooterComponent,
+    PortadaComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule
   ],
   exports: [
     RedesSocialesComponent,
     HeaderComponent,
     FooterComponent,
+    PortadaComponent,
   ]
 })
 export class SharedModule { }

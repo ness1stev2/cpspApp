@@ -1,12 +1,6 @@
-@import 'animate.css';
-@import '../../../app.component.scss';
-
-.header--inicio {
-  @include header-styling('../../../../assets/christin-hume-Hcfwew744z4-unsplash');
-}
-
 .aviso--container {
   padding: 60px 0;
+
   .aviso--container-desc {
     font-size: 1.1rem;
     white-space: pre-line;
@@ -16,10 +10,11 @@
     box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 60px;
     max-width: 1550px;
+
     .aviso--container-subtitle {
       font-size: 2rem;
       font-weight: 700;
-  }
+    }
 
   }
 }

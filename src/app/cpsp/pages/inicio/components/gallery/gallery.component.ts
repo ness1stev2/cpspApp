@@ -1,6 +1,6 @@
 import { CpspService } from 'src/app/cpsp/services/cpsp.service';
 import { Component } from '@angular/core';
-import { Gallery } from 'src/app/cpsp/interfaces/gallery.interface';
+import { Gallery } from 'src/app/interfaces/gallery.interface';
 
 @Component({
   selector: 'app-gallery',

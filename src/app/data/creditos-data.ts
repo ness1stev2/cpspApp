@@ -1,4 +1,4 @@
-import { Credito } from "../cpsp/interfaces/credito.interface";
+import { Credito } from "../interfaces/credito.interface";
 
 
 export const CreditosData: Credito[] = [
@@ -288,7 +288,7 @@ export const CreditosData: Credito[] = [
     <li> RFC con homoclave.</li><br>
     Los requisitos pueden variar de acuerdo al resultado del análisis del crédito o la
     integración del expediente en relación al monto de crédito solicitado.
- 
+
     Para más información, consulta con un ejecutivo en cualquiera de nuestras
     sucursales, quien con gusto te atenderá.
     </ul>`,

@@ -1,4 +1,4 @@
-import { Alianza } from "../revista-alianzas/interfaces/alianzas.interface";
+import { Alianza } from "../interfaces/alianzas.interface";
 
 export const AlianzasData: Alianza[] = [
   {

@@ -1,6 +1,13 @@
-import { NovEvent } from '../cpsp/interfaces/nov-event.interface';
+import { NovEvent } from '../interfaces/nov-event.interface';
 
 export const NovEventData: NovEvent[] = [
+  {
+    srcImg: "99",
+    altImg: "Inaguración sucursal Centro Sur",
+    title: "Inaguración sucursal Centro Sur",
+    description: "Imagenes Inaguración sucursal Centro Sur",
+    imagesGallery: ['99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '109', '110']
+  },
   {
     srcImg: "91",
     altImg: "Competencias Directivas",

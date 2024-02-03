@@ -1,4 +1,4 @@
-import { Gallery } from "../cpsp/interfaces/gallery.interface";
+import { Gallery } from "../interfaces/gallery.interface";
 
 export const GalleryData: Gallery[] = [
   {

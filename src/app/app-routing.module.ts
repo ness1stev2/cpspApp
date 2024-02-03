@@ -1,6 +1,6 @@
 import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CreditoSimuladorComponent } from './cpsp/components/creditos-simulador/creditos-simulador.component';
+import { CreditoSimuladorComponent } from './nav-options/components/creditos-simulador/creditos-simulador.component';
 
 
 const routes: Routes = [
@@ -8,6 +8,10 @@ const routes: Routes = [
   {
     path: 'inicio',
     loadChildren: () => import('./cpsp/cpsp.module').then( m => m.CpspModule )
+  },
+  {
+    path: 'servicio',
+    loadChildren: () => import('./nav-options/nav-options.module').then( m => m.NavOptionsModule )
   },
   {
     path: 'btns',

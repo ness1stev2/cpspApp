@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CuatroBotones } from 'src/app/cpsp/interfaces/cuatro-botones.interface';
+import { CuatroBotones } from 'src/app/interfaces/cuatro-botones.interface';
 import { CpspService } from 'src/app/cpsp/services/cpsp.service';
 
 @Component({

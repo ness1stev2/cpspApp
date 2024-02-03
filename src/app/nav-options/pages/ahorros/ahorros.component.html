@@ -1,0 +1,673 @@
+<portada-component title="CUENTAS DE DEPÓSITO" colorText="text-white" img="familia-mexicana-sonriente-tiro-medio" alt="familia-mexicana-sonriente-tiro-medio"></portada-component>
+
+  <section class="ahorros--container container">
+
+    <div class="card-container row no-padding justify-content-center">
+
+      <div class="card-ahorro d-flex col-6" (click)="toggleInfo(0)">
+        <div class="card-ahorro-img adulto"></div>
+        <div class="card-ahorro-title align-items-center">AHORRO ADULTO</div>
+      </div>
+
+      <div class="card-ahorro-info" [ngStyle]="{'display': isActive[0] ? 'block' : 'none'}">
+        <div class="card-ahorro-title title-sub">AHORRO ADULTO</div>
+        <div class="card-ahorro-desc">Cuenta dónde se realizan depósitos en moneda nacional
+          cuyo saldo recibe un interés anual fijo.</div>
+
+        <div class="accordion pt-4 accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <b>CARACTERÍSTICAS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Es una cuenta de depósito a la vista que genera rendimientos anuales fijos.</li>
+                  <li>Cuenta destinada a fomentar en el Socio el hábito y cultura del ahorro mediante depósitos
+                    sistemáticos y de la permanencia de sus saldos.</li>
+                  <li>Se pueden realizar depósitos y retiros sin ningún tipo de restricción o aviso previo.</li>
+                  <li>La disposición del saldo total o parcial será a la vista mientras no mantengas un compromiso
+                    de reciprocidad por un préstamo otorgado.</li>
+                  <li>Los depósitos y retiros de dinero podrán efectuarse en cualquier sucursal de la Cooperativa.
+                  </li>
+                  <li>Sin cobro de comisiones.</li>
+                  <li>Apertura de cuenta en cualquiera de nuestras sucursales.</li>
+                  <li>Operaciones en Moneda Nacional.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <b>VENTAJAS Y BENEFICIOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>El saldo de tu ahorro podrá ser considerado como reciprocidad para solicitar un préstamo.</li>
+                  <li>No existe cobro por apertura de cuenta.</li>
+                  <li>Te permite elegir la periodicidad de depósitos que más se adapte a tus posibilidades: diario,
+                    semanal, quincenal o mensual.</li>
+                  <li>Participar en diferentes promociones durante el año.*</li>
+                  <li>En caso de fallecimiento al beneficiario se le otorgara un monto adicional al saldo del ahorro
+                    registrado al momento del deceso. **</li>
+                  <li>Así mismo, en caso de fallecimiento, Caja San Pablo te proporciona apoyo para gastos
+                    funerarios.***</li>
+                </ul>
+
+                *Aplican restricciones y sujeto al cumplimiento de políticas que se darán a conocer mediante las
+                vías de comunicación oficiales de la Cooperativa. <br>
+                **Los detalles de estos montos están sujetos a los términos y condiciones que se dan a conocer al
+                momento de la contratación del producto.<br>
+                ***Aplican restricciones y sujeto al cumplimiento de políticas que se darán a conocer mediante los
+                medios de avisos oficiales de la Cooperativa.<br>
+
+                Producto garantizado por el Fideicomiso Fondo de Supervisión Auxiliar de Sociedades Cooperativas de
+                Ahorro y Préstamo y de Protección a sus Ahorradores por 25,000 UDIS (Unidades de Inversión) por
+                persona.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <b>REQUISITOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Ser Socio de la Cooperativa</li>
+                  <li>Tener cubierta la parte social de $1,000.00 (un mil pesos 00/100 m.n.)</li>
+                  <li>Monto mínimo de apertura: $1.00 (un peso moneda nacional 00/100 m.n.).</li>
+                  <li>Para mayor información consulta en tu sucursal más cercana o llámanos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <b>CONSIDERACIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <b>(Ganancia Anual Total Neta) GAT Real</b><br>
+                -2.36% <br><br>
+
+                <b>Antes de impuestos</b><br>
+                "La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada".
+                "Para fines informativos y de comparación"
+                Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).
+                <br><br>
+                <b>Tasa de interés ordinaria anual fija</b><br>
+                1.50%
+                Tasas de interés expresadas antes de impuestos.
+                <br><br>
+                <b>GAT Nominal</b><br>
+                1.51%
+                "Antes de impuestos"
+                "Para fines informativos y de comparación"
+                GAT: Ganancia Anual Total Neta.
+                Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100 M/N).
+                <br><br>
+
+                <b>Fecha de cálculo 15 de Diciembre 2023<br>
+                  Vigencia - Enero/Junio 2024</b>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <b>RECOMENDACIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Destina al menos el 10% de tus ingresos mensuales al ahorro: verás que luego de algunos meses,
+                    contarás con un dinero extra que te caerá muy bien para afrontar algún imprevisto o darte un
+                    gusto.</li>
+                  <li>Es importante que tengas asignados a los beneficiarios de tu cuenta.</li>
+                  <li>Recuerda que el plazo máximo para aclaraciones o reclamaciones es de 90 días.</li>
+                  <li>Revisa tú comprobante de depósito cada que realices un movimiento (depósito y/o retiro).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                <b>COMISIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                ESTE PRODUCTO NO COBRA COMISIÓN ALGUNA POR SU CONTRATACIÓN O USO
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card-ahorro d-flex col-6" (click)="toggleInfo(1)">
+        <div class="card-ahorro-img menores"></div>
+        <div class="card-ahorro-title align-items-center">AHORRO MENORES</div>
+      </div>
+
+      <div class="card-ahorro-info" [ngStyle]="{'display': isActive[1] ? 'block' : 'none'}">
+        <div class="card-ahorro-title title-sub">AHORRO MENORES</div>
+        <div class="card-ahorro-desc">Cuenta dónde se realizan depósitos en moneda nacional, cuyo propósito es inculcar
+          el hábito del ahorro a los menores de edad de 1 a 17 años.</div>
+
+        <div class="accordion pt-4 accordion-flush" id="accordionFlush2">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingEight2">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseEight2" aria-expanded="false" aria-controls="flush-collapseEight2">
+                <b>CARACTERÍSTICAS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseEight2" class="accordion-collapse collapse" aria-labelledby="flush-headingEight2"
+              data-bs-parent="accordionFlush2">
+              <div class="accordion-body">
+                <ul>
+                  <li>Es una cuenta de depósito a la vista que genera rendimientos anuales fijos.</li>
+                  <li>La cuenta quedará a nombre de menor, quedando como responsable madre, padre o tutor legalmente
+                    reconocido.</li>
+                  <li>Se pueden realizar depósitos y retiros sin ningún tipo de restricción o aviso previo, en
+                    cualquiera de nuestras sucursales.</li>
+                  <li>Los retiros de la cuenta se efectuarán bajo la firma e identificación del padre o tutor del
+                    menor hasta la edad de 18 años.</li>
+                  <li>Apertura en cualquiera de nuestras sucursales en el Estado de Jalisco.</li>
+                  <li>Operaciones en Moneda nacional.</li>
+                  <li>Sin cobro de comisiones.</li>
+                  <li>Los beneficiarios de esta cuenta serán los que designe el padre o tutor.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingNine2">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseNine2" aria-expanded="false" aria-controls="flush-collapseNine2">
+                <b>VENTAJAS Y BENEFICIOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseNine2" class="accordion-collapse collapse" aria-labelledby="flush-headingNine2"
+              data-bs-parent="#accordionFlush2">
+              <div class="accordion-body">
+
+                <ul>
+                  <li>Podrás consultar tu saldo o disponer de tu efectivo mediante tu madre, padre o tutor
+                    legalmente reconocido.</li>
+                  <li>No existe cobro por apertura.</li>
+                  <li>Al mantener un ahorro constante, tienes la oportunidad de participar en las promociones
+                    especialesque preparamos especialmente para ti.*</li>
+                  <li>Así mismo, en caso de fallecimiento, Caja San Pablo proporciona apoyo para gastos funerarios.
+                    **</li>
+                </ul>
+
+                <b>*Aplican restricciones y sujeto al cumplimiento de políticas que se darán a conocer mediante las
+                  vías de comunicación oficiales de la Cooperativa.</b><br>
+                <b>**Los detalles de este plan de protecciones y apoyos funerarios, están sujetos a los términos y
+                  condiciones que se dan a conocer al momento de la contratación del producto.</b><br><br>
+
+                Producto garantizado por el Fideicomiso Fondo de Supervisión Auxiliar de Sociedades Cooperativas de
+                Ahorro y Préstamo y de Protección a sus Ahorradores por 25,000 UDIS (Unidades de Inversión) por
+                persona.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTen">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                <b>REQUISITOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
+              data-bs-parent="#accordionFlush2">
+              <div class="accordion-body">
+                <ul>
+                  <li>Monto mínimo de apertura: $1.00 (un peso moneda nacional 00/100 m.n.).</li>
+                  <li>La cuenta deberá ser contratada por el padre o tutor legal del Ahorrador Menor.</li>
+                  <li>Presentar original del acta de nacimiento y CURP del menor, un comprobante de domicilio y la
+                    identificación oficial del padre o tutor.</li>
+                  <li>Para mayor información consulta en tu sucursal más cercana o llámanos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingEleven">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                <b>CONSIDERACIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven"
+              data-bs-parent="#accordionFlush2">
+              <div class="accordion-body">
+                <b>(Ganancia Anual Total Neta) GAT Real</b><br>
+                -2.36%<br><br>
+
+                <b>Antes de impuestos</b><br>
+                "La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada".
+                "Para fines informativos y de comparación"
+                Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100
+                M/N).<br><br>
+
+                <b>Tasa de interés ordinaria anual fija</b><br>
+                1.50%
+                Tasas de interés expresadas antes de impuestos.<br><br>
+
+                <b>GAT Nominal</b><br>
+                1.51%
+                "Antes de impuestos"
+                "Para fines informativos y de comparación"
+                GAT: Ganancia Anual Total Neta.
+                Monto mínimo requerido para obtener la tasa de interés anual es de $100.00
+                (Cien Pesos 00/100 M/N).<br><br>
+
+                <b>Fecha de cálculo 15 de Diciembre 2023<br>
+                  Vigencia - Enero/Junio 2024</b>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTwelve">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                <b>RECOMENDACIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve"
+              data-bs-parent="#accordionFlush2">
+              <div class="accordion-body">
+                <ul>
+                  <li>Fomentar a los menores el hábito del ahorro como parte de su formación personal, para alcanzar
+                    sus metas a corto, mediano o largo plazo. Es importante que tengas asignados a los beneficiarios
+                    de tu cuenta.</li>
+                  <li>Revisa tú comprobante de depósito cada que realices un movimiento.</li>
+                  <li>Recuerda que el plazo máximo para aclaraciones o reclamaciones es de 90 días.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFourteen">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+                <b>COMISIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen"
+              data-bs-parent="#accordionFlush2">
+              <div class="accordion-body">
+                ESTE PRODUCTO NO COBRA COMISIÓN ALGUNA POR SU CONTRATACIÓN O USO
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card-ahorro d-flex col-6" (click)="toggleInfo(2)">
+        <div class="card-ahorro-img corriente"></div>
+        <div class="card-ahorro-title align-items-center">CUENTA CORRIENTE</div>
+      </div>
+
+      <div class="card-ahorro-info" [ngStyle]="{'display': isActive[2] ? 'block' : 'none'}">
+        <div class="card-ahorro-title title-sub">CUENTA CORRIENTE</div>
+        <div class="card-ahorro-desc">Cuenta dónde se realizan depósitos en moneda nacional, con disponibilidad
+          inmediata.</div>
+        <div class="accordion pt-4 accordion-flush" id="accordionFlushExample3">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingOne3">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne3">
+                <b>CARACTERÍSTICAS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne3"
+              data-bs-parent="#accordionFlushExample3">
+              <div class="accordion-body">
+                <ul>
+                  <li>Es una cuenta de depósito a la vista.</li>
+                  <li>Se pueden realizar depósitos y retiros sin ningún tipo de restricción o aviso previo en
+                    cualquierade nuestras sucursales.</li>
+                  <li>Operaciones en moneda nacional.</li>
+                  <li>Sin cobro de comisiones.</li>
+                  <li>Para efectuar retiros solo deberás presentar tu identificación oficial vigente con fotografía.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTwo3">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo3" aria-expanded="false" aria-controls="flush-collapseTwo3">
+                <b>VENTAJAS Y BENEFICIOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo3" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo3"
+              data-bs-parent="#accordionFlushExample3">
+              <div class="accordion-body">
+                <ul>
+                  <li>Depósitos y retiros ilimitados a través de cualquiera de nuestras sucursales.</li>
+                  <li>Disponibilidad inmediata de tu dinero.</li>
+                  <li>No requiere un saldo mínimo a mantener.</li>
+                </ul>
+
+                Producto garantizado por el Fideicomiso Fondo de Supervisión Auxiliar de Sociedades Cooperativas de
+                Ahorro y Préstamo y de Protección a sus Ahorradores por 25,000 UDIS (Unidades de Inversión) por
+                persona.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingThree3">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+                <b>REQUISITOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseThree3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree3"
+              data-bs-parent="#accordionFlushExample3">
+              <div class="accordion-body">
+                <ul>
+                  <li>Monto mínimo de apertura: $1.00 (un peso moneda nacional 00/100 m.n.).</li>
+                  <li>Ser Socio de la Cooperativa.</li>
+                  <li>Para mayor información consulta en tu sucursal más cercana o llámanos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFour3">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour3" aria-expanded="false" aria-controls="flush-collapseFour3">
+                <b>CONSIDERACIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseFour3" class="accordion-collapse collapse" aria-labelledby="flush-headingFour3"
+              data-bs-parent="#accordionFlushExample3">
+              <div class="accordion-body">
+                <b>(Ganancia Anual Total Neta) GAT Real</b><br>
+                -3.81%<br><br>
+
+                <b>Antes de impuestos</b><br>
+                "La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada".
+                "Para fines informativos y de comparación"
+                Monto mínimo requerido para obtener la tasa de interés anual es de $100.00 (Cien Pesos 00/100
+                M/N).<br><br>
+
+                <b>Tasa de interés ordinaria anual fija</b><br>
+                0.00%
+                Tasas de interés expresadas antes de impuestos.<br><br>
+
+                <b>GAT Nominal</b><br>
+                0.00%
+                "Antes de impuestos"
+                "Para fines informativos y de comparación"
+                GAT: Ganancia Anual Total Neta.<br><br>
+
+
+                <b>Fecha de cálculo 15 de Diciembre 2023<br>
+                  Vigencia - Enero/Junio 2024</b>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFive3">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive3" aria-expanded="false" aria-controls="flush-collapseFive3">
+                <b>RECOMENDACIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseFive3" class="accordion-collapse collapse" aria-labelledby="flush-headingFive3"
+              data-bs-parent="#accordionFlushExample3">
+              <div class="accordion-body">
+                Revisa tú comprobante de depósito cada que realices un movimiento.<br>
+                Recuerda que el plazo máximo para aclaraciones o reclamaciones es de 90 días.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingSix3">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix3" aria-expanded="false" aria-controls="flush-collapseSix3">
+                <b>RIESGOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseSix3" class="accordion-collapse collapse" aria-labelledby="flush-headingSix3"
+              data-bs-parent="#accordionFlushExample3">
+              <div class="accordion-body">
+                <ul>
+                  <li>Incumplir tus obligaciones te puede generar cargos por intereses moratorios.</li>
+                  <li>Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio.</li>
+                  <li>El avalista, obligado solidario o coacreditado responderá como obligado principal por el total
+                    del pago frente a la Institución Financiera</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingSeven3">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven3" aria-expanded="false" aria-controls="flush-collapseSeven3">
+                <b>COMISIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseSeven3" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven3"
+              data-bs-parent="#accordionFlushExample3">
+              <div class="accordion-body">
+                ESTE PRODUCTO NO COBRA COMISIÓN ALGUNA POR SU CONTRATACIÓN O USO
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card-ahorro d-flex col-6" (click)="toggleInfo(3)">
+        <div class="card-ahorro-img fijo"></div>
+        <div class="card-ahorro-title align-items-center justify-content-center">PLAZO FIJO</div>
+      </div>
+
+      <div class="card-ahorro-info" [ngStyle]="{'display': isActive[3] ? 'block' : 'none'}">
+        <div class="card-ahorro-title title-sub">PLAZO FIJO</div>
+        <div class="card-ahorro-desc">Cuenta de inversión que te permite depositar dinero en moneda nacional,
+          durante el plazo único de 28 días, generando rendimientos al término del plazo contratado.</div>
+        <div class="accordion pt-4 accordion-flush" id="accordionFlushExample4">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingOne4">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne4">
+                <b>CARACTERÍSTICAS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne4"
+              data-bs-parent="#accordionFlushExample4">
+              <div class="accordion-body">
+
+                <ul>
+                  <li>Cuenta de depósito a plazo fijo en la cual el capital se liquida únicamente al vencimiento del
+                    plazo pactado, y los intereses serán pagaderos al término del plazo de la inversión (28 días).
+                  </li>
+                  <li>Plazo único de 28 días.</li>
+                  <li>Tasa de interés anual fija, el rendimiento depende del monto depositado.</li>
+                  <li>Contratación en cualquiera de nuestras sucursales.</li>
+                  <li>Puedes contratar varias inversiones, por diferentes cantidades y en diferentes fechas
+                    devencimiento.</li>
+                  <li>Operaciones en Moneda Nacional.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTwo4">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo4" aria-expanded="false" aria-controls="flush-collapseTwo4">
+                <b>VENTAJAS Y BENEFICIOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo4" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo4"
+              data-bs-parent="#accordionFlushExample4">
+              <div class="accordion-body">
+                <ul>
+                  <li>Reinversión automática.</li>
+                  <li>Al vencimiento, podrás disponer de tu inversión, transferir a tu cuenta de depósito de ahorro
+                    y/o cuenta corriente.</li>
+                  <li>Tasa de rendimiento fija durante el plazo de tu inversión.</li>
+                  <li>Tienes una opción accesible que te permite comenzar a invertir con tan solo $5,000.00 (Cinco
+                    mil pesos 00/100 m.n.)</li>
+                </ul>
+                Producto garantizado por el Fideicomiso Fondo de Supervisión Auxiliar de Sociedades Cooperativas de
+                Ahorro y Préstamo y de Protección a sus Ahorradores por 25,000 UDIS (Unidades de Inversión) por
+                persona.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingThree4">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree4" aria-expanded="false" aria-controls="flush-collapseThree4">
+                <b>REQUISITOS</b>
+              </button>
+            </h2>
+            <div id="flush-collapseThree4" class="accordion-collapse collapse" aria-labelledby="flush-headingThree4"
+              data-bs-parent="#accordionFlushExample4">
+              <div class="accordion-body">
+                <ul>
+                  <li>Ser Socio de la Cooperativa.</li>
+                  <li>Monto mínimo de apertura: $5,000.00 (Cinco mil pesos 00/100 m.n.).</li>
+                  <li>Firma del contrato correspondiente.</li>
+                  <li>Contrata en cualquier Sucursal de la Cooperativa.</li>
+                  <li>Para mayor información consulta en tu sucursal más cercana o llámanos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFive4">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive4" aria-expanded="false" aria-controls="flush-collapseFive4">
+                <b>CONSIDERACIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseFive4" class="accordion-collapse collapse" aria-labelledby="flush-headingFive4"
+              data-bs-parent="#accordionFlushExample4">
+              <div class="accordion-body">
+                <b>Tasa de interés ordinaria anual fija:</b><br> ver tabla ya que depende de los montos en inversión
+                (Tasas de interés expresadas antes de impuestos).<br><br>
+
+                <b>GAT Nominal "Antes de impuestos"</b><br>
+                "Para fines informativos y de comparación".
+                GAT: Ganancia Anual Total Neta.
+                GAT Nominal Calculado sobre un monto de inversión de $5,000.00
+                (Cinco mil Pesos 00/100 M/N).<br><br>
+
+                <b>Ganancia Anual Total Neta GAT</b><br>
+                <b>"Antes de impuestos".</b><br>
+                <b>"La GAT Real es el rendimiento que obtendría después de descontar la inflación estimada".</b><br>
+                <b>"Para fines informativos y de comparación".</b><br>
+                <b>GAT REAL Calculado sobre un monto de inversión de $5,000.00 (Cinco mil pesos 00/100 M/N).</b>
+
+                <div class="table-wrapper">
+                  <div class="container scroll">
+                    <table class="table " cellspacing="0">
+                      <thead>
+                        <tr class="table-heads">
+                          <th class="head-item mbr-fonts-style fs-2 display-5">RANGOS</th>
+                          <th class="head-item mbr-fonts-style fs-2 display-5">PLAZO</th>
+                          <th class="head-item mbr-fonts-style fs-2 display-5">TASA DE INTERES FIJA</th>
+                          <th class="head-item mbr-fonts-style fs-2 display-5">GAT NOMINAL</th>
+                          <th class="head-item mbr-fonts-style fs-2 display-5">GAT REAL</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="body-item mbr-fonts-style display-7">De $5,000 a $10,999.99</td>
+                          <td class="body-item mbr-fonts-style text-center display-7">28 Días</td>
+                          <td class="body-item mbr-fonts-style text-center display-7">3.75%</td>
+                          <td class="body-item mbr-fonts-style display-5"><strong>3.82%</strong></td>
+                          <td class="body-item mbr-fonts-style display-6"><strong>-0.14%</strong></td>
+                        </tr>
+                        <tr>
+                          <td class="body-item mbr-fonts-style display-7">De $11,000 a $30,999.99</td>
+                          <td class="body-item mbr-fonts-style text-center display-7">28 Días</td>
+                          <td class="body-item mbr-fonts-style text-center display-7">3.95%</td>
+                          <td class="body-item mbr-fonts-style display-5"><strong>4.02%</strong></td>
+                          <td class="body-item mbr-fonts-style display-6"><strong>0.06%</strong></td>
+                        </tr>
+                        <tr>
+                          <td class="body-item mbr-fonts-style display-7">De $31,000 a $99,999.99</td>
+                          <td class="body-item mbr-fonts-style text-center display-7">28 Días</td>
+                          <td class="body-item mbr-fonts-style text-center display-7">4.25%</td>
+                          <td class="body-item mbr-fonts-style display-5"><strong>4.33%</strong></td>
+                          <td class="body-item mbr-fonts-style display-6"><strong>0.36%</strong></td>
+                        </tr>
+                        <tr>
+                          <td class="body-item mbr-fonts-style display-7">De $100,000 o más</td>
+                          <td class="body-item mbr-fonts-style text-center display-7">28 Días</td>
+                          <td class="body-item mbr-fonts-style text-center display-7">4.75%</td>
+                          <td class="body-item mbr-fonts-style display-5"><strong>4.86%</strong></td>
+                          <td class="body-item mbr-fonts-style display-6"><strong>0.86%</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <b>Fecha de cálculo 15 de Diciembre 2023<br>
+                  Vigencia - Enero/Junio 2024</b>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingSeven4">
+              <button class="accordion-button collapsed card-ahorro-info-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven4" aria-expanded="false" aria-controls="flush-collapseSeven4">
+                <b>COMISIONES</b>
+              </button>
+            </h2>
+            <div id="flush-collapseSeven4" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven4"
+              data-bs-parent="#accordionFlushExample4">
+              <div class="accordion-body">
+                ESTE PRODUCTO NO COBRA COMISIÓN ALGUNA POR SU CONTRATACIÓN O USO
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+

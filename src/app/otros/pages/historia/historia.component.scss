@@ -1,10 +1,3 @@
-@import 'animate.css';
-@import '../../../app.component.scss';
-
-.header--historia {
-  @include header-styling('../../../../assets/historiaimg');
-}
-
 .historia {
   background-color: #ffffff;
   position: relative;
@@ -16,32 +9,32 @@
 
   .quienes--somos-title {
     font-size: 2.5rem;
-    color: var(--color-secundario);
+    color: var(--color-primario);
     text-align: center;
   }
 
   .quienes--somos-desc {
-    font-size: 1rem;
+    text-align: justify;
+    font-size: 1.2rem;
     color: var(--color-negro);
     white-space: pre-line;
     margin: 20px 0px;
-    text-align: center;
   }
 }
 
 .quienes-somos {
   .quienes--somos-title {
     font-size: 2.5rem;
-    color: var(--color-secundario);
+    color: var(--color-primario);
     text-align: center;
   }
 
   .quienes--somos-desc {
-    font-size: 1rem;
+    text-align: justify;
+    font-size: 1.2rem;
     color: var(--color-negro);
     white-space: pre-line;
     margin: 20px 0px;
-    text-align: center;
   }
 
 
@@ -74,7 +67,7 @@
 
   .quienes--somos-title {
     font-size: 2.5rem;
-    color: var(--color-secundario);
+    color: var(--color-primario);
     text-align: center;
   }
 
