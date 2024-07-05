@@ -1,0 +1,36 @@
+.gallery {
+  overflow: hidden;
+  animation: fadeIn;
+  animation-duration: 1s;
+  max-width: 1300px;
+  margin: 0 auto;
+  box-shadow: black 0px 0px 20px -5px;
+
+  @media (min-width: 768px) {
+    border-radius: 0 0 20px 20px;
+  }
+
+  picture{
+    img{
+      width: 100%;
+      height: auto;
+      max-height: 652px;
+      object-fit: cover;
+    }
+  }
+
+  .btnGallery {
+    min-width: fit-content;
+    text-align: center;
+    border-radius: 45px;
+    width: 20%;
+    font-weight: 700;
+    padding: 10px;
+    position: absolute;
+    transition: all 1s ease;
+    &:hover {
+      transform: scale(1.7);
+    }
+  }
+
+}

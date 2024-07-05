@@ -1,0 +1,184 @@
+.contactanos-flotante {
+  position: fixed;
+  top: 90%;
+  right: 4%;
+  animation: bounce 3s 3s 5;
+  /* animation-name, animation-duration, animation-delay, animation-iteration-count */
+  transition: all 500ms;
+  z-index: 1;
+
+  &:hover {
+    transform: scale(1.4);
+  }
+}
+
+.avisos-importantes {
+  background-color: var(--color-primario);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 30px;
+
+  a {
+    background-color: white;
+    border-radius: 30px;
+    padding: 3px 7px;
+    transition: all 500ms;
+    cursor: pointer;
+
+    svg {
+      width: 17px;
+      height: auto;
+      fill: var(--color-primario);
+      position: relative;
+      bottom: 2px;
+    }
+
+    &:hover {
+      background-color: var(--color-naranja);
+      fill: white;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+}
+
+.menu-superior {
+  background-color: var(--color-azul-oscuro);
+  padding: 10px;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  a {
+    cursor: pointer;
+    color: white;
+  }
+
+  ul {
+    font-weight: 500;
+
+    .svg-img-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      animation: flipInX;
+
+
+      .ruta-activa{
+        color: var(--color-naranja);
+        .svg-image {
+          fill: var(--color-naranja);
+        }
+      }
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          color: var(--color-naranja);
+
+          .svg-image {
+            fill: var(--color-naranja);
+          }
+        }
+
+        .ruta-activa{
+          fill: var(--color-naranja);
+          color: var(--color-naranja);
+        }
+        .svg-image {
+          margin: 0 auto;
+          fill: var(--color-blanco);
+
+
+          @media (min-width: 768px) and (max-width: 991px) {
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 13px;
+      }
+
+    }
+
+    .svg-img-text:nth-child(1) {
+      animation-duration: 500ms;
+    }
+
+    .svg-img-text:nth-child(2) {
+      animation-duration: 1000ms;
+    }
+
+    .svg-img-text:nth-child(3) {
+      animation-duration: 1500ms;
+    }
+
+    .svg-img-text:nth-child(4) {
+      animation-duration: 2000ms;
+
+    }
+
+
+
+    .btn-saldo {
+      animation: flipInX;
+      animation-duration: 2500ms;
+
+      .saldos {
+        background-color: var(--color-primario);
+        border: none;
+        font-size: 13px;
+        font-weight: 500;
+
+        &:hover {
+          background-color: var(--color-naranja);
+        }
+      }
+
+    }
+
+
+  }
+
+  .menu-icon {
+    /* Ocultar el menú desplegable en pantallas grandes */
+    cursor: pointer;
+    animation: fadeIn;
+    animation-duration: 1000ms;
+  }
+
+  .menu-desplegable {
+    background-color: var(--color-azul-oscuro);
+    position: absolute;
+    width: 100%;
+    top: 68px;
+    right: 0px;
+    text-align: end;
+    z-index: 2;
+    padding: 15px;
+
+    .linea-horizontal {
+      color: white;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+}

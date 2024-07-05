@@ -1,0 +1,121 @@
+{
+  "creditos": [
+    {
+      "id": "ordinario",
+      "nombre": "Ordinario",
+      "montoMin": 500,
+      "montoMax": 300000,
+      "plazoMin": 2,
+      "plazoMax": 60,
+      "interesMen": 1.8
+    },
+    {
+      "id": "credilomio",
+      "nombre": "Credilomio",
+      "montoMin": 500,
+      "montoMax": "90%",
+      "plazoMin": 2,
+      "plazoMax": 36,
+      "interesMen": 1
+    },
+    {
+      "id": "credileal",
+      "nombre": "Credileal",
+      "montoMin": 500,
+      "montoMax": 100000,
+      "plazoMin": 2,
+      "plazoMax": 60,
+      "interesMen": 1.5
+    },
+    {
+      "id": "automovil",
+      "nombre": "Automovil",
+      "montoMin": 50000,
+      "montoMax": 400000,
+      "plazoMin": 2,
+      "plazoMax": 72,
+      "interesMen": 1.2
+    },
+    {
+      "id": "credisolidario",
+      "nombre": "Credisolidario",
+      "montoMin": 5000,
+      "montoMax": 80000,
+      "plazoMin": 6,
+      "plazoMax": 48,
+      "interesMen": 2
+    },
+    {
+      "id": "alternativo",
+      "nombre": "Alternativo",
+      "montoMin": 500,
+      "montoMax": "90%",
+      "plazoMin": 2,
+      "plazoMax": 36,
+      "interesMen": 1
+    },
+    {
+      "id": "ordinario-hipotecario",
+      "nombre": "Ordinario Hipotecario",
+      "montoMin": 500,
+      "montoMax": "90%",
+      "plazoMin": 2,
+      "plazoMax": 36,
+      "interesMen": 1
+    },
+    {
+      "id": "micronegocio",
+      "nombre": "Micronegocio",
+      "montoMin": 1000,
+      "montoMax": 20000,
+      "plazoMin": 6,
+      "plazoMax": 12,
+      "interesMen": 1.5
+    },
+    {
+      "id": "emprende",
+      "nombre": "Emprende",
+      "montoMin": 10000,
+      "montoMax": 100000,
+      "plazoMin": 2,
+      "plazoMax": 48,
+      "interesMen": 0.75
+    },
+    {
+      "id": "prestamovil",
+      "nombre": "Prestamóvil",
+      "montoMin": 50000,
+      "montoMax": 1400000,
+      "plazoMin": 2,
+      "plazoMax": 72,
+      "interesMen": 1.2
+    },
+    {
+      "id": "comercial-avio",
+      "nombre": "Comercial Avío",
+      "montoMin": 5000,
+      "montoMax": "80%",
+      "plazoMin": 6,
+      "plazoMax": 60,
+      "interesMen": 1.8
+    },
+    {
+      "id": "comercial-refaccionario",
+      "nombre": "Comercial Refaccionario",
+      "montoMin": 5000,
+      "montoMax": "80%",
+      "plazoMin": 6,
+      "plazoMax": 60,
+      "interesMen": 1.8
+    },
+    {
+      "id": "vivienda",
+      "nombre": "Vivienda",
+      "montoMin": 200000,
+      "montoMax": "",
+      "plazoMin": 12,
+      "plazoMax": 240,
+      "interesMen": 0.8
+    }
+  ]
+}

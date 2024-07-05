@@ -1,0 +1,27 @@
+<portada-component title="SUCURSALES" colorText="text-white" img="mujer sucursales" alt="Mujer sosteniendo un mapa y un celular"></portada-component>
+
+<section class="sucursales">
+  <div class="container py-5">
+    <div class="card-container row justify-content-evenly">
+
+      <div *ngFor="let sucursal of sucursales" [class]="sucursal.class+' card-suc col'">
+        <a [href]="sucursal.link" target="_blank">
+          <div class="card-suc-title-btn">
+            <div class="card-suc-title">{{sucursal.title}}</div>
+            <div class="card-suc-btng">
+              <img loading="lazy" src="assets/icon/mapas-de-google.webp" width="16px" height="16px" alt="pin-mapa">
+              <p>Obtener dirección</p>
+            </div>
+          </div>
+          <div class="card-suc-inf">
+            <div class="card-suc-inf-title">Teléfono</div>
+            <div class="card-suc-inf-numbers">{{sucursal.telefono}}</div>
+            <div class="card-suc-inf-title">Horario</div>
+            <div class="card-suc-inf-numbers">{{sucursal.horario}}</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>

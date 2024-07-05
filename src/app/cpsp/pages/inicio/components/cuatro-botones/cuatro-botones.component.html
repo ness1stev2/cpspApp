@@ -1,0 +1,29 @@
+<div class="cuatro-botones">
+  <div class="container">
+    <section class="my-5 gap-5 row align-items-start">
+
+      <div *ngFor="let boton of cuatroBotones" class="col d-flex flex-column align-items-center">
+        <a *ngIf="boton.ruta;else botonpdf" [routerLink]="boton.ruta" class="text-decoration-none animate__animated animate__fadeIn animate__slow">
+          <div class="image-wrapper position-relative">
+            <div class="overlay position-absolute"></div>
+            <img [src]="boton.img+'.webp'" [alt]="boton.alt" loading="lazy" width="250px" height="250px" style="border-radius: 7%;box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);">
+            <div class="hover-text">Leer más</div>
+          </div>
+          <div class="card-content-text">{{ boton.nombre }}</div>
+        </a>
+
+        <ng-template #botonpdf>
+          <a [href]="boton.pdf" target="_blank" class="text-decoration-none animate__animated animate__fadeIn animate__slow">
+            <div class="image-wrapper position-relative">
+              <div class="overlay position-absolute"></div>
+              <img [src]="boton.img+'.webp'" [alt]="boton.alt" loading="lazy" width="250px" height="250px" style="border-radius: 7%;box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);">
+              <div class="hover-text">Leer más</div>
+            </div>
+            <div class="card-content-text">{{ boton.nombre }}</div>
+          </a>
+        </ng-template>
+      </div>
+
+    </section>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+.buro {
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .tabla {
+    .btn {
+      position: absolute;
+      top: 90%;
+      left: 95%;
+      transform: translate(-50%, -50%);
+      color: green;
+      background-color: #e0e3e1;
+      width: 9%;
+      padding: 0px;
+    }
+  }
+
+  .btn-consulta {
+    .btn {
+      background-color: var(--color-secundario);
+      width: fit-content;
+      padding: 10px;
+      border-radius: 12px;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+      margin: 20px 0px;
+    }
+  }
+}

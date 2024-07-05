@@ -1,0 +1,38 @@
+<portada-component title="ALIANZAS ESTRATÉGICAS" colorText="text-black" img="bolsa de trabajo"
+  alt="apreton manos socios comerciales reunion grupo que hace inversion proyecto primer"></portada-component>
+
+<section class="grid">
+
+  <div class="container">
+    <div class="row gap-3 justify-content-evenly">
+
+      <div class="item col-3" *ngFor="let alianza of alianzas">
+        <div class="item-contenido">
+          <img [src]="'assets/'+ alianza.img+'.webp'" [alt]="alianza.img">
+        </div>
+        <h2>{{alianza.nombre}}</h2>
+        <span>{{alianza.beneficio}}</span>
+        <!-- <ul class="ctn-tag p-0">
+          <li *ngFor="let categoria of alianza.categoria">{{ categoria }}</li>
+        </ul> -->
+        <div class="d-flex gap-2 p-3" style="width: 100%; list-style: none;">
+
+            <a href=""><img class="" src="assets/icon/facebook.png" alt=""></a>
+
+            <a href=""><img class="" src="assets/icon/instagram.png" alt=""></a>
+
+            <a href=""><img class="" src="assets/icon/youtube.png" alt=""></a>
+
+            <a href=""><img class="" src="assets/icon/tik-tok.png" alt=""></a>
+
+            <a href=""><img class="" src="assets/icon/x.png" alt=""></a>
+
+        </div>
+        <a [href]="'assets/pdf/'+ alianza.pdfName" target="_blank"><button>Leer más</button></a>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>

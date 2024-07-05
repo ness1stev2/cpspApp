@@ -1,0 +1,38 @@
+
+
+<portada-component title="BUZÓN DE COMENTARIOS" colorText="text-black" img="buzon de comentarios" alt="Mujer con laptop sentada sonriendo"></portada-component>
+
+
+<section class="buzon-option">
+  <div class="container">
+    <div class="buzon-option-title">ELIJE UNA DE LAS OPCIONES</div>
+    <div class="buzon-option-btns d-flex justify-content-evenly">
+      <div class="btn administrativo" (click)="toggleInfo2()">Consejo de Administración</div>
+      <div class="btn vigilancia" (click)="toggleInfo()">Consejo de Vigilancia</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="forml-vig" [ngStyle]="{'display': isActive ? 'block' : 'none'}">
+  <div class="container">
+    <div class="buzon-option-title">Formulario Consejo de Vigilancia</div>
+    <div class=" forml-vig-desc">Este buzón es exclusivo para seguimiento a temas de servicio y atención al
+      Socio.</div>
+
+    <!-- /*Formulario*/ -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5ZbxBwSmi8-aYWbJyyAhQpKNUqxdqdI8qJgO4qFuhcv080Q/viewform?embedded=true" width="100%" height="1678" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+  </div>
+
+</section>
+<section class="forml-vig admin" [ngStyle]="{'display': isActive2 ? 'block' : 'none'}">
+  <div class="container">
+    <div class="buzon-option-title" style="color: #dc9c48;">Formulario Consejo de Administración</div>
+    <div class="forml-vig-desc">Este buzón es exclusivo para seguimiento a temas de servicio y atención al Socio.
+    </div>
+
+    <!-- /*Formulario*/ -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8Phw4VS8FINLNyLauQ9kqbilWJVsESS_qsvTG3R6cTmp1rg/viewform?embedded=true" width="100%" height="1678" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+  </div>
+
+</section>

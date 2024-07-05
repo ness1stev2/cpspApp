@@ -1,0 +1,97 @@
+<portada-component title="LIBERTADOR" colorText="text-black" img="revistas libertador"
+  alt="pareja joven disfrutando tiempo juntos casa"></portada-component>
+
+<section class="revistas container">
+  <p class="revistas-subtitle text-center my-5">Conoce lo nuevo que tiene <span
+      style="color: var(--color-primario);">Caja Popular San Pablo</span></p>
+
+  <div class="row gap-5 justify-content-around">
+
+    @for (item of revistasPorAnio['2024']; track $index) {
+    <a [href]="'assets/pdf/'+item.pdf" target="_blank" class="card-revista col-3 p-0">
+      <img class="card-img" [src]="'assets/img-revistas/'+item.img" alt="Revistas 2024">
+      <div class="card-title my-4 text-center">{{item.mesyAnio}}</div>
+      <div class="btn-leer-mas text-center">Leer más</div>
+    </a>
+    }
+
+  </div>
+</section>
+
+<section class="revistas 2023">
+
+  <div class="tiulo-año container-fluid d-flex justify-content-center align-items-center gap-5 text-center ">
+    <button class="fs-5 d-inline-block px-4 rounded-pill"
+      style="height: 50px; background-color: var(--color-naranja); color: white; border: none"
+      (click)="mostrarRevistas('2023')"><span>{{!revistaFlag['2023'] ? 'Mostrar' : 'Ocultar'}}</span></button>
+    <p class="mb-0">2023</p>
+  </div>
+
+  @if (revistaFlag['2023']) {
+  <div class="container">
+    <div class="row justify-content-around my-5 gap-5">
+
+      @for (item of revistasPorAnio['2023']; track $index) {
+      <a [href]="'assets/pdf/'+item.pdf" target="_blank" class="card-revista col-3 p-0">
+        <img class="card-img" [src]="'assets/img-revistas/'+item.img" alt="Revista diciembre 2023" loading="lazy">
+        <div class="card-title my-4 text-center">{{item.mesyAnio}}</div>
+        <div class="btn-leer-mas text-center">Leer más</div>
+      </a>
+      }
+
+    </div>
+  </div>
+  }
+</section>
+
+<section class="revistas 2022">
+
+  <div class="tiulo-año container-fluid d-flex justify-content-center align-items-center gap-5 text-center ">
+    <button class="fs-5 d-inline-block px-4 rounded-pill"
+      style="height: 50px; background-color: var(--color-naranja); color: white; border: none"
+      (click)="mostrarRevistas('2022')"><span>{{!revistaFlag['2022'] ? 'Mostrar' : 'Ocultar'}}</span></button>
+    <p class="mb-0">2022</p>
+  </div>
+
+  @if (revistaFlag['2022']) {
+  <div class="container">
+    <div class="cards-revistas row justify-content-around my-5 gap-5">
+
+      @for (item of revistasPorAnio['2022']; track $index) {
+      <a [href]="'assets/pdf/'+item.pdf" target="_blank" class="card-revista col-3 p-0">
+        <img class="card-img" [src]="'assets/img-revistas/'+item.img" alt="Revista diciembre 2023" loading="lazy">
+        <div class="card-title my-4 text-center">{{item.mesyAnio}}</div>
+        <div class="btn-leer-mas text-center">Leer más</div>
+      </a>
+      }
+
+    </div>
+  </div>
+  }
+</section>
+
+<section class="revistas 2021">
+
+  <div class="tiulo-año container-fluid d-flex justify-content-center align-items-center gap-5 text-center ">
+    <button class="fs-5 d-inline-block px-4 rounded-pill"
+      style="height: 50px; background-color: var(--color-naranja); color: white; border: none"
+      (click)="mostrarRevistas('2021')"><span>{{!revistaFlag['2021'] ? 'Mostrar' : 'Ocultar'}}</span></button>
+    <p class="mb-0">2021</p>
+  </div>
+
+  @if (revistaFlag['2021']) {
+  <div class="container">
+    <div class="cards-revistas row justify-content-around my-5 gap-5">
+
+      @for (item of revistasPorAnio['2021']; track $index) {
+      <a [href]="'assets/pdf/'+item.pdf" target="_blank" class="card-revista col-3 p-0">
+        <img class="card-img" [src]="'assets/img-revistas/'+item.img" alt="Revista diciembre 2023" loading="lazy">
+        <div class="card-title my-4 text-center">{{item.mesyAnio}}</div>
+        <div class="btn-leer-mas text-center">Leer más</div>
+      </a>
+      }
+
+    </div>
+  </div>
+  }
+</section>

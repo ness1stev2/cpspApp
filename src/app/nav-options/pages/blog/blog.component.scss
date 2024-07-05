@@ -1,0 +1,11 @@
+.row {
+  @media (max-width: 576px) {
+    justify-content: center;
+  }
+
+  .tar {
+    @media (max-width: 576px) {
+      max-width: 90%;
+    }
+  }
+}

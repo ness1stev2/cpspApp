@@ -1,0 +1,61 @@
+<portada-component title="QUIERO SER SOCIO" colorText="text-black" img="quiero ser socio"
+  alt="Dos personas chocando la mano"></portada-component>
+
+<section class="deseo--socio-container">
+  <div class="deseo--socio-titulo text-center">DESEO SER SOCIO</div>
+  <div class="deseo--socio-desc">COPIA Y ORIGINAL DE LOS SIGUIENTES DOCUMENTOS</div>
+  <div class="requisitos--container">
+    <div class="deseo--socio-subtitulo">Adultos</div>
+
+    @for (descripcion of socioMayor; track $index) {
+    <div class="check--descripcion">
+      <img loading="lazy" width="45" height="45" src="../assets/icon/cheque.webp" alt="icono check">
+      <div class="check--descripcion-text">{{descripcion}}</div>
+    </div>
+    }
+
+    <div class="deseo--socio-subtitulo">Datos adicionales</div>
+
+    <div class="check--descripcion">
+      <img loading="lazy" width="45" height="45" src="../assets/icon/cheque.webp" alt="icono check">
+      <div class="check--descripcion-text">Teléfono celular del Titular.</div>
+    </div>
+    <div class="check--descripcion">
+      <img loading="lazy" width="45" height="45" src="../assets/icon/cheque.webp" alt="icono check">
+      <div class="check--descripcion-text">Correo electrónico del titular.</div>
+    </div>
+  </div>
+
+  <div class="requisitos--container requisitos--color">
+    <div class="deseo--socio-subtitulo">Ahorradores menores de edad (De 1 a 17 años)</div>
+
+    @for (descripcion of socioMenor; track $index) {
+    <div class="check--descripcion">
+      <img loading="lazy" width="45" height="45" src="../assets/icon/cheque.webp" alt="icono check">
+      <div class="check--descripcion-text">{{descripcion}}</div>
+    </div>
+    }
+
+  </div>
+
+  <div class="requisitos--container">
+    <div class="deseo--socio-subtitulo">Ciudadanos mexicanos naturalizados (Extranjeros) Además de cumplir con los datos
+      antes mencionados, deberán presentar:</div>
+
+      @for (descripcion of socioExtranjero; track $index) {
+        <div class="check--descripcion">
+          <img loading="lazy" width="45" height="45" src="../assets/icon/cheque.webp" alt="icono check">
+          <div class="check--descripcion-text">{{descripcion}}</div>
+        </div>
+      }
+    <!-- <div class="check--descripcion">
+      <img loading="lazy" width="45" height="45" src="../assets/icon/cheque.webp" alt="icono check">
+      <div class="check--descripcion-text">Dato de su domicilio en el país de origen.</div>
+    </div> -->
+
+    <div class="deseo--socio-desc" style="color:brown;margin-top: 30px;">Importante: Los documentos personales deberán
+      estar traducidos al español (documento oficial).</div>
+  </div>
+
+
+</section>

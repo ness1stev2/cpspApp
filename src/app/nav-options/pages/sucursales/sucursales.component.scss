@@ -1,0 +1,190 @@
+.sucursales {
+  .card-container {
+    gap: 0px 80px;
+
+    .centroSur {
+      background-image: url(../../../../assets/Centro-Sur.webp);
+    }
+
+    .aleira {
+      background-image: url(../../../../assets/aleira.webp);
+    }
+
+    .matriz {
+      background-image: url(../../../../assets/suc-matriz.webp);
+    }
+
+    .zalatitan {
+      background-image: url(../../../../assets/suczalatitan.webp);
+    }
+
+    .iglesias {
+      background-image: url(../../../../assets/jose-ma.-i.webp);
+    }
+
+    .zapopan {
+      background-image: url(../../../../assets/suc.-zapopan-3.webp);
+    }
+
+    .pedrito {
+      background-image: url(../../../../assets/san-pedrito.webp);
+    }
+
+    .santa {
+      background-image: url(../../../../assets/sucsantafe.webp);
+    }
+
+    .chapala {
+      background-image: url(../../../../assets/chapala-3.webp);
+    }
+
+    .chapala {
+      background-image: url(../../../../assets/chapala-3.webp);
+    }
+
+    .centro {
+      background-image: url(../../../../assets/centro.webp);
+    }
+
+    .obrero {
+      background-image: url(../../../../assets/sucobrero.webp);
+    }
+
+    .tonala {
+      background-image: url(../../../../assets/tonala1.webp);
+    }
+
+    .castillo {
+      background-image: url(../../../../assets/castillo.webp);
+    }
+
+    .bahia {
+      background-image: url(../../../../assets/bahia-c.webp);
+    }
+
+    .tlaquepaque {
+      background-image: url(../../../../assets/tlaquepaque.webp);
+    }
+
+    .ocotlan {
+      background-image: url(../../../../assets/ocotlan.webp);
+    }
+
+    .medico {
+      background-image: url(../../../../assets/serviciomed-626x417.webp);
+    }
+
+    .tonala {
+      background-image: url(../../../../assets/tonala1.webp);
+    }
+
+
+
+    .belisario {
+      background-image: url(../../../../assets/suc-belisario.webp);
+      background-position: center;
+    }
+
+    .card-suc {
+      height: 415px;
+      margin: 20px 0;
+      text-align: center;
+      background-size: cover;
+      box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+      border-radius: 5px;
+      min-width: 240px;
+      max-width: 280px;
+      cursor: pointer;
+      transition: box-shadow 500ms ease;
+
+      a {
+        text-decoration: none;
+      }
+
+      //Unicamente para nuevas sucursales (borrar una vez que se deje de utilizar)
+      .nueva-sucursal {
+        background: var(--color-naranja);
+        color: white;
+        transform: rotate(45deg);
+        padding: 8px 0px;
+        position: absolute;
+        bottom: 180px;
+        left: 90px;
+        font-size: 20px;
+        width: 220px;
+      }
+
+      .card-suc-title-btn {
+        position: relative;
+        top: 37%;
+
+        .card-suc-title {
+          font-size: 2.5rem;
+          color: var(--color-blanco);
+          text-shadow: 0 0 10px black;
+          line-height: 30px;
+          margin-bottom: 5px;
+        }
+
+        .card-suc-btng {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: var(--color-primario);
+          width: 190px;
+          border-radius: 15px;
+          height: 30px;
+          color: var(--color-blanco);
+          margin: 20px auto;
+          font-size: 1rem;
+          padding: 10px;
+          transition: background-color 500ms ease;
+
+          p {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      .card-suc-inf {
+        background-color: rgb(77, 77, 79, 80%);
+        padding: 20px;
+        text-align: start;
+        height: 325px;
+        transform: translateY(315px);
+
+        .card-suc-inf-title {
+          font-size: 2.6rem;
+          color: var(--color-blanco);
+        }
+
+        .card-suc-inf-numbers {
+          color: var(--color-blanco);
+          font-size: 1.2rem;
+          margin: 10px 0px;
+          white-space: pre-line;
+        }
+      }
+    }
+
+    .card-suc:hover {
+      box-shadow: 1px 1px 21px 0px var(--color-naranja);
+
+      .card-suc-title-btn {
+        .card-suc-btng {
+          background-color: var(--color-primario);
+        }
+      }
+    }
+
+    .card-suc-inf {
+      background-color: rgb(77, 77, 79, 80%);
+      padding: 20px;
+      text-align: start;
+      height: 325px;
+      transform: translateY(315px);
+    }
+  }
+}

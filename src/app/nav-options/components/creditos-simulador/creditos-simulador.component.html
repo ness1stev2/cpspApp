@@ -1,0 +1,91 @@
+<section class="section-main">
+  <div class="container pt-3">
+    <div class="row mt-3">
+      <div class="col-12 col-sm-12 col-lg-4">
+
+        <form [formGroup]="formSimulador" (ngSubmit)="onSubmit()">
+
+          <div class="row align-items-center">
+            <div class="col-3">
+              <img [src]="'assets/icon/credito-' + credito.id + '.webp'" class="img-credito d-block" loading="lazy" [alt]="credito.nombre">
+            </div>
+            <div class="col-9">
+              <h2 class="titulo-simulador d-inline">Simulador de Crédito {{ credito.nombre }}</h2>
+              <p class="tipo-credito d-inline-block m-0 ms-md-2"
+                [ngClass]="{'btn-amarillo': credito.tipoCredito === 'Consumo', 'btn-azul': credito.tipoCredito === 'Comercial', 'btn-azul-marino': credito.tipoCredito === 'Vivienda'}">
+                {{ credito.tipoCredito }}</p>
+            </div>
+          </div>
+
+          <div class="form-group mt-2 mb-3">
+            <label for="monto"><b>Monto</b></label>
+            <input type="text" class="form-control" placeholder="Ingresar monto" formControlName="monto">
+            <div *ngIf="formSimulador.get('monto')?.hasError('montoFueraDeRango'); else templateA" class="bg-danger rounded-pill text-white text-center mt-2">
+              Monto fuera del rango de ${{ credito.montoMin }} y hasta ${{ credito.montoMax }}
+            </div>
+
+            <ng-template #templateA>
+              <p class="mt-2">Monto del Crédito desde
+                ${{ credito.montoMin | number:'1.2-2' }}
+                hasta
+                ${{ credito.montoMax | number:'1.2-2' }} pesos.
+              </p>
+            </ng-template>
+
+          </div>
+          <div class="form-group mt-2 mb-3">
+            <label for="tiempo"><b>Tiempo en Meses</b></label>
+            <input type="number" class="form-control" placeholder="Ingresar cantidad de meses" formControlName="tiempo"
+              [min]="credito.plazoMin || 0" [max]="credito.plazoMax || 1">
+            <p>Plazo mínimo de {{ credito.plazoMin }} meses y un maximo de {{ credito.plazoMax }} meses.</p>
+            <p id="meses" style="color: red;"></p>
+            <p id="mesesv" style="color: green;"></p>
+          </div>
+          <div class="form-group mt-2 mb-3">
+            <label for="interes"><b>Interés Mensual %</b></label>
+            <input type="text" class="form-control" id="interes" [value]="credito.interesMen" readonly>
+          </div>
+          <div class="form-group mt-2 mb-3 alert alert-danger" hidden id="alert-error">
+            Debes llenar todos los campos!
+          </div>
+          <button type="submit" class="btn btn-primary fw-bold" id="btnCalcular">CALCULAR</button>
+          <div class="form-group mt-2 mb-3">
+            <p><b>La información exhibida es única y exclusivamente para uso informativo y no representa ninguna
+                obligación ó compromiso
+                por parte de la Caja Popular San Pablo.</b></p>
+
+          </div>
+
+
+        </form>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-7 overflow-auto">
+        <table id="lista-tabla" class="table">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Fecha</th>
+              <th class="text-center">Abono a Capital</th>
+              <th>Interés</th>
+              <th *ngIf="credito.tipoCredito !== 'Comercial' && credito.tipoCredito !== 'Vivienda'">IVA</th>
+              <th>A pagar</th>
+              <th>Saldo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let result of resultCredito; let i = index">
+              <td>{{ result.no }}</td>
+              <td>{{ result.fecha[i] }}</td>
+              <td class="text-center">${{ result.abonoCapital | number:'1.2-2' }}</td>
+              <td>${{ result.interes | number:'1.2-2' }}</td>
+              <td *ngIf="credito.tipoCredito !== 'Comercial' && credito.tipoCredito !== 'Vivienda'">${{ result.iva | number:'1.2-2' }}</td>
+              <td>${{ result.aPagar | number:'1.2-2' }}</td>
+              <td>${{ result.saldo | number:'1.2-2' }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</section>
