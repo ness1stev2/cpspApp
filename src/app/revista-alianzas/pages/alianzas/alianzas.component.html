@@ -17,15 +17,37 @@
         </ul> -->
         <div class="d-flex gap-2 p-3" style="width: 100%; list-style: none;">
 
-            <a href=""><img class="" src="assets/icon/facebook.png" alt=""></a>
+          @if (alianza.redesSocialesUrl.facebook) {
+            <a [href]="alianza.redesSocialesUrl.facebook"><img class="" src="assets/icon/facebook.png" alt=""></a>
+          }
 
-            <a href=""><img class="" src="assets/icon/instagram.png" alt=""></a>
+          @if (alianza.redesSocialesUrl.instagram) {
+            <a [href]="alianza.redesSocialesUrl.instagram"><img class="" src="assets/icon/instagram.png" alt=""></a>
+          }
 
-            <a href=""><img class="" src="assets/icon/youtube.png" alt=""></a>
+          @if (alianza.redesSocialesUrl.youtube) {
+            <a [href]="alianza.redesSocialesUrl.youtube"><img class="" src="assets/icon/youtube.png" alt=""></a>
+          }
 
-            <a href=""><img class="" src="assets/icon/tik-tok.png" alt=""></a>
+          @if (alianza.redesSocialesUrl.tiktok) {
+            <a [href]="alianza.redesSocialesUrl.tiktok"><img class="" src="assets/icon/tik-tok.png" alt=""></a>
+          }
 
-            <a href=""><img class="" src="assets/icon/x.png" alt=""></a>
+          @if (alianza.redesSocialesUrl.twitter) {
+            <a [href]="alianza.redesSocialesUrl.twitter"><img class="" src="assets/icon/x.png" alt=""></a>
+          }
+
+          @if (alianza.redesSocialesUrl.email) {
+            <a [href]="alianza.redesSocialesUrl.email"><img class="" src="assets/icon/email.png" alt=""></a>
+          }
+
+          @if (alianza.redesSocialesUrl.noTelefono) {
+            <a [href]="alianza.redesSocialesUrl.noTelefono"><img class="" src="assets/icon/telefono.png" alt=""></a>
+          }
+
+          @if (alianza.redesSocialesUrl.sitioWeb) {
+            <a [href]="alianza.redesSocialesUrl.sitioWeb"><img class="" src="assets/icon/sitio-web.png" alt=""></a>
+          }
 
         </div>
         <a [href]="'assets/pdf/'+ alianza.pdfName" target="_blank"><button>Leer más</button></a>

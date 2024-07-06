@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { ViewportScroller, NgFor } from '@angular/common';
 import { filter } from 'rxjs';
 import { CpspService } from '../../../cpsp/services/cpsp.service';
 import { Alianza } from '../../../interfaces/alianzas.interface';
 import { PortadaComponent } from '../../../shared/components/portada/portada.component';
+
 
 @Component({
     selector: 'app-alianzas',
