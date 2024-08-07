@@ -129,7 +129,7 @@ export const CreditosData: Credito[] = [
     <li> Monto del Crédito desde $500.00 y hasta el 90% del saldo de tu cuenta de
     ahorro.</li>
     <li> Tiene una tasa de interés ordinaria anual fija durante la vigencia del crédito.</li>
-    <li> Los intereses ordinarios se calclian sobre el saldo insoluto del capital del
+    <li> Los intereses ordinarios se calculan sobre el saldo insoluto del capital del
     crédito.</li>
     <li> Plazo de 2 y hasta 36 o 60 meses según el monto del crédito.</li>
     <li> Periodicidad de pago mensual.</li>
@@ -749,7 +749,7 @@ export const CreditosData: Credito[] = [
     `,
     consideraciones: `
     <b>Tasa de Interés anual fija</b><br>
-    24.00%<br>
+    21.60%<br>
     antes de IVA.<br><br>
     <b>Tasa de Interés anual moratoria fija</b><br>
     48.00%<br>

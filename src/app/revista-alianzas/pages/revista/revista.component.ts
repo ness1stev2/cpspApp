@@ -22,6 +22,11 @@ export class RevistaComponent {
   revistasPorAnio: { [anio: string]: Revista[] } = {
     '2024': [
       {
+        pdf: 'REV Agosto 2024.pdf',
+        img: 'REV Agosto 2024.webp',
+        mesyAnio: 'Agosto 2024',
+      },
+      {
         pdf: 'REV Julio 2024.pdf',
         img: 'REV Julio 2024.webp',
         mesyAnio: 'JULIO 2024',

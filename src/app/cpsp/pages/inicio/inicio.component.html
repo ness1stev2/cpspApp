@@ -84,7 +84,8 @@
           <span class="btn" style="background-color: var(--color-primario); color: white">Ver detalles »</span>
         </a>
 
-        <a routerLink="/servicio/educoof" class="col-lg-4 text-center animate__animated animate__backInUp animate__slow">
+        <a routerLink="/servicio/educoof"
+          class="col-lg-4 text-center animate__animated animate__backInUp animate__slow">
           <img src="assets/icon/puerco_educoof.webp" loading="lazy" alt="imagen puerco educoof" class="rounded-circle"
             style="object-fit: contain;background-color: var(--color-azul-oscuro);" width="140" height="140">
 
@@ -93,7 +94,8 @@
           <span class="btn" style="background-color: var(--color-primario); color: white">Ver detalles »</span>
         </a>
 
-        <a routerLink="/servicio/creditos" class="col-lg-4 text-center animate__animated animate__backInUp animate__slow">
+        <a routerLink="/servicio/creditos"
+          class="col-lg-4 text-center animate__animated animate__backInUp animate__slow">
           <img src="assets/alegre-joven-emocionada-telefono-movil-tarjeta-credito.webp"
             alt="Chica sonriendo con una tarjeta de credito" class="rounded-circle" width="140" height="140">
 
@@ -139,14 +141,18 @@
   <div style="height: 1000px;"></div>
   }
   @defer (on viewport) {
-  <preguntas-frecuentes-component />
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+          <preguntas-frecuentes-component />
+        </div>
+        <hr class="d-block d-lg-none m" style="width: 90%; margin: 0 auto;">
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+          <buzon-component-inicio class="position-sticky" style="top: 85px;" />
+        </div>
+      </div>
+    </div>
 
-  }@placeholder {
-  <div style="height: 1000px;"></div>
-  }
-  <hr class="linea-horizontal" style="margin: 50px 0;">
-  @defer (on viewport) {
-  <buzon-component-inicio />
   }@placeholder {
   <div style="height: 1000px;"></div>
   }

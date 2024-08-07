@@ -2,6 +2,20 @@ import { Alianza } from "../interfaces/alianzas.interface";
 
 export const AlianzasData: Alianza[] = [
   {
+    img: "san juan cosala",
+    nombre: "Hotel Balneario San Juan Cosala",
+    beneficio: "LUNES A SABADO- ADULTO $340/ NIÑOS MENORES A 130CM DE ALTURA $170.00 (MAXIMO 5 PERSONAS POR SOCIO O COLABORADOR)",
+    pdfName: "SAN JUAN COSALA.pdf",
+    redesSocialesUrl: {
+      noTelefono: "33 1599 3781",
+      email: "consultorio_quintil@hotmail.com",
+      sitioWeb: "https://www.hotelspacosala.com/",
+      facebook: "https://www.facebook.com/Hotel.Balneario.SanJuan.Cosala/?locale=es_LA",
+      instagram: "https://www.facebook.com/Hotel.Balneario.SanJuan.Cosala/?locale=es_LA",
+      tiktok: "https://www.facebook.com/Hotel.Balneario.SanJuan.Cosala/?locale=es_LA"
+    }
+  },
+  {
     img: "Consultorio Dental Rey Quintil Guadalajara",
     nombre: "Consultorio Dental Rey Quintil Guadalajara",
     beneficio: "25% de descuento a Socios. • 30% de descuento a colaboradores de la Cooperativa.",
@@ -113,7 +127,7 @@ export const AlianzasData: Alianza[] = [
       facebook: "https://www.facebook.com/Cecati190CursosYCapacitaciones/?locale=es_LA",
     },
   },
-  {
+  /* {
     img: "CEAO",
     nombre: "CEAO",
     beneficio: "Descuento de 20% en colegiatura Prepa UDG y Prepa semiescolarizada. Excepto carreras de aviación",
@@ -124,7 +138,7 @@ export const AlianzasData: Alianza[] = [
       sitioWeb: "http://ceaoac.edu.mx/",
       facebook: "https://www.facebook.com/estudiosadministrativos/?locale=es_LA",
     },
-  },
+  }, */
   {
     img: "SELVA MAGICA",
     nombre: "SELVA MAGICA",
@@ -153,20 +167,20 @@ export const AlianzasData: Alianza[] = [
   },
   {
     img: "DMX",
-      nombre: "DMX ENERGÍA SUSTENTABLE",
-      beneficio: "Descuento: 5% para el Socio.",
-      pdfName: "DMX.pdf",
-      redesSocialesUrl: {
-        noTelefono: "33 3898 3041",
-        email: "contacto@dmx-mexico.com",
-        sitioWeb: "https://dmx-mexico.com/",
-        facebook: "https://www.facebook.com/profile.php?id=100063940932041",
+    nombre: "DMX ENERGÍA SUSTENTABLE",
+    beneficio: "Descuento: 5% para el Socio.",
+    pdfName: "DMX.pdf",
+    redesSocialesUrl: {
+      noTelefono: "33 3898 3041",
+      email: "contacto@dmx-mexico.com",
+      sitioWeb: "https://dmx-mexico.com/",
+      facebook: "https://www.facebook.com/profile.php?id=100063940932041",
     },
   },
-  {
+  /* {
     img: "KibryzLogo",
-      nombre: "KI-BRYZ ENERGY",
-      beneficio: "Descuento: 6% para Socios.",
+    nombre: "KI-BRYZ ENERGY",
+    beneficio: "Descuento: 6% para Socios.",
     pdfName: "Kibryz.pdf",
     redesSocialesUrl: {
       noTelefono: "3329393365",
@@ -175,7 +189,7 @@ export const AlianzasData: Alianza[] = [
       instagram: "https://www.instagram.com/ki.bryz.energy/",
       tiktok: "https://www.tiktok.com/@kibryz.energy",
     },
-  },
+  }, */
   {
     img: "Optica lemus",
     nombre: "OPTICA LEMUS",
@@ -249,4 +263,4 @@ export const AlianzasData: Alianza[] = [
       instagram: "https://www.instagram.com/viajes.alondra",
     },
   },
-  ]
+]
