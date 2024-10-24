@@ -1,6 +1,18 @@
 .slogan {
   background-color: var(--color-azul-oscuro);
 
+  .row{
+    height: 620px;
+    @media screen and (max-width: 768px) {
+      height: auto
+    }
+  }
+  .bg-matriz {
+    @media screen and (max-width: 768px) {
+      height: 300px
+    }
+  }
+
   .slogan-texto {
     text-align: center;
     text-shadow: 1px 1px 10px black;

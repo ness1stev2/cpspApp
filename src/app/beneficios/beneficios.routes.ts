@@ -11,7 +11,7 @@ export const routes: Routes = [
     children: [
       { path: 'asesoria', component: AsesoriaComponent },
       { path: 'medico', component: MedicoComponent },
-      { path: 'profun', component: ProfunComponent },
+      { path: 'servicio-apoyo-funerario', component: ProfunComponent },
       { path: 'proteccion', component: ProteccionComponent },
       { path: 'servicios', component: ServiciosComponent },
       { path: '**', redirectTo: 'asesoria' },

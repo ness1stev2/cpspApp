@@ -255,7 +255,7 @@ export const AlianzasData: Alianza[] = [
     img: "VIAJES ALONDRA",
     nombre: "VIAJES ALONDRA",
     beneficio: "Descuento de 7% al socio",
-    pdfName: "hospital siloe.pdf",
+    pdfName: "viajes-alondra.pdf",
     redesSocialesUrl: {
       noTelefono: "33 1833 2733",
       email: "viajesalondra@hotmail.com",

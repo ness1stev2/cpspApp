@@ -8,6 +8,7 @@ import { NovEventComponent } from './pages/nov-event/nov-event.component';
 import { EducoofComponent } from './pages/educoof/educoof.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { MantenimientoComponent } from './pages/mantenimiento/mantenimiento.component';
+import { SeccionNegociosComponent } from './pages/seccionnegocios/seccion-negocios.component';
 
 export const routes: Routes = [
   {
@@ -22,6 +23,7 @@ export const routes: Routes = [
       { path: 'nov-event', component: NovEventComponent},
       { path: 'educoof', component: EducoofComponent},
       { path: 'blog', component: BlogComponent},
+      { path: 'negocios', component: SeccionNegociosComponent},
     ]
   }
 ];
