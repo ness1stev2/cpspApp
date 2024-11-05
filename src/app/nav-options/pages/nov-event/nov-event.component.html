@@ -15,13 +15,13 @@
 
 
 <div class="container">
-  <div class="row">
+  <div class="row py-5">
 
     <ng-container *ngFor="let item of novEvent; index as i">
 
       <div class="col-12 col-md-4 col-xl-3">
         <div class="card mb-2">
-          <img [src]="'assets/img-nov-event/'+item.srcImg+'.webp'" class="card-img-top" [alt]="item.altImg">
+          <img style="content-visibility: auto;" [src]="'assets/img-nov-event/'+item.srcImg+'.webp'" class="card-img-top" [alt]="item.altImg">
           <div class="card-body">
             <h5 class="card-title">{{ item.title }}</h5>
             <p class="card-text">{{ item.description }}</p>
@@ -48,7 +48,7 @@
                 <div class="carousel-inner">
                   <div *ngFor="let event of item.imagesGallery; index as j" class="carousel-item"
                     [ngClass]="{'active': j === 0}">
-                    <img [src]="'assets/img-nov-event/'+event+'.webp'" class="d-block w-100"
+                    <img style="content-visibility: auto;" [src]="'assets/img-nov-event/'+event+'.webp'" class="d-block w-100"
                       [alt]="'imagen de'+ item.title">
                   </div>
                 </div>

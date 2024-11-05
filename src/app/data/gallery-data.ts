@@ -4,22 +4,19 @@ export const GalleryData: Gallery[] = [
   {
     isActive: true,
     rlink: false,
+    path: "assets/cerrado-2-de-nov",
+    alt: "Sucursales cerradas el sabado 2 de noviembre del 2024",
+    btn: false
+  },
+  {
+    isActive: false,
+    rlink: false,
     path: "assets/becas",
     alt: "Imagen becas 2024 - 2025",
     btn: true,
     href: "assets/pdf/beca.pdf",
     btntext: "Conoce las bases",
     styleBtn: "background-color: #f4a31a; color: black; right: 8%; bottom: 10%;",
-  },
-  {
-    isActive: false,
-    rlink: false,
-    path: "assets/aurelio",
-    alt: "Becas exclusivas para Socios - Aurelio Lozano",
-    btn: true,
-    href: "assets/pdf/aurelio-chapala-ocotlan.pdf",
-    btntext: "Conoce las bases",
-    styleBtn: "background-color: #235ba5; color: white; right: 8%; bottom: 10%;",
   },
   {
     isActive: false,
