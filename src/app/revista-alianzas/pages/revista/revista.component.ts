@@ -20,7 +20,19 @@ interface Revista {
 export class RevistaComponent {
 
   revistasPorAnio: { [anio: string]: Revista[] } = {
+    '2025': [
+      {
+        pdf: 'REV Enero 2025.pdf',
+        img: 'REV Enero 2025.webp',
+        mesyAnio: 'Enero 2025',
+      },
+    ],
     '2024': [
+      {
+        pdf: 'REV Noviembre 2024.pdf',
+        img: 'REV Noviembre 2024.webp',
+        mesyAnio: 'Noviembre 2024',
+      },
       {
         pdf: 'REV Noviembre 2024.pdf',
         img: 'REV Noviembre 2024.webp',
@@ -266,6 +278,7 @@ export class RevistaComponent {
   };
 
   revistaFlag: { [key: string]: boolean } = {
+    '2024': false,
     '2023': false,
     '2022': false,
     '2021': false,

@@ -2,6 +2,13 @@ import { Sucursal } from '../interfaces/sucursal.interface';
 
 export const sucursalesData: Sucursal[] = [
   {
+    class:    'chapalita',
+    link:     'https://maps.app.goo.gl/jCUL8Zqm2vGiCJgq8',
+    title:    'CHAPALITA',
+    telefono: 'Conmutador: 3338831830 o 3336441728 Ext. Captación: 1103 / 1121 / 1178 / 1235 / 1124 Crédito: 1104 / 1132 / 1154 / 1155 Cobranza: 1131 / 1125 / 1105',
+    horario:  'Lunes a Viernes de 9:00 a 18:45 horas Sábado de 9:00 a 13:00 horas'
+  },
+  {
     class:    'centroSur',
     link:     'https://maps.app.goo.gl/hctrRYvLY1fLU3e88',
     title:    'CENTRO SUR',

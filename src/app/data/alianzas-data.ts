@@ -2,13 +2,23 @@ import { Alianza } from "../interfaces/alianzas.interface";
 
 export const AlianzasData: Alianza[] = [
   {
+    img: "Clase y estilo",
+    nombre: "Escuela de Perosnalidad y Belleza (Clase y Estilo)",
+    beneficio: "Descuento: 10% de descuento",
+    pdfName: "Clase y Estilo.pdf",
+    redesSocialesUrl: {
+      noTelefono: "33 2208 0114",
+      facebook: "https://www.facebook.com/claseyestilomx/?locale=es_LA",
+      instagram: "https://www.instagram.com/escuelaclaseyestilo/?hl=es",
+    }
+  },
+  {
     img: "san juan cosala",
     nombre: "Hotel Balneario San Juan Cosala",
     beneficio: "LUNES A SABADO- ADULTO $340/ NIÑOS MENORES A 130CM DE ALTURA $170.00 (MAXIMO 5 PERSONAS POR SOCIO O COLABORADOR)",
     pdfName: "SAN JUAN COSALA.pdf",
     redesSocialesUrl: {
       noTelefono: "33 1599 3781",
-      email: "consultorio_quintil@hotmail.com",
       sitioWeb: "https://www.hotelspacosala.com/",
       facebook: "https://www.facebook.com/Hotel.Balneario.SanJuan.Cosala/?locale=es_LA",
       instagram: "https://www.facebook.com/Hotel.Balneario.SanJuan.Cosala/?locale=es_LA",
@@ -165,18 +175,6 @@ export const AlianzasData: Alianza[] = [
       facebook: "https://www.facebook.com/Distring",
     },
   },
-  {
-    img: "DMX",
-    nombre: "DMX ENERGÍA SUSTENTABLE",
-    beneficio: "Descuento: 5% para el Socio.",
-    pdfName: "DMX.pdf",
-    redesSocialesUrl: {
-      noTelefono: "33 3898 3041",
-      email: "contacto@dmx-mexico.com",
-      sitioWeb: "https://dmx-mexico.com/",
-      facebook: "https://www.facebook.com/profile.php?id=100063940932041",
-    },
-  },
   /* {
     img: "KibryzLogo",
     nombre: "KI-BRYZ ENERGY",
@@ -190,17 +188,7 @@ export const AlianzasData: Alianza[] = [
       tiktok: "https://www.tiktok.com/@kibryz.energy",
     },
   }, */
-  {
-    img: "Optica lemus",
-    nombre: "OPTICA LEMUS",
-    beneficio: "Descuento: 20% en productos y servicios.",
-    pdfName: "Optica Lemus.pdf",
-    redesSocialesUrl: {
-      noTelefono: "33 3644 0368",
-      facebook: "https://www.facebook.com/opticalemus20",
-      instagram: "https://www.instagram.com/opticalemus/",
-    },
-  },
+
   {
     img: "OPTI IMAGEN",
     nombre: "OPTI IMAGEN",
@@ -224,15 +212,6 @@ export const AlianzasData: Alianza[] = [
       sitioWeb: "https://volveraescucharaparatosauditivos.com/",
       facebook: "https://www.facebook.com/profile.php?id=100065055829627&paipv=0&eav=AfY_in0-HnEVkSBCjzh6KmVYCFyAiw95pm7HbuosOuSvneT-vnr2ubOcJ1CDk2PIJg0",
       instagram: "https://www.instagram.com/volver.a.escuchar",
-    },
-  },
-  {
-    img: "DR ALBERTO ROBLES",
-    nombre: "DR JESÚS ALBERTO ROBLES",
-    beneficio: "Socios 10% a 15% en traumatología y ortopedia",
-    pdfName: "Dr Jesús Alberto Robles.pdf",
-    redesSocialesUrl: {
-      noTelefono: "3311727536",
     },
   },
   {

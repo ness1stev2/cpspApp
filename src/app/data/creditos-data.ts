@@ -79,8 +79,8 @@ export const CreditosData: Credito[] = [
     <b>CAT promedio</b><br>
     18.6%<br><br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.<br>
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br>
-    <b>Vigencia de cálculo: Julio - Diciembre 2024.</b>
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br>
+    <b>Vigencia de cálculo: Enero - Julio 2025.</b>
     `,
     recomendaciones: `<ul>
     <li> Al pagar puntualmente tu crédito, generas un buen historial crediticio.</li>
@@ -191,10 +191,10 @@ export const CreditosData: Credito[] = [
     36.00%<br>
     antes de IVA.<br><br>
     <b>CAT promedio</b><br>
-    182.0%<br><br>
+    194.1%<br><br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.<br>
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br>
-    <b>Vigencia de cálculo: Julio - Diciembre 2024.<b>
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br>
+    <b>Vigencia de cálculo: Enero - Julio 2025.<b>
     `,
     recomendaciones: `<ul>
     <li> Al pagar puntualmente tu crédito, generas un buen historial crediticio.</li>
@@ -300,10 +300,10 @@ export const CreditosData: Credito[] = [
     36.00%<br>
     antes de IVA.<br><br>
     <b>CAT promedio</b><br>
-    202.8%<br><br>
+    203.2%<br><br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br>
-    <b>Vigencia de cálculo: Julio - Diciembre 2024.<b>
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br>
+    <b>Vigencia de cálculo: Enero - Julio 2025.<b>
     </ul>`,
     recomendaciones: `<ul>
     <li> Al pagar puntualmente tu crédito, generas un buen historial crediticio.</li>
@@ -419,8 +419,8 @@ export const CreditosData: Credito[] = [
     <b>CAT promedio</b><br>
     14.0%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.<br>
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br><br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br><br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -543,10 +543,10 @@ export const CreditosData: Credito[] = [
     48.00%<br>
     antes de IVA.<br><br>
     <b>CAT promedio</b><br>
-    16.0%<br><br>
+    15.8%<br><br>
     <b>&quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br>
-    Vigencia de cálculo: Julio - Diciembre 2024.</b>
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br>
+    Vigencia de cálculo: Enero - Julio 2025.</b>
     `,
     recomendaciones: `
     <ul>
@@ -650,8 +650,8 @@ export const CreditosData: Credito[] = [
     <b>CAT promedio</b><br>
     30.0%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br><br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br><br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -757,8 +757,8 @@ export const CreditosData: Credito[] = [
     <b>CAT promedio</b><br>
     30.0%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br><br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br><br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -880,10 +880,10 @@ export const CreditosData: Credito[] = [
     48.00%<br>
     antes de IVA.<br><br>
     <b>CAT promedio</b><br>
-    13.6%<br>
+    13.7%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br><br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br><br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -999,8 +999,8 @@ export const CreditosData: Credito[] = [
     <b>CAT promedio</b><br>
     12.7%<br><br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.
-    Cálculo de CAT realizado: 18 de Junio del 2024.
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -1106,8 +1106,8 @@ export const CreditosData: Credito[] = [
     <b>CAT promedio</b><br>
     9.4%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br><br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br><br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -1239,10 +1239,10 @@ export const CreditosData: Credito[] = [
     48.00%<br>
     antes de IVA.<br><br>
     <b>CAT promedio</b><br>
-    13.0%<br>
+    12.7%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br><br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br><br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -1371,11 +1371,11 @@ export const CreditosData: Credito[] = [
     48.00%<br>
     antes de IVA.<br><br>
     <b>CAT promedio</b><br>
-    14.3%<br>
+    13.9%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.<br><br>
 
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -1501,10 +1501,10 @@ export const CreditosData: Credito[] = [
     48.00%<br>
     antes de IVA.<br><br>
     <b>CAT promedio</b><br>
-    13.8%<br>
+    13.5%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.<br><br>
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -1652,9 +1652,9 @@ export const CreditosData: Credito[] = [
     <b>CAT promedio</b><br>
     13.4%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.<br><br>
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br>
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br>
 
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>
@@ -1785,8 +1785,8 @@ export const CreditosData: Credito[] = [
     10.9%<br>
     &quot;SIN IVA&quot;. Para fines informativos y de comparación exclusivamente.<br><br>
 
-    Cálculo de CAT realizado: 18 de Junio del 2024.<br>
-    Vigencia de cálculo: Julio - Diciembre 2024.
+    Cálculo de CAT realizado: 06 de Diciembre 2024.<br>
+    Vigencia de cálculo: Enero - Julio 2025.
     `,
     recomendaciones: `
     <ul>

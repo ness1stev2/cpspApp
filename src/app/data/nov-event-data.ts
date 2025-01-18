@@ -2,6 +2,20 @@ import { NovEvent } from '../interfaces/nov-event.interface';
 
 export const NovEventData: NovEvent[] = [
   {
+    srcImg: "179",
+    altImg: "Foro Cooperativo San Pablo",
+    title: "Foro Cooperativo San Pablo",
+    description: "Foro Cooperativo San Pablo",
+    imagesGallery: ['168', '169', '170', '171', '172', '173', '173', '174', '175', '176', '177', '178', '179', '180', '181']
+  },
+  {
+    srcImg: "191",
+    altImg: "Aurelio Lozano - Ocotlan 2024",
+    title: "Aurelio Lozano - Ocotlan 2024",
+    description: "Curso de Personalidad y Automaquillaje",
+    imagesGallery: ['183', '182', '184', '185', '186', '187', '188', '189', '190', '191', '192']
+  },
+  {
     srcImg: "167",
     altImg: "Aurelio Lozano - Matriz 2024",
     title: "Aurelio Lozano - Matriz 2024",
